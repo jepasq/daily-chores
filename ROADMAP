@@ -1,0 +1,15 @@
+							-*-org-*-
+
+* v1.0.0
+** v0.1.0
+*** v0.0.1
+**** May handle multi-items chores
+- [ ] Do x things. Modify it with a spinbox
+- [ ] Maybe also nested items ?  
+**** Continue implementation
+- [ ] If no chores defined, add a link to define some
+- [ ] Add a preference panel to let define chores
+**** TODO Correct project setup
+- [X] Move index and css file in view/ ?
+- [ ] Add COPYING file
+- [ ] Add a README.md file  
