@@ -9,10 +9,11 @@
 - [ ] Maybe also nested items ?  
 **** May add unit tests
 **** TODO Continue implementation
+- [X] Must add progname and version to the titlebar
+- [ ] Add bootstrap dependency  
+- [ ] Add a preference bootstrap modal to let define chores
 - [ ] If no chores defined, add a link to define some
 - [ ] Must get today's date in a stringly serializable way (YY-MM-DD)
-- [ ] Must add progname and version to the titlebar
-- [ ] Add a preference panel to let define chores
 **** DONE Correct project setup
 - [X] Move index and css file in view/ ?
 - [X] Add COPYING file

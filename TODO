@@ -3,5 +3,7 @@ daily-chores - GPLv3 - An electron app. to check for daily chores.
 * see ROADMAP for more
 
 === ChangeLog ===
+    (Update version and revision in view/index.html)
 
 * v0.0.0-1 (18 Jul. 2022 - ???)
+- (1) Change app. title
