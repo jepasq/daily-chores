@@ -7,6 +7,15 @@
     <title>Daily Chores v0.0.0-0</title>
     <link rel="stylesheet" type="text/css" href="./styles.css">
 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../ext/bootstrap/5.1.3/css/bootstrap.min.css" />
+
+    <!-- Bootstrap Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script>let $ = require('jquery');</script>
+    <script>require('popper.js');</script>
+    <script>require('bootstrap');</script>
+    
   </head>
   <body>
     <h1>Today's chores</h1>
@@ -27,6 +36,30 @@
 	<th><label for="scales">Scales</label></th>
       </row>
     </table>
+
+
+
+    <div class="modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+	<div class="modal-content">
+	  <div class="modal-header">
+            <h5 class="modal-title">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal"
+		    aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+	  </div>
+	  <div class="modal-body">
+            <p>Modal body text goes here.</p>
+	  </div>
+	  <div class="modal-footer">
+            <button type="button" class="btn btn-secondary"
+		    data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+	  </div>
+	</div>
+      </div>
+    </div>
     
     <script src="../src/renderer.js"></script>
   </body>
