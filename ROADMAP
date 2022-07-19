@@ -3,13 +3,17 @@
 * v1.0.0
 ** v0.1.0
 *** v0.0.1
+**** May add a D3 chart to see today's work
 **** May handle multi-items chores
 - [ ] Do x things. Modify it with a spinbox
 - [ ] Maybe also nested items ?  
-**** Continue implementation
+**** May add unit tests
+**** TODO Continue implementation
 - [ ] If no chores defined, add a link to define some
+- [ ] Must get today's date in a stringly serializable way (YY-MM-DD)
+- [ ] Must add progname and version to the titlebar
 - [ ] Add a preference panel to let define chores
-**** TODO Correct project setup
+**** DONE Correct project setup
 - [X] Move index and css file in view/ ?
-- [ ] Add COPYING file
-- [ ] Add a README.md file  
+- [X] Add COPYING file
+- [X] Add a README.md file eventually with some screenshots
