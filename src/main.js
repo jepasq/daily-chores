@@ -1,13 +1,13 @@
 const { app, BrowserWindow, ipcMain, nativeTheme } = require('electron');
 const path = require('path')
-
+const chore = require('./chore')
 
 const createWindow = () => {
   const win = new BrowserWindow({
       width: 800,
       height: 600,
       webPreferences: {
-	  nodeIntegration: false, // is default value after Electron v5
+	  nodeIntegration: true, // is default value after Electron v5
 	  contextIsolation: true, // protect against prototype pollution
 	  enableRemoteModule: false, // turn off remote
 	  preload: path.join(__dirname, 'preload.js'),
@@ -39,6 +39,10 @@ app.whenReady().then(() => {
 	if (BrowserWindow.getAllWindows().length === 0) createWindow();
     })
 
+    let today = new Date().toLocaleDateString();
+//    let c = Chore.new(today);
+    console.log(today);
+    
 })
 
 app.on('window-all-closed', () => {

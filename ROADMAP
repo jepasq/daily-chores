@@ -8,8 +8,14 @@
 - [ ] Do x things. Modify it with a spinbox
 - [ ] Maybe also nested items ?  
 **** May add unit tests
+**** LocalStorage handling
+- [ ] ChoreTemplate is what we should have
+  classes started but can't used them in main.js
+- [ ] Chore for today  
 **** TODO Continue implementation
 :LOGBOOK:
+CLOCK: [2022-07-20 mer. 06:17]--[2022-07-20 mer. 06:47] =>  0:30
+CLOCK: [2022-07-20 mer. 03:51]--[2022-07-20 mer. 04:10] =>  0:19
 CLOCK: [2022-07-20 mer. 02:40]--[2022-07-20 mer. 02:55] =>  0:15
 CLOCK: [2022-07-20 mer. 01:57]--[2022-07-20 mer. 02:28] =>  0:31
 CLOCK: [2022-07-19 mar. 04:21]--[2022-07-19 mar. 04:36] =>  0:15
@@ -17,6 +23,8 @@ CLOCK: [2022-07-19 mar. 04:21]--[2022-07-19 mar. 04:36] =>  0:15
 - [X] Must add progname and version to the titlebar
 - [X] Add bootstrap dependency
   see https://www.ryadel.com/en/electron-jquery-bootstrap-project-add-npm/
+- [X] Must get today's date in a stringly serializable way (YY-MM-DD)
+  In main.js
 - [-] We have some errors in index.html
   - [X] refused to execute inline script...
   - [ ] require is not defined
@@ -24,7 +32,6 @@ CLOCK: [2022-07-19 mar. 04:21]--[2022-07-19 mar. 04:36] =>  0:15
 - [ ] dark mode doesn't work anymore 
 - [ ] Add a preference bootstrap modal to let define chores
 - [ ] If no chores defined, add a link to define some
-- [ ] Must get today's date in a stringly serializable way (YY-MM-DD)
 **** DONE Correct project setup
 - [X] Move index and css file in view/ ?
 - [X] Add COPYING file
