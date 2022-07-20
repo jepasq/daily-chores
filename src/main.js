@@ -1,6 +1,7 @@
 const { app, BrowserWindow, ipcMain, nativeTheme } = require('electron');
 const path = require('path')
 
+
 const createWindow = () => {
   const win = new BrowserWindow({
       width: 800,
@@ -13,7 +14,7 @@ const createWindow = () => {
       }
   })
 
-    win.loadFile('view/index.html')
+    win.loadFile('index.html')
     win.webContents.openDevTools();
 
     
@@ -35,8 +36,9 @@ app.whenReady().then(() => {
     createWindow()
 
     app.on('activate', () => {
-	if (BrowserWindow.getAllWindows().length === 0) createWindow()
+	if (BrowserWindow.getAllWindows().length === 0) createWindow();
     })
+
 })
 
 app.on('window-all-closed', () => {

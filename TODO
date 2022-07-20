@@ -3,9 +3,12 @@ daily-chores - GPLv3 - An electron app. to check for daily chores.
 * see ROADMAP for more
 
 === ChangeLog ===
-    (Update version and revision in view/index.html)
+    (6 items by revision)
+    Update version and revision in index.html
+    
 
 * v0.0.0-1 (18 Jul. 2022 - ???)
-- (3) Fix an inline script execution issue
+- (4) Move back index.html in root directory
+- Fix an inline script execution issue
 - Add bootstrap dependency
 - Change app. title
