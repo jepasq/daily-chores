@@ -13,12 +13,18 @@
 
     <!-- Bootstrap Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
     
   </head>
   <body>
     <h1>Today's chores</h1>
     <p>Current theme source: <strong id="theme-source">System</strong></p>
 
+    <button id="btn-preferences" title="Open preferences dialog">
+      <i class="fa fa-cog fa-1x" aria-hidden="true"></i>
+    </button>
+
+    
     <button id="toggle-dark-mode">Toggle Dark Mode</button>
     <button id="reset-to-system">Reset to System Theme</button>
     <h1>Chores</h1>
@@ -41,7 +47,7 @@
 	  <div class="modal-header">
             <h5 class="modal-title">Modal title</h5>
             <button type="button" class="close" data-dismiss="modal"
-		    aria-label="Close">
+		    aria-label="Close"">
               <span aria-hidden="true">&times;</span>
             </button>
 	  </div>
@@ -49,7 +55,7 @@
             <p>Modal body text goes here.</p>
 	  </div>
 	  <div class="modal-footer">
-            <button type="button" class="btn btn-secondary"
+            <button type="button" class="btn btn-secondary close"
 		    data-dismiss="modal">Close</button>
             <button type="button" class="btn btn-primary">Save changes</button>
 	  </div>

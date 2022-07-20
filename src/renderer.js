@@ -1,8 +1,7 @@
-let $ = require('jquery');
+/*
 require('popper.js');
 require('bootstrap');
-
-//let $ = require('jquery');
+*/
 
 document.getElementById('toggle-dark-mode').addEventListener('click', async()=>{
     const isDarkMode = await window.darkMode.toggle();
@@ -14,4 +13,13 @@ document.getElementById('reset-to-system').addEventListener('click', async()=>{
   document.getElementById('theme-source').innerHTML = 'System'
 })
 
-document.getElementById('myModal').modal('show')
+$('#btn-preferences').on ('click', (event) => {
+    console.log("Show preferences dialog");
+    $('#myModal').show()
+});
+
+$('#myModal .close').on ('click', (event) => {
+    $('#myModal').hide()
+});
+
+
