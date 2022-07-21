@@ -3,15 +3,17 @@ require('popper.js');
 require('bootstrap');
 */
 
-document.getElementById('toggle-dark-mode').addEventListener('click', async()=>{
-    const isDarkMode = await window.darkMode.toggle();
+$('#toggle-dark-mode').on ('click', (event) => {
+    const isDarkMode = window.darkMode.toggle();
     document.getElementById('theme-source').innerHTML=isDarkMode?'Dark':'Light';
-})
+});
 
-document.getElementById('reset-to-system').addEventListener('click', async()=>{
-  await window.darkMode.system()
-  document.getElementById('theme-source').innerHTML = 'System'
-})
+$('#reset-to-system').on ('click', (event) => {
+    console.log("Reset to system clicked");
+    window.darkMode.system()
+    document.getElementById('theme-source').innerHTML = 'System'
+});
+
 
 $('#btn-preferences').on ('click', (event) => {
     console.log("Show preferences dialog");

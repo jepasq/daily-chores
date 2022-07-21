@@ -3,10 +3,13 @@
 * v1.0.0
 ** v0.1.0
 *** v0.0.1
+**** May handle a theme editor
+     and so, a fully customizable one
 **** May add a D3 chart to see today's work
 **** May handle multi-items chores
 - [ ] Do x things. Modify it with a spinbox
 - [ ] Maybe also nested items ?  
+**** Maybe handle multiple theme, not only light/dark
 **** May add unit tests
 **** LocalStorage handling
 - [ ] ChoreTemplate is what we should have
@@ -14,6 +17,7 @@
 - [ ] Chore for today  
 **** TODO Continue implementation
 :LOGBOOK:
+CLOCK: [2022-07-21 jeu. 04:10]--[2022-07-21 jeu. 04:31] =>  0:21
 CLOCK: [2022-07-21 jeu. 02:22]--[2022-07-21 jeu. 02:32] =>  0:10
 CLOCK: [2022-07-20 mer. 07:00]--[2022-07-20 mer. 07:29] =>  0:29
 CLOCK: [2022-07-20 mer. 06:17]--[2022-07-20 mer. 06:47] =>  0:30
@@ -29,12 +33,13 @@ CLOCK: [2022-07-19 mar. 04:21]--[2022-07-19 mar. 04:36] =>  0:15
   In main.js
 - [X] Add a preference icon maybe using font-awesome
 - [X] Theme selection in modal
+- [X] dark mode doesn't work anymore 
 - [-] We have some errors in index.html
   - [X] refused to execute inline script...
   - [ ] require is not defined : seems jquery require has been fixed via
-    a simple script tag i index.html. Try the same with popper and bootstrap
+    a simple script tag in index.html. Try the same with popper and bootstrap
   - [ ] Uncaught ReferenceError : $ is not defined
-- [ ] dark mode doesn't work anymore 
+- [ ] Dark mode doesn't work on dialog
 - [ ] Add a preference bootstrap modal to let define chores
 - [ ] If no chores defined, add a link to define some
 **** DONE Correct project setup
