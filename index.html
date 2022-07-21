@@ -37,8 +37,8 @@
       </row>
     </table>
 
-    <div class="modal show" tabindex="-1" role="dialog" id="myModal">
-      <div class="modal-dialog" role="document">
+    <div class="modal show fade in" tabindex="-1" role="dialog" id="myModal">
+      <div class="modal-dialog modal-xl" role="document">
 	<div class="modal-content">
 	  <div class="modal-header">
             <h5 class="modal-title">Preferences</h5>
@@ -54,6 +54,42 @@
 	    <button id="toggle-dark-mode">Toggle Dark Mode</button>
 	    <button id="reset-to-system">Reset to System Theme</button>
             <p>Modal body text goes here.</p>
+
+	    <h2>Chores Template</h2>
+	    <div class="container">
+	      <div class="row">
+		<div class="col-sm">
+		  Actual chores :
+		  <ul class="list-group">
+		    <li class="list-group-item">
+		      <i class="fas fa-check-square"></i> Item1</li>
+		    <li class="list-group-item"> Item2</li>
+		    <li class="list-group-item">Morbi leo risus</li>
+		    <li class="list-group-item">Porta ac consectetur ac</li>
+		    <li class="list-group-item">Vestibulum at eros</li>
+		  </ul>
+		</div>
+		<div class="col-sm">
+		  <div>Actions :</div>
+		  <div class="btn-group-vertical">
+		    <button type="button" class="btn btn-secondary">
+		      &lt;&lt; Add
+		    </button>
+		    <button type="button" class="btn btn-secondary">
+		      &gt;&gt; Modify
+		    </button>
+		    <button type="button" class="btn btn-secondary">
+		      -- Delete
+		    </button>
+		  </div>
+		</div>
+		<div class="col-sm">
+		  New chores :
+		</div>
+	      </div>
+	    </div>
+
+	    
 	  </div>
 	  <div class="modal-footer">
             <button type="button" class="btn btn-secondary close"
@@ -63,7 +99,6 @@
 	</div>
       </div>
     </div>
-    
     <script src="src/renderer.js"></script>
   </body>
 </html>

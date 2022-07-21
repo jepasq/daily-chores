@@ -17,7 +17,7 @@ $('#reset-to-system').on ('click', (event) => {
 
 $('#btn-preferences').on ('click', (event) => {
     console.log("Show preferences dialog");
-    $('#myModal').show()
+    $('#myModal').show({backdrop: 'static'})
 });
 
 $('#myModal .close').on ('click', (event) => {
