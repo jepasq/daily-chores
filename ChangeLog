@@ -1,0 +1,7 @@
+* v0.0.0-1 (18 Jul. 2022 - 21 Jul. 2022)
+- The selection is into modal dialog
+- Can show/hide modal dialog
+- Move back index.html in root directory
+- Fix an inline script execution issue
+- Add bootstrap dependency
+- Change app. title

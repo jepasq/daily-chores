@@ -7,10 +7,5 @@ daily-chores - GPLv3 - An electron app. to check for daily chores.
     Update version and revision in index.html
     
 
-* v0.0.0-1 (18 Jul. 2022 - ???)
-- (6) The selection is into modal dialog
-- Can show/hide modal dialog
-- Move back index.html in root directory
-- Fix an inline script execution issue
-- Add bootstrap dependency
-- Change app. title
+* v0.0.0-2 (21 Jul. 2022 - ???)
+
