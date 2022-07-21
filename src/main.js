@@ -36,11 +36,12 @@ app.whenReady().then(() => {
     createWindow()
 
     app.on('activate', () => {
-	if (BrowserWindow.getAllWindows().length === 0) createWindow();
+	if (BrowserWindow.getAllWindows().length === 0)
+	    createWindow();
     })
 
     let today = new Date().toLocaleDateString();
-//    let c = Chore.new(today);
+    let c = chore.Chore.new(today);
     console.log(today);
     
 })
