@@ -10,18 +10,23 @@
 - [ ] Do x things. Modify it with a spinbox
 - [ ] Maybe also nested items ?  
 **** Maybe handle multiple theme, not only light/dark
+**** More dialog work
+- [ ] Add a dialog 'backdrop'
+  as in https://stackoverflow.com/q/60767212
 **** May add unit tests
 **** TODO LocalStotage handling
 :LOGBOOK:
 CLOCK: [2022-07-22 ven. 05:52]--[2022-07-22 ven. 06:21] =>  0:29
 :END:
      Can only be used in renderer, not main process.
-- [ ] ChoreTemplate is what we should have
+- [X] ChoreTemplate is what we should have
+- [ ] Add a chore should work
 - [ ] Chore for today
 - [ ] May run =npm audit fix=
   13 vulnerabilities (2 low, 8 moderate, 1 high, 2 critical)
-**** TODO Continue implementation
+**** DONE Continue implementation
 :LOGBOOK:
+CLOCK: [2022-07-22 ven. 06:35]--[2022-07-22 ven. 06:49] =>  0:14
 CLOCK: [2022-07-22 ven. 05:44]--[2022-07-22 ven. 05:52] =>  0:08
 CLOCK: [2022-07-22 ven. 04:13]--[2022-07-22 ven. 04:45] =>  0:32
 CLOCK: [2022-07-21 jeu. 05:20]--[2022-07-21 jeu. 06:13] =>  0:53
@@ -48,10 +53,8 @@ CLOCK: [2022-07-19 mar. 04:21]--[2022-07-19 mar. 04:36] =>  0:15
   - [ ] require is not defined : seems jquery require has been fixed via
     a simple script tag in index.html. Try the same with popper and bootstrap
 - [X] Dark mode doesn't work on dialog
-- [ ] Add a preference bootstrap modal to let define chores
-- [ ] Add a dialog 'backdrop'
-  as in https://stackoverflow.com/q/60767212
-- [ ] If no chores defined, add a link to define some
+- [X] If no chores defined, add a link to define some
+- [X] Add a preference bootstrap modal to let define chores
 **** DONE Correct project setup
 - [X] Move index and css file in view/ ?
 - [X] Add COPYING file

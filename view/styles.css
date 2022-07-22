@@ -23,3 +23,12 @@
     color: red;
     font-weight: bold;
 }
+
+/* Used to define an element hidden startup
+ *
+ * Designed to be shown back using $().show();
+ *
+ */
+.hidden {
+    display: none;
+}

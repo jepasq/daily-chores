@@ -18,13 +18,19 @@
   </head>
   <body>
 
-    <h1>Today's chores</h1>
+    <div class="row">
+      <div class="col-6">
+	<h1>Today's chores</h1>
+      </div>
 
-    <button id="btn-preferences" title="Open preferences dialog">
-      <i class="fa fa-cog fa-1x" aria-hidden="true"></i>
-    </button>
-
-    <div><a id="undefined-chore-template" href='#'>
+      <div class="col-3">
+	<button id="btn-preferences" title="Open preferences dialog">
+	  <i class="fa fa-cog fa-1x" aria-hidden="true" class="float-rigth"></i>
+	</button>
+      </div>
+    </div>
+    
+    <div id="undefined-chore-template" class="hidden"><a href='#'>
 	You don't have defined Chores Template yet.
 	Please define some.</a>
     </div>

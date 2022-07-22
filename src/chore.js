@@ -8,9 +8,6 @@ class ChoreTemplate {
 	this.chores = [];
 	var ct = localStorage.getItem('chore-template');
 	console.log("chore-template is " + ct);
-	if (ct === null) {
-	    alert("aze");
-	}	    
     }
     isDefined() {
 	return localStorage.getItem('chore-template')!=null;
