@@ -17,6 +17,7 @@
     <link rel="stylesheet" type="text/css" href="view/styles.css">
   </head>
   <body>
+
     <h1>Today's chores</h1>
 
     <button id="btn-preferences" title="Open preferences dialog">
@@ -72,7 +73,8 @@
 		<div class="col-sm">
 		  <div>Actions :</div>
 		  <div class="btn-group-vertical">
-		    <button type="button" class="btn btn-secondary">
+		    <button type="button" class="btn btn-secondary"
+			    id="addChore">
 		      &lt;&lt; Add
 		    </button>
 		    <button type="button" class="btn btn-secondary">
@@ -85,6 +87,13 @@
 		</div>
 		<div class="col-sm">
 		  New chores :
+		  <label>Name <span class="mandatory"
+				    title="Field is mandatory">*</class>
+		    <input id="newChoreName">
+		  </label>
+		  <label>Description
+		    <input id="newChoreDescription">
+		  </label>
 		</div>
 	      </div>
 	    </div>

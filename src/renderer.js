@@ -18,10 +18,22 @@ $('#reset-to-system').on ('click', (event) => {
 $('#btn-preferences').on ('click', (event) => {
     console.log("Show preferences dialog");
     $('#myModal').show({backdrop: 'static'})
+//    $('body').append($("<div class='modal-backdrop fade hide'></div>")
+    
+	
 });
 
 $('#myModal .close').on ('click', (event) => {
     $('#myModal').hide()
 });
 
-
+/** Add a new chore to the chorelist
+ *
+ * Informations are directly taken from the preferences dialog inputs.
+ *
+ */
+$('#addChore').on ('click', (event) => {
+    const name = $('#newChoreName').val();
+    const desc = $('#newChoreDescription').val();
+    alert(name + ' ' + desc);
+});

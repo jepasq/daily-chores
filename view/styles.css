@@ -17,3 +17,9 @@
 .modal-dialog {
     max-width: 85%;
 }
+
+/* Used to show an input field is mandatory. */
+.mandatory {
+    color: red;
+    font-weight: bold;
+}
