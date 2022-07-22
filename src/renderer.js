@@ -1,3 +1,4 @@
+//const { Chore, ChoreTemplate} = require('./chore');
 /*
 require('popper.js');
 require('bootstrap');
@@ -37,3 +38,10 @@ $('#addChore').on ('click', (event) => {
     const desc = $('#newChoreDescription').val();
     alert(name + ' ' + desc);
 });
+
+
+    let today = new Date().toLocaleDateString();
+    let c = new Chore(today);
+    let ct = new ChoreTemplate();
+    console.log(today);
+    

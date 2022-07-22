@@ -24,6 +24,12 @@
       <i class="fa fa-cog fa-1x" aria-hidden="true"></i>
     </button>
 
+    <div><a id="undefined-chore-template" href='#'>
+	You don't have defined Chores Template yet.
+	Please define some.</a>
+    </div>
+
+    
     <h1>Chores</h1>
     <h2>{Today's date}</h2>
 
@@ -44,10 +50,12 @@
 	  <div class="modal-header">
             <h5 class="modal-title">Preferences</h5>
             <button type="button" class="close" data-dismiss="modal"
-		    aria-label="Close"">
-              <span aria-hidden="true">&times;</span>
-            </button>
+		    aria-label="Close">
+	      <span aria-hidden="true">&times;</span>
+	    </button>
 	  </div>
+
+
 	  <div class="modal-body">
 	    <h2>Theme selection</h2>
 	    <p>Current theme source:
@@ -108,6 +116,7 @@
 	</div>
       </div>
     </div>
+    <script src="src/chore.js"></script>
     <script src="src/renderer.js"></script>
   </body>
 </html>

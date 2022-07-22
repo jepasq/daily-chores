@@ -1,6 +1,5 @@
 const { app, BrowserWindow, ipcMain, nativeTheme } = require('electron');
-const path = require('path')
-const chore = require('./chore')
+const path = require('path');
 
 const createWindow = () => {
   const win = new BrowserWindow({
@@ -15,7 +14,7 @@ const createWindow = () => {
   })
 
     win.loadFile('index.html')
-//    win.webContents.openDevTools();
+    win.webContents.openDevTools();
 
     
     ipcMain.handle('dark-mode:toggle', () => {
@@ -40,10 +39,6 @@ app.whenReady().then(() => {
 	    createWindow();
     })
 
-    let today = new Date().toLocaleDateString();
-    let c = chore.Chore.new(today);
-    console.log(today);
-    
 })
 
 app.on('window-all-closed', () => {
