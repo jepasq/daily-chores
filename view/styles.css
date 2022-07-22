@@ -10,6 +10,10 @@
   .modal-content { background: #bbb; color: black; }
 }
 
+body {
+    margin: 1cm 2cm;
+}
+
 .modal.in {
     opacity: 0.9;
 }

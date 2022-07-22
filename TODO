@@ -8,6 +8,7 @@ daily-chores - GPLv3 - An electron app. to check for daily chores.
     
 
 * v0.0.0-2 (21 Jul. 2022 - ???)
-- (3) Add undefined chore template message
+- (4) ChoreTemplate add seems to work
+- Add undefined chore template message
 - Start to use LocalStorage in renderer thread
 - dark/light theme switch is back

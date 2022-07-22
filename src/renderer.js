@@ -5,10 +5,8 @@ require('bootstrap');
 */
 
 function show_dialog() {
-    console.log("Show preferences dialog");
     $('#myModal').show({backdrop: 'static'})
     //    $('body').append($("<div class='modal-backdrop fade hide'></div>")
-    
 }
 
 $('#toggle-dark-mode').on ('click', (event) => {
@@ -43,7 +41,17 @@ $('#myModal .close').on ('click', (event) => {
 $('#addChore').on ('click', (event) => {
     const name = $('#newChoreName').val();
     const desc = $('#newChoreDescription').val();
-    alert(name + ' ' + desc);
+    if (!name) {
+	alert("Chore's name is mandatory");
+    } else {
+	let ct = new ChoreTemplate();
+	try {
+	    ct.add({name, desc});
+	} finally {
+	    $('#newChoreName').val("");
+	    $('#newChoreDescription').val("");
+	}
+    }
 });
 
 $(document).ready(function(){
