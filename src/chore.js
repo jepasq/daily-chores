@@ -6,7 +6,6 @@
 class ChoreTemplate {
     constructor() {
 	this.chores = [];
-	console.log(typeof(this.chores));
 	if (this.isDefined()) {
 	    try {
 		const jp = JSON.parse(localStorage.getItem('chore-template'));
@@ -27,6 +26,7 @@ class ChoreTemplate {
 	}
     }
     isDefined() {
+	console.log(JSON.parse(localStorage.getItem('chore-template')));
 	return localStorage.getItem('chore-template')!=null;
     }
 
@@ -41,9 +41,21 @@ class ChoreTemplate {
     add(item) {
 	console.log(this.chores + ' is a ' + typeof(this.chores));
 	this.chores.push(item);
-	localStorage.setItem('chore-template', JSON.stringify(this.chores));
+	this.save();
 	console.log(localStorage.getItem('chore-template'));
 	this.debug();
+    }
+
+    // Save actual members in local storage
+    save() {
+	localStorage.setItem('chore-template', JSON.stringify(this.chores));
+
+    }
+
+    // Warning : reset localStorage
+    reset() {
+	localStorage.removeItem('chore-template');
+	this.chores = [];
     }
 }
 

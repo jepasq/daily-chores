@@ -16,6 +16,7 @@
 **** May add unit tests
 **** TODO LocalStotage handling
 :LOGBOOK:
+CLOCK: [2022-07-25 lun. 06:07]--[2022-07-25 lun. 06:17] =>  0:10
 CLOCK: [2022-07-22 ven. 07:26]--[2022-07-22 ven. 08:06] =>  0:40
 CLOCK: [2022-07-22 ven. 06:57]--[2022-07-22 ven. 07:26] =>  0:29
 CLOCK: [2022-07-22 ven. 05:52]--[2022-07-22 ven. 06:21] =>  0:29
@@ -23,9 +24,11 @@ CLOCK: [2022-07-22 ven. 05:52]--[2022-07-22 ven. 06:21] =>  0:29
      Can only be used in renderer, not main process.
 - [X] ChoreTemplate is what we should have
 - [X] Adding a chore should work
-- [ ] May run =npm audit fix=
+- [X] Implement ChoreTemplate.save : load() function not needed, done
+  in constructor
+- [ ] May regularly run =npm audit fix=
   13 vulnerabilities (2 low, 8 moderate, 1 high, 2 critical)
-- [ ] Implement ChoreTemplate.save
+  25/07/22: No changes
 - [ ] Must implement a function that synchronize chores and modal's HTML table
 - [ ] Maybe add a type field (checkbox, etc...)
 - [ ] Chore for today

@@ -54,6 +54,14 @@ $('#addChore').on ('click', (event) => {
     }
 });
 
+$('#reset-chore-template').on ('click', (event) => {
+    let ct = new ChoreTemplate();
+    ct.reset();
+
+    let ct2 = new ChoreTemplate();
+    ct2.debug();
+});
+  
 $(document).ready(function(){
     let today = new Date().toLocaleDateString();
     let c = new Chore(today);
@@ -62,3 +70,4 @@ $(document).ready(function(){
     
     $("#undefined-chore-template").show();
 });
+
