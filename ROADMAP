@@ -13,10 +13,19 @@
 **** More dialog work
 - [ ] Add a dialog 'backdrop'
   as in https://stackoverflow.com/q/60767212
-**** May add unit tests
-- [ ] Find a good way to compute SLOC
+**** TODO May add unit tests
+:LOGBOOK:
+CLOCK: [2022-07-25 lun. 09:48]--[2022-07-25 lun. 09:58] =>  0:10
+CLOCK: [2022-07-25 lun. 09:34]--[2022-07-25 lun. 09:42] =>  0:08
+:END:
+- [X] Find a good way to compute SLOC
   maybe https://github.com/flosse/sloc
-- see https://www.electronjs.org/fr/docs/latest/tutorial/automated-testing
+- [ ] Test mocha following
+  https://medium.com/serverlessguru/how-to-unit-test-with-nodejs-76967019ba56
+  Test if we can test for ChoreTemplate here. Not sure since we use
+  localStorage and it needs a browser window/DOM.
+- [ ] Test this on another branch
+  see https://www.electronjs.org/fr/docs/latest/tutorial/automated-testing
 **** TODO LocalStotage handling
 :LOGBOOK:
 CLOCK: [2022-07-25 lun. 07:17]--[2022-07-25 lun. 07:49] =>  0:32

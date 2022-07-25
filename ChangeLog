@@ -1,4 +1,4 @@
-* v0.0.0-2 (21 Jul. 2022 - 25 Jul. 2022) SLOC ???
+* v0.0.0-2 (21 Jul. 2022 - 25 Jul. 2022) SLOC 239
 - First draft of the chores_to_html() function
 - Add choreTemplate's save and reset functions
 - ChoreTemplate add seems to work
