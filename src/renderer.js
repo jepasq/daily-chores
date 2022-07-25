@@ -9,6 +9,22 @@ function show_dialog() {
     //    $('body').append($("<div class='modal-backdrop fade hide'></div>")
 }
 
+/** Clear and feed HTML using in-memory ChoreTemplate
+ *
+ * \param ct The ChoreTemplate object.
+ *
+ */
+function chores_to_html(ct) {
+    
+    var ctl = $('#chore-template-list');
+    console.log(ctl);
+    ctl.empty();
+    ct.chores.forEach((item) => {
+	console.log(item);
+	ctl.append('<li  class="list-group-item">'+item.name+'</li>');
+    });
+}
+
 $('#toggle-dark-mode').on ('click', (event) => {
     const isDarkMode = window.darkMode.toggle();
     document.getElementById('theme-source').innerHTML=isDarkMode?'Dark':'Light';
@@ -50,6 +66,7 @@ $('#addChore').on ('click', (event) => {
 	} finally {
 	    $('#newChoreName').val("");
 	    $('#newChoreDescription').val("");
+	    chores_to_html(ct);
 	}
     }
 });
