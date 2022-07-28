@@ -33,6 +33,7 @@ CLOCK: [2022-07-25 lun. 09:34]--[2022-07-25 lun. 09:42] =>  0:08
   see https://www.electronjs.org/fr/docs/latest/tutorial/automated-testing
 **** TODO LocalStotage handling
 :LOGBOOK:
+CLOCK: [2022-07-28 jeu. 08:40]--[2022-07-28 jeu. 08:44] =>  0:04
 CLOCK: [2022-07-28 jeu. 08:16]--[2022-07-28 jeu. 08:30] =>  0:14
 CLOCK: [2022-07-28 jeu. 06:18]--[2022-07-28 jeu. 06:29] =>  0:11
 CLOCK: [2022-07-25 lun. 07:17]--[2022-07-25 lun. 07:49] =>  0:32
@@ -49,6 +50,7 @@ CLOCK: [2022-07-22 ven. 05:52]--[2022-07-22 ven. 06:21] =>  0:29
 - [X] Must implement a function that synchronize chores and modal's HTML table
 - [X] Remove default items of dialog
 - [X] Maybe add a type field (checkbox, etc...)
+- [X] =npm audit fix= Upgrade electron from 19.0.9 to 19.0.10
 - [ ] There is an issue with the ChoreTemplate save function
   Always changing the next element, not adding
   Because it always add as a new array element
