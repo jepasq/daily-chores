@@ -59,12 +59,14 @@ $('#myModal .close').on ('click', (event) => {
 $('#addChore').on ('click', (event) => {
     const name = $('#newChoreName').val();
     const desc = $('#newChoreDescription').val();
+    // Thanks to https://stackoverflow.com/a/23053203
+    const type = $('input[name="chore-type"]:checked').val();
     if (!name) {
 	alert("Chore's name is mandatory");
     } else {
 	let ct = new ChoreTemplate();
 	try {
-	    ct.add({name, desc});
+	    ct.add({name, desc, type});
 	} finally {
 	    $('#newChoreName').val("");
 	    $('#newChoreDescription').val("");

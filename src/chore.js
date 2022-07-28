@@ -40,6 +40,7 @@ class ChoreTemplate {
     // May use exception here
     add(item) {
 	console.log(this.chores + ' is a ' + typeof(this.chores));
+	console.log("Adding item : " + item);
 	this.chores.push(item);
 	this.save();
 	console.log(localStorage.getItem('chore-template'));
@@ -49,11 +50,11 @@ class ChoreTemplate {
     // Save actual members in local storage
     save() {
 	localStorage.setItem('chore-template', JSON.stringify(this.chores));
-
     }
 
     // Warning : reset localStorage
     reset() {
+	console.log("Local storage has benn reset");
 	localStorage.removeItem('chore-template');
 	this.chores = [];
     }
