@@ -67,3 +67,5 @@ class Chore {
 	this.date = date;
     }
 }
+
+module.exports = {Chore, ChoreTemplate};
