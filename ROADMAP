@@ -26,12 +26,14 @@ CLOCK: [2022-07-25 lun. 09:34]--[2022-07-25 lun. 09:42] =>  0:08
   https://medium.com/serverlessguru/how-to-unit-test-with-nodejs-76967019ba56
   Test if we can test for ChoreTemplate here. Not sure since we use
   localStorage and it needs a browser window/DOM.
-  *So it works but we don't have access to localStorage*
+  *So it works but we don't have access to localStorage* : it is fixed with
+  'module' but this trick make the main process fail.
   - [ ] It seems we can mock it. see https://stackoverflow.com/a/37331384
 - [ ] Test this on another branch
   see https://www.electronjs.org/fr/docs/latest/tutorial/automated-testing
 **** TODO LocalStotage handling
 :LOGBOOK:
+CLOCK: [2022-07-28 jeu. 06:18]--[2022-07-28 jeu. 06:29] =>  0:11
 CLOCK: [2022-07-25 lun. 07:17]--[2022-07-25 lun. 07:49] =>  0:32
 CLOCK: [2022-07-25 lun. 06:07]--[2022-07-25 lun. 06:17] =>  0:10
 CLOCK: [2022-07-22 ven. 07:26]--[2022-07-22 ven. 08:06] =>  0:40
@@ -44,6 +46,7 @@ CLOCK: [2022-07-22 ven. 05:52]--[2022-07-22 ven. 06:21] =>  0:29
 - [X] Implement ChoreTemplate.save : load() function not needed, done
   in constructor
 - [X] Must implement a function that synchronize chores and modal's HTML table
+- [ ] Remove default items of dialog
 - [ ] There is an issue with the chore save function
   Always changing the next element, not adding
 - [ ] May regularly run =npm audit fix=

@@ -7,6 +7,8 @@ require('bootstrap');
 function show_dialog() {
     $('#myModal').show({backdrop: 'static'})
     //    $('body').append($("<div class='modal-backdrop fade hide'></div>")
+    let ct = new ChoreTemplate();
+    chores_to_html(ct);
 }
 
 /** Clear and feed HTML using in-memory ChoreTemplate

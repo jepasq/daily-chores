@@ -9,6 +9,7 @@ daily-chores - GPLv3 - An electron app. to check for daily chores.
 
 
 * v0.0.0-3 (25 Jul. 2022 - ???) SLOC ???
-- (2) Fix unusable constructor in unit tests
+- (3) Auto-load stored ChoreTemplate at startup
+- Fix unusable constructor in unit tests
 - Add mocha dependency and test script
 
