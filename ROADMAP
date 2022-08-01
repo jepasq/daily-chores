@@ -58,6 +58,10 @@ CLOCK: [2022-07-22 ven. 05:52]--[2022-07-22 ven. 06:21] =>  0:29
   13 vulnerabilities (2 low, 8 moderate, 1 high, 2 critical)
   25/07/22: No changes
 - [ ] Chore for today
+**** DONE Can't install on ubuntu mate
+     With node v8.10.0
+- [ ] i386 is not supported on v10 and above
+  https://github.com/nodesource/distributions/blob/master/README.md
 **** DONE Continue implementation
 :LOGBOOK:
 CLOCK: [2022-07-22 ven. 06:35]--[2022-07-22 ven. 06:49] =>  0:14
