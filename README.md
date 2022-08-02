@@ -4,8 +4,15 @@ An electron application to check for daily chores.
 
 # Dependencies
 
-  sudo apt install npm
-  npm install
+First, you'll need to install *node package manager* :
+
+	sudo apt install npm
+		or 
+	sudo pacman -S npm
+
+then, once node is installed :
+
+	npm install
 
 # Run
 
