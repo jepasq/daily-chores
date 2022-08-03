@@ -9,7 +9,7 @@ class ChoreTemplate {
 	if (this.isDefined()) {
 	    try {
 		const jp = JSON.parse(localStorage.getItem('chore-template'));
-		this.chores.push(jp);
+		this.chores = jp;
 	    }
 	    catch {
 		console.log("Can't parse JSON, resetting chores");

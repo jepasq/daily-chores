@@ -75,12 +75,17 @@ $('#addChore').on ('click', (event) => {
     }
 });
 
+/** Reset stored choresTemplate
+ *
+ */
 $('#reset-chore-template').on ('click', (event) => {
     let ct = new ChoreTemplate();
     ct.reset();
 
     let ct2 = new ChoreTemplate();
     ct2.debug();
+
+    chores_to_html(ct);
 });
   
 $(document).ready(function(){
