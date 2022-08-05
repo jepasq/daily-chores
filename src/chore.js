@@ -1,4 +1,4 @@
-// Do not use 'require' here (called from renderer
+// Do not use 'require' here (called from renderer)
 
 /** This is what you expect to be done each day
  *
@@ -26,7 +26,8 @@ class ChoreTemplate {
 	}
     }
     isDefined() {
-	console.log(JSON.parse(localStorage.getItem('chore-template')));
+	console.log("in Chore::isDefined(): "+
+		    JSON.parse(localStorage.getItem('chore-template')));
 	return localStorage.getItem('chore-template')!=null;
     }
 

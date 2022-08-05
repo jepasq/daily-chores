@@ -33,6 +33,7 @@ CLOCK: [2022-07-25 lun. 09:34]--[2022-07-25 lun. 09:42] =>  0:08
   see https://www.electronjs.org/fr/docs/latest/tutorial/automated-testing
 **** TODO LocalStotage handling
 :LOGBOOK:
+CLOCK: [2022-08-05 ven. 10:22]--[2022-08-05 ven. 11:03] =>  0:41
 CLOCK: [2022-08-03 mer. 11:23]--[2022-08-03 mer. 11:47] =>  0:24
 CLOCK: [2022-08-02 mar. 10:48]--[2022-08-02 mar. 11:10] =>  0:22
 CLOCK: [2022-07-28 jeu. 08:40]--[2022-07-28 jeu. 08:44] =>  0:04
@@ -54,11 +55,17 @@ CLOCK: [2022-07-22 ven. 05:52]--[2022-07-22 ven. 06:21] =>  0:29
 - [X] Maybe add a type field (checkbox, etc...)
 - [X] =npm audit fix= Upgrade electron from 19.0.9 to 19.0.10
 - [X] There is an issue with the ChoreTemplate save function
+- [X] Should make the homepage message about empty choreTemplate work
+
+- [ ] If ChroreTemplate is defined, should show it in homepage
+
+- [ ] Trying IPC when main needs storage feature
+  Testing https://www.electronjs.org/fr/docs/latest/tutorial/ipc#pattern-3-main-to-renderer
+  Actually fail but continue testing
 - [ ] May regularly run =npm audit fix=
   13 vulnerabilities (2 low, 8 moderate, 1 high, 2 critical)
   25/07/22: No changes
   03/08/22: Trying with --force: 
-- [ ] Chore for today
 **** DONE Can't install on ubuntu mate
      With node v8.10.0
 - [ ] i386 is not supported on v10 and above

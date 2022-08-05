@@ -4,15 +4,15 @@ const { contextBridge, ipcRenderer } = require('electron')
 // Toutes les APIs Node.js sont disponibles dans le processus de préchargement.
 // Il a la même sandbox qu'une extension Chrome.
 window.addEventListener('DOMContentLoaded', () => {
-  const replaceText = (selector, text) => {
-    const element = document.getElementById(selector)
-    if (element) element.innerText = text
-  }
-
-  for (const dependency of ['chrome', 'node', 'electron']) {
-    replaceText(`${dependency}-version`, process.versions[dependency])
-  }
-})
+    const replaceText = (selector, text) => {
+	const element = document.getElementById(selector)
+	if (element) element.innerText = text
+    }
+    
+    for (const dependency of ['chrome', 'node', 'electron']) {
+	replaceText(`${dependency}-version`, process.versions[dependency])
+    }
+});
 
 function setStyles() {
   var currentColor = localStorage.getItem('bgcolor');
@@ -29,6 +29,6 @@ function setStyles() {
 }
 
 contextBridge.exposeInMainWorld('darkMode', {
-  toggle: () => ipcRenderer.invoke('dark-mode:toggle'),
-  system: () => ipcRenderer.invoke('dark-mode:system')
-})
+    toggle: () => ipcRenderer.invoke('dark-mode:toggle'),
+    system: () => ipcRenderer.invoke('dark-mode:system')
+});

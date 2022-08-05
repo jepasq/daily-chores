@@ -90,10 +90,11 @@ $('#reset-chore-template').on ('click', (event) => {
   
 $(document).ready(function(){
     let today = new Date().toLocaleDateString();
-    let c = new Chore(today);
-    let ct = new ChoreTemplate();
     console.log(today);
-    
-    $("#undefined-chore-template").show();
+
+    const ct = new ChoreTemplate();
+    if (!ct.isDefined()) {
+	$("#undefined-chore-template").show();
+    }
 });
 
