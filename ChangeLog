@@ -1,3 +1,11 @@
+* v0.0.0-3 (25 Jul. 2022 - 05 Aug. 2022) SLOC 271
+- Upgrade electron version from 19.0.10 tp 19.0.11
+- Fix the ChroreTemplate save/push issue
+- Add a chore template type radio button in the dialog
+- Auto-load stored ChoreTemplate at startup
+- Fix unusable constructor in unit tests
+- Add mocha dependency and test script
+
 * v0.0.0-2 (21 Jul. 2022 - 25 Jul. 2022) SLOC 239
 - First draft of the chores_to_html() function
 - Add choreTemplate's save and reset functions
