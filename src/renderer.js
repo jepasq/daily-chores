@@ -27,6 +27,19 @@ function chores_to_html(ct) {
     });
 }
 
+/// Set the initial state of the homepage
+function home_load() {
+    let today = new Date().toLocaleDateString();
+    console.log(today);
+
+    const ct = new ChoreTemplate();
+    if (!ct.isDefined()) {
+	$("#undefined-chore-template").show();
+    } else {
+	$("#undefined-chore-template").hide();
+    }
+}
+
 $('#toggle-dark-mode').on ('click', (event) => {
     const isDarkMode = window.darkMode.toggle();
     document.getElementById('theme-source').innerHTML=isDarkMode?'Dark':'Light';
@@ -49,6 +62,7 @@ $("#undefined-chore-template").on ('click', (event) => {
 
 $('#myModal .close').on ('click', (event) => {
     $('#myModal').hide()
+    home_load();
 });
 
 /** Add a new chore to the chorelist
@@ -89,12 +103,6 @@ $('#reset-chore-template').on ('click', (event) => {
 });
   
 $(document).ready(function(){
-    let today = new Date().toLocaleDateString();
-    console.log(today);
-
-    const ct = new ChoreTemplate();
-    if (!ct.isDefined()) {
-	$("#undefined-chore-template").show();
-    }
+    home_load();
 });
 
