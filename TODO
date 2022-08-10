@@ -9,6 +9,7 @@ daily-chores - GPLv3 - An electron app. to check for daily chores.
 
 
 * v0.0.0-4 (05 Aug. 2022 - ???) SLOC ???
-- (3) home_load() set today's date
+- (4) Start to add chores to the home page
+- home_load() set today's date
 - Reset empty chores warning when closing dialog
 - Undefined chores message in homepage works

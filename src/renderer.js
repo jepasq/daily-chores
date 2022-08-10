@@ -39,7 +39,16 @@ function home_load() {
 	$("#undefined-chore-template").hide();
     }
 
-    
+    let str='';
+    // Chore list
+    ct.chores.forEach((chore) => {
+	str=str+"<tr>"+
+	    "<td><input type='checkbox' id='scales' name='scales'></td>"+
+	    "<td><label for='scales'>"+chore.name+"</label></td>"+
+	    "<td>"+chore.desc+"</td>"+
+	    "</tr>";
+    });
+    $('#chore-list').html(str);
 }
 
 $('#toggle-dark-mode').on ('click', (event) => {
