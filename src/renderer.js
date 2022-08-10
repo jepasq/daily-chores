@@ -30,7 +30,7 @@ function chores_to_html(ct) {
 /// Set the initial state of the homepage
 function home_load() {
     let today = new Date().toLocaleDateString();
-    console.log(today);
+    $('#today-date').html(today);
 
     const ct = new ChoreTemplate();
     if (!ct.isDefined()) {
@@ -38,6 +38,8 @@ function home_load() {
     } else {
 	$("#undefined-chore-template").hide();
     }
+
+    
 }
 
 $('#toggle-dark-mode').on ('click', (event) => {
