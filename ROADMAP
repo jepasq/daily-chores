@@ -33,6 +33,7 @@ CLOCK: [2022-07-25 lun. 09:34]--[2022-07-25 lun. 09:42] =>  0:08
   see https://www.electronjs.org/fr/docs/latest/tutorial/automated-testing
 **** TODO LocalStotage handling
 :LOGBOOK:
+CLOCK: [2022-08-15 lun. 11:25]--[2022-08-15 lun. 11:42] =>  0:17
 CLOCK: [2022-08-10 mer. 10:27]--[2022-08-10 mer. 10:54] =>  0:27
 CLOCK: [2022-08-10 mer. 09:23]--[2022-08-10 mer. 09:27] =>  0:04
 CLOCK: [2022-08-05 ven. 11:16]--[2022-08-05 ven. 11:19] =>  0:03
@@ -63,6 +64,11 @@ CLOCK: [2022-07-22 ven. 05:52]--[2022-07-22 ven. 06:21] =>  0:29
 
 - [ ] If ChroreTemplate is defined, should show it in homepage
 
+- [ ] We will need a choreid to be sure we checked the good one
+  - [ ] choreTemplate store it anc inc. it each time a new one is created
+  - [ ] Preference dialog should show the next 
+  - [ ] Chore saves it as checked {is, id id...}
+    
 - [ ] Trying IPC when main needs storage feature
   Testing https://www.electronjs.org/fr/docs/latest/tutorial/ipc#pattern-3-main-to-renderer
   Actually fail but continue testing

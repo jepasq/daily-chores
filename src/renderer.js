@@ -9,6 +9,8 @@ function show_dialog() {
     //    $('body').append($("<div class='modal-backdrop fade hide'></div>")
     let ct = new ChoreTemplate();
     chores_to_html(ct);
+
+    $('#nextchore').html(ct.nextchoreid);
 }
 
 /** Clear and feed HTML using in-memory ChoreTemplate

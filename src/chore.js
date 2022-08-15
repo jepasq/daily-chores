@@ -6,10 +6,12 @@
 class ChoreTemplate {
     constructor() {
 	this.chores = [];
+	this.nextchoreid = 0;
 	if (this.isDefined()) {
 	    try {
 		const jp = JSON.parse(localStorage.getItem('chore-template'));
 		this.chores = jp;
+		this.nextchoreid = localStorage.getItem('nextchore-id');
 	    }
 	    catch {
 		console.log("Can't parse JSON, resetting chores");
@@ -43,6 +45,8 @@ class ChoreTemplate {
 	console.log(this.chores + ' is a ' + typeof(this.chores));
 	console.log("Adding item : " + item);
 	this.chores.push(item);
+	this.nextchoreid += 1;
+
 	this.save();
 	console.log(localStorage.getItem('chore-template'));
 	this.debug();
@@ -51,6 +55,7 @@ class ChoreTemplate {
     // Save actual members in local storage
     save() {
 	localStorage.setItem('chore-template', JSON.stringify(this.chores));
+	localStorage.setItem('nextchore-id', this.nextchoreid);
     }
 
     // Warning : reset localStorage
