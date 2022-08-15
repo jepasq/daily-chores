@@ -1,3 +1,11 @@
+* v0.0.0-4 (05 Aug. 2022 - 15 Aug. 2022) SLOC 308
+- Add actual nextchoreid to ChoreTemplate's saved item
+- Add next chore id to preferences dialog
+- Start to add chores to the home page
+- home_load() set today's date
+- Reset empty chores warning when closing dialog
+- Undefined chores message in homepage works
+
 * v0.0.0-3 (25 Jul. 2022 - 05 Aug. 2022) SLOC 271
 - Upgrade electron version from 19.0.10 tp 19.0.11
 - Fix the ChroreTemplate save/push issue

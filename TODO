@@ -8,10 +8,5 @@ daily-chores - GPLv3 - An electron app. to check for daily chores.
     SLOC is the Physical line of flosse/sloc output on 'src/ test/'.
 
 
-* v0.0.0-4 (05 Aug. 2022 - ???) SLOC ???
-- (6) Add actual nextchoreid to ChoreTemplate's saved item
-- Add next chore id to preferences dialog
-- Start to add chores to the home page
-- home_load() set today's date
-- Reset empty chores warning when closing dialog
-- Undefined chores message in homepage works
+* v0.0.0-5 (15 Aug. 2022 - ???) SLOC ???
+
