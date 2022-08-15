@@ -100,6 +100,7 @@ $('#addChore').on ('click', (event) => {
 	    chores_to_html(ct);
 	}
     }
+
 });
 
 /** Reset stored choresTemplate

@@ -11,7 +11,14 @@ class ChoreTemplate {
 	    try {
 		const jp = JSON.parse(localStorage.getItem('chore-template'));
 		this.chores = jp;
-		this.nextchoreid = localStorage.getItem('nextchore-id');
+		const nc = localStorage.getItem('nextchore-id');
+		console.log(nc);
+		if (nc === null) {
+		    console.log("nextchore-id is NULL. Not overriding.");
+		}
+		else {
+		    this.nextchoreid = parseInt(nc, 10);
+		}
 	    }
 	    catch {
 		console.log("Can't parse JSON, resetting chores");
@@ -44,6 +51,7 @@ class ChoreTemplate {
     add(item) {
 	console.log(this.chores + ' is a ' + typeof(this.chores));
 	console.log("Adding item : " + item);
+	item.id=this.nextchoreid;
 	this.chores.push(item);
 	this.nextchoreid += 1;
 

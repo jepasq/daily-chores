@@ -9,7 +9,8 @@ daily-chores - GPLv3 - An electron app. to check for daily chores.
 
 
 * v0.0.0-4 (05 Aug. 2022 - ???) SLOC ???
-- (5) Add next chore id to preferences dialog
+- (6) Add actual nextchoreid to ChoreTemplate's saved item
+- Add next chore id to preferences dialog
 - Start to add chores to the home page
 - home_load() set today's date
 - Reset empty chores warning when closing dialog
