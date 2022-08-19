@@ -45,7 +45,8 @@ function home_load() {
     // Chore list
     ct.chores.forEach((chore) => {
 	str=str+"<tr>"+
-	    "<td><input type='checkbox' id='"+chore.id+"' name='scales'></td>"+
+	    "<td><input  class='checkb'"+
+	    "type='checkbox' id='"+chore.id+"' name='scales'></td>"+
 	    "<td><label for='scales'>"+chore.name+"</label></td>"+
 	    "<td>"+chore.desc+"</td>"+
 	    "</tr>";
@@ -118,5 +119,10 @@ $('#reset-chore-template').on ('click', (event) => {
   
 $(document).ready(function(){
     home_load();
+
+
+    $(".checkb").on ('change', () => {
+	console.log("A checkbox has been clicked" + this.checked);
+    });
 });
 

@@ -33,6 +33,7 @@ CLOCK: [2022-07-25 lun. 09:34]--[2022-07-25 lun. 09:42] =>  0:08
   see https://www.electronjs.org/fr/docs/latest/tutorial/automated-testing
 **** TODO LocalStotage handling
 :LOGBOOK:
+CLOCK: [2022-08-19 ven. 17:38]--[2022-08-19 ven. 18:10] =>  0:32
 CLOCK: [2022-08-19 ven. 17:21]--[2022-08-19 ven. 17:24] =>  0:03
 CLOCK: [2022-08-15 lun. 11:51]--[2022-08-15 lun. 11:59] =>  0:08
 CLOCK: [2022-08-15 lun. 11:25]--[2022-08-15 lun. 11:42] =>  0:17
@@ -65,10 +66,14 @@ CLOCK: [2022-07-22 ven. 05:52]--[2022-07-22 ven. 06:21] =>  0:29
 - [X] May reset empty chores warning when closing dialog (home_load impl)
 - [X] If ChroreTemplate is defined, should show it in homepage
 
-- [-] We will need a choreid to be sure we checked the good one
+- [X] We will need a choreid to be sure we checked the good one
   - [X] Preference dialog should show the next 
-  - [ ] choreTemplate store it and inc. it each time a new one is created
+  - [X] choreTemplate store it and inc. it each time a new one is created
+- [-] Now save current state : here, may handle save as a transaction to
+  avoid quitting ap. before the complete thing is saved
+  - [X] Handle check box event
   - [ ] Chore saves it as checked {id, id id...}
+  - [ ] When saved, show a little green notification at the bottom/right corner
     
 - [ ] Trying IPC when main needs storage feature
   Testing https://www.electronjs.org/fr/docs/latest/tutorial/ipc#pattern-3-main-to-renderer
