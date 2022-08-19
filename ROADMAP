@@ -33,6 +33,7 @@ CLOCK: [2022-07-25 lun. 09:34]--[2022-07-25 lun. 09:42] =>  0:08
   see https://www.electronjs.org/fr/docs/latest/tutorial/automated-testing
 **** TODO LocalStotage handling
 :LOGBOOK:
+CLOCK: [2022-08-19 ven. 17:21]--[2022-08-19 ven. 17:24] =>  0:03
 CLOCK: [2022-08-15 lun. 11:51]--[2022-08-15 lun. 11:59] =>  0:08
 CLOCK: [2022-08-15 lun. 11:25]--[2022-08-15 lun. 11:42] =>  0:17
 CLOCK: [2022-08-10 mer. 10:27]--[2022-08-10 mer. 10:54] =>  0:27
@@ -62,8 +63,7 @@ CLOCK: [2022-07-22 ven. 05:52]--[2022-07-22 ven. 06:21] =>  0:29
 - [X] There is an issue with the ChoreTemplate save function
 - [X] Should make the homepage message about empty choreTemplate work
 - [X] May reset empty chores warning when closing dialog (home_load impl)
-
-- [ ] If ChroreTemplate is defined, should show it in homepage
+- [X] If ChroreTemplate is defined, should show it in homepage
 
 - [-] We will need a choreid to be sure we checked the good one
   - [X] Preference dialog should show the next 
