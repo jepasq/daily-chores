@@ -80,7 +80,13 @@ class ChoreTemplate {
 class Chore {
     constructor(date) {
 	this.date = date;
+	console.log(this.date);
     }
+
+    save() {
+//	localStorage.setItem('chore', JSON.stringify(this.chores));
+    }
+
 }
 
 //module.exports = {Chore, ChoreTemplate};

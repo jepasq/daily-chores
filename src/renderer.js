@@ -122,7 +122,12 @@ $(document).ready(function(){
 
 
     $(".checkb").on ('change', () => {
-	console.log("A checkbox has been clicked" + this.checked);
+	json=[]
+	$(".checkb").each((e) => {
+	    b = $("#"+e).is(':checked'); // Get the checked status
+	    json.push([e, b]);           // Checkox's id, checked status
+	});
+	console.log(JSON.stringify(json));
     });
 });
 
