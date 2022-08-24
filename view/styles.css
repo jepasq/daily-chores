@@ -36,3 +36,8 @@ body {
 .hidden {
     display: none;
 }
+
+.notification {
+    position: absolute;
+    top: 250px;
+}

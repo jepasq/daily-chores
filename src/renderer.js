@@ -54,6 +54,10 @@ function home_load() {
     $('#chore-list').html(str);
 }
 
+function save_notification() {
+    $('#save-notif').removeClass("d-none").show().delay(600).fadeOut(200);
+}
+
 $('#toggle-dark-mode').on ('click', (event) => {
     const isDarkMode = window.darkMode.toggle();
     document.getElementById('theme-source').innerHTML=isDarkMode?'Dark':'Light';
@@ -128,6 +132,8 @@ $(document).ready(function(){
 	    json.push([e, b]);           // Checkox's id, checked status
 	});
 	console.log(JSON.stringify(json));
+	save_notification();
     });
+
 });
 

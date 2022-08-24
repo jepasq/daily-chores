@@ -33,6 +33,7 @@ CLOCK: [2022-07-25 lun. 09:34]--[2022-07-25 lun. 09:42] =>  0:08
   see https://www.electronjs.org/fr/docs/latest/tutorial/automated-testing
 **** TODO LocalStotage handling
 :LOGBOOK:
+CLOCK: [2022-08-24 mer. 02:33]--[2022-08-24 mer. 02:50] =>  0:17
 CLOCK: [2022-08-24 mer. 01:42]--[2022-08-24 mer. 01:48] =>  0:06
 CLOCK: [2022-08-19 ven. 17:38]--[2022-08-19 ven. 18:10] =>  0:32
 CLOCK: [2022-08-19 ven. 17:21]--[2022-08-19 ven. 17:24] =>  0:03
@@ -74,8 +75,9 @@ CLOCK: [2022-07-22 ven. 05:52]--[2022-07-22 ven. 06:21] =>  0:29
   avoid quitting ap. before the complete thing is saved
   - [X] Handle check box event
   - [X] Get all checkboxes as a json object [{id, checked}]
+  - [X] When saved, show a little green notification at the bottom/right corner
+  - [ ] Make the notification at the bottom  
   - [ ] Chore saves it as checked {id, id id...}
-  - [ ] When saved, show a little green notification at the bottom/right corner
     
 - [ ] Trying IPC when main needs storage feature
   Testing https://www.electronjs.org/fr/docs/latest/tutorial/ipc#pattern-3-main-to-renderer
