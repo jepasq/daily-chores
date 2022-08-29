@@ -76,7 +76,7 @@ CLOCK: [2022-07-22 ven. 05:52]--[2022-07-22 ven. 06:21] =>  0:29
   - [X] Handle check box event
   - [X] Get all checkboxes as a json object [{id, checked}]
   - [X] When saved, show a little green notification at the bottom/right corner
-  - [ ] Make the notification at the bottom  
+  - [X] Make the notification at the bottom  
   - [ ] Chore saves it as checked {id, id id...}
     
 - [ ] Trying IPC when main needs storage feature

@@ -9,6 +9,7 @@ daily-chores - GPLv3 - An electron app. to check for daily chores.
 
 
 * v0.0.0-5 (15 Aug. 2022 - ???) SLOC ???
-- (3) Add save notification div
+- (4) Move the notification at the bottom
+- Add save notification div
 - Get all checkboxes status and print it as json
 - Remove Save Changes button from dialog

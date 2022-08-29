@@ -38,6 +38,8 @@ body {
 }
 
 .notification {
-    position: absolute;
-    top: 250px;
+    position: fixed;
+    heigth: 250px;
+    bottom: 0;
+    width: 100%;
 }
