@@ -131,7 +131,10 @@ $(document).ready(function(){
 	    b = $("#"+e).is(':checked'); // Get the checked status
 	    json.push([e, b]);           // Checkox's id, checked status
 	});
-	console.log(JSON.stringify(json));
+
+	let ch = new Chore();
+	ch.save(json);
+//	console.log(JSON.stringify(json));
 	save_notification();
     });
 

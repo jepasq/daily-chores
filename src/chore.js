@@ -74,19 +74,36 @@ class ChoreTemplate {
     }
 }
 
+function padTo2Digits(num) {
+  return num.toString().padStart(2, '0');
+}
+
+function formatDate(date) {
+  return [
+    padTo2Digits(date.getDate()),
+    padTo2Digits(date.getMonth() + 1),
+    date.getFullYear(),
+  ].join('-');
+}
 /** This is what you effectively did a given day
  *
  */
 class Chore {
-    constructor(date) {
-	this.date = date;
+    constructor() {
+	let d = new Date();
+	this.date = formatDate(d);
+	this.key =  'chore' + this.date;
 	console.log(this.date);
     }
 
-    save() {
-//	localStorage.setItem('chore', JSON.stringify(this.chores));
+    save(json) {
+	localStorage.setItem(this.key, JSON.stringify(json));
     }
 
+    loadToday() {
+	console.log(localStorage.getItem(this.key));
+    }
+    
 }
 
 //module.exports = {Chore, ChoreTemplate};
