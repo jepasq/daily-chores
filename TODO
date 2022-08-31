@@ -7,11 +7,5 @@ daily-chores - GPLv3 - An electron app. to check for daily chores.
     Update version and revision in index.html
     SLOC is the Physical line of flosse/sloc output on 'src/ test/'.
 
+* v0.0.0-6 (31 Aug. 2022 - ???) SLOC ???
 
-* v0.0.0-5 (15 Aug. 2022 - ???) SLOC ???
-- (6) Upgrade electron to 19.0.14 running npm audit fix
-- Correctly save daily chores
-- Move the notification at the bottom
-- Add save notification div
-- Get all checkboxes status and print it as json
-- Remove Save Changes button from dialog

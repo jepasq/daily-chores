@@ -1,3 +1,11 @@
+* v0.0.0-5 (15 Aug. 2022 - 31 Aug. 2022) SLOC 351
+- Upgrade electron to 19.0.14 running npm audit fix
+- Correctly save daily chores
+- Move the notification at the bottom
+- Add save notification div
+- Get all checkboxes status and print it as json
+- Remove Save Changes button from dialog
+
 * v0.0.0-4 (05 Aug. 2022 - 15 Aug. 2022) SLOC 308
 - Add actual nextchoreid to ChoreTemplate's saved item
 - Add next chore id to preferences dialog
