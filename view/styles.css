@@ -43,3 +43,16 @@ body {
     bottom: 0;
     width: 100%;
 }
+
+.chore-name {
+    font-size: 18px;    
+    font-weight: bold;
+}
+
+.chore-desc {
+    margin-left: 10px;
+}
+.chore:hover {
+    background-color: #EEA;
+    cursor: pointer;
+}

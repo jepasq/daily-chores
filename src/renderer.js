@@ -44,12 +44,13 @@ function home_load() {
     let str='';
     // Chore list
     ct.chores.forEach((chore) => {
-	str=str+"<tr>"+
-	    "<td><input  class='checkb'"+
-	    "type='checkbox' id='"+chore.id+"' name='scales'></td>"+
-	    "<td><label for='scales'>"+chore.name+"</label></td>"+
-	    "<td>"+chore.desc+"</td>"+
-	    "</tr>";
+	str=str+
+	    "<div class='chore'>"+
+	      "<div class='chore-name'><input  class='checkb'"+
+	      "type='checkbox' id='"+chore.id+"' name='scales'>"+
+	      "<label for='scales'>"+chore.name+"</label></div>"+
+	      "<div class='chore-desc'>"+chore.desc+"</div>"+
+	    "</div>";
     });
     $('#chore-list').html(str);
 }

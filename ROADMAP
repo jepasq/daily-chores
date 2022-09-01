@@ -31,10 +31,12 @@ CLOCK: [2022-07-25 lun. 09:34]--[2022-07-25 lun. 09:42] =>  0:08
   - [ ] It seems we can mock it. see https://stackoverflow.com/a/37331384
 - [ ] Test this on another branch
   see https://www.electronjs.org/fr/docs/latest/tutorial/automated-testing
-**** Today's chores loading
+**** TODO Today's chores loading
 :LOGBOOK:
+CLOCK: [2022-09-02 ven. 00:44]--[2022-09-02 ven. 01:07] =>  0:23
 CLOCK: [2022-08-31 mer. 16:26]--[2022-08-31 mer. 16:38] =>  0:12
 :END:
+- [ ] Must check checkbox if complete chore is clicked.
 - [ ] Chore load at startup and check items
 
 - [ ] Trying IPC when main needs storage feature
