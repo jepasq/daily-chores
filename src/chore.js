@@ -93,7 +93,7 @@ class Chore {
 	let d = new Date();
 	this.date = formatDate(d);
 	this.key =  'chore' + this.date;
-	console.log(this.date);
+	console.log("Saving chores for today ("+this.date+")");
     }
 
     save(json) {
@@ -101,7 +101,10 @@ class Chore {
     }
 
     loadToday() {
-	console.log(localStorage.getItem(this.key));
+	console.log("Loading today's chores");
+	var content = localStorage.getItem(this.key);
+//	console.log(content);
+	return  JSON.parse(content)
     }
     
 }

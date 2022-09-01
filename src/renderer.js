@@ -53,6 +53,15 @@ function home_load() {
 	    "</div>";
     });
     $('#chore-list').html(str);
+
+    // Get today chores status
+    const ch = new Chore();
+    var todayChores = ch.loadToday();
+    todayChores.forEach((cht) => {
+	var id=cht[0];
+	$('#'+id).prop("checked", cht[1]);
+    });
+    
 }
 
 function save_notification() {
