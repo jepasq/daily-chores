@@ -57,13 +57,20 @@ function home_load() {
     // Get today chores status
     const ch = new Chore();
     var todayChores = ch.loadToday();
-    todayChores.forEach((cht) => {
-	var id=cht[0];
-	$('#'+id).prop("checked", cht[1]);
-    });
+    if (todayChores == null) {
+	console.log("Today's chore are NULL asuming first launch for this day");
+    } else {
+	todayChores.forEach((cht) => {
+	    var id=cht[0];
+	    $('#'+id).prop("checked", cht[1]);
+	});
+    }
     
 }
 
+/** Show then show a notification alert indicating we saved current state.
+ *
+ */
 function save_notification() {
     $('#save-notif').removeClass("d-none").show().delay(600).fadeOut(200);
 }

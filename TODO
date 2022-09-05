@@ -8,5 +8,6 @@ daily-chores - GPLv3 - An electron app. to check for daily chores.
     SLOC is the Physical line of flosse/sloc output on 'src/ test/'.
 
 * v0.0.0-6 (31 Aug. 2022 - ???) SLOC ???
-- (2) Correctly load today's chores status at startup
+- (3) Better handling of NULL today's chores array
+- Correctly load today's chores status at startup
 - Chores are made of divs (not table)
