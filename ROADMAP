@@ -33,6 +33,7 @@ CLOCK: [2022-07-25 lun. 09:34]--[2022-07-25 lun. 09:42] =>  0:08
   see https://www.electronjs.org/fr/docs/latest/tutorial/automated-testing
 **** TODO Today's chores loading
 :LOGBOOK:
+CLOCK: [2022-09-07 mer. 02:43]--[2022-09-07 mer. 02:57] =>  0:14
 CLOCK: [2022-09-07 mer. 02:04]--[2022-09-07 mer. 02:36] =>  0:32
 CLOCK: [2022-09-05 lun. 05:49]--[2022-09-05 lun. 06:00] =>  0:11
 CLOCK: [2022-09-02 ven. 01:41]--[2022-09-02 ven. 01:55] =>  0:14
@@ -42,9 +43,9 @@ CLOCK: [2022-08-31 mer. 16:26]--[2022-08-31 mer. 16:38] =>  0:12
 - [X] Chore load at startup and check items
 - [X] How does the chore loading with a not-yet-saved day ? all unchecked
   so it works
-- [-] Must check checkbox if complete chore is clicked.
+- [X] Must check checkbox if complete chore is clicked.
   - [X] Get the click event, heavently with chore id
-  - [ ] Now check the checkbox from its ID
+  - [X] Now check the checkbox from its ID
     
 - [ ] Trying IPC when main needs storage feature
   Testing https://www.electronjs.org/fr/docs/latest/tutorial/ipc#pattern-3-main-to-renderer

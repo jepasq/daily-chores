@@ -46,7 +46,7 @@ function home_load() {
     ct.chores.forEach((chore) => {
 	str=str+
 	    "<div class='chore' onclick='chore_onClick("+chore.id+")'>"+
-	    "<div class='chore-name'"+
+	    "<div class='chore-name'>"+
 	      "<input  class='checkb'"+
 	      "type='checkbox' id='"+chore.id+"' name='scales'>"+
 	      "<label for='scales'>"+chore.name+"</label></div>"+
@@ -74,6 +74,33 @@ function home_load() {
  */
 function save_notification() {
     $('#save-notif').removeClass("d-none").show().delay(600).fadeOut(200);
+}
+
+/** Save current chores state and show notification
+ *
+ */
+function save() {
+    json=[]
+    $(".checkb").each((e) => {
+	b = $("#"+e).is(':checked'); // Get the checked status
+	json.push([e, b]);           // Checkox's id, checked status
+    });
+    let ch = new Chore();
+    ch.save(json);
+    save_notification();
+}
+
+/** The chore div has been clicked
+  *
+  * \param choreid The corresponding chore id as integer.
+  *
+  */
+function chore_onClick(choreid) {
+    console.log("Chore div clicked! Id=" + choreid);
+    const cid = $("#"+choreid).each(function () {
+	this.checked = !this.checked;
+    });
+    save();
 }
 
 $('#toggle-dark-mode').on ('click', (event) => {
@@ -144,26 +171,7 @@ $(document).ready(function(){
 
 
     $(".checkb").on ('change', () => {
-	json=[]
-	$(".checkb").each((e) => {
-	    b = $("#"+e).is(':checked'); // Get the checked status
-	    json.push([e, b]);           // Checkox's id, checked status
-	});
-
-	let ch = new Chore();
-	ch.save(json);
-//	console.log(JSON.stringify(json));
-	save_notification();
+	save();
     });
-
-    
 });
 
-/** The chore div has been clicked
-  *
-  * \param choreid The corresponding chore id as integer.
-  *
-  */
-function chore_onClick(choreid) {
-    console.log("Chore div clicked! Id=" + choreid);
-}
