@@ -33,6 +33,7 @@ CLOCK: [2022-07-25 lun. 09:34]--[2022-07-25 lun. 09:42] =>  0:08
   see https://www.electronjs.org/fr/docs/latest/tutorial/automated-testing
 **** TODO Today's chores loading
 :LOGBOOK:
+CLOCK: [2022-09-07 mer. 03:15]--[2022-09-07 mer. 03:26] =>  0:11
 CLOCK: [2022-09-07 mer. 02:43]--[2022-09-07 mer. 02:57] =>  0:14
 CLOCK: [2022-09-07 mer. 02:04]--[2022-09-07 mer. 02:36] =>  0:32
 CLOCK: [2022-09-05 lun. 05:49]--[2022-09-05 lun. 06:00] =>  0:11
@@ -55,7 +56,8 @@ CLOCK: [2022-08-31 mer. 16:26]--[2022-08-31 mer. 16:38] =>  0:12
   25/07/22: No changes
   03/08/22: Trying with --force: broke something.
   31/08/22: Electron switch from 19.0.13 to 14
-
+  07/09/22: Electron switch from 19.0.14 to 15
+  
 **** DONE LocalStotage handling
 :LOGBOOK:
 CLOCK: [2022-08-29 lun. 12:53]--[2022-08-29 lun. 13:18] =>  0:25
