@@ -45,8 +45,9 @@ function home_load() {
     // Chore list
     ct.chores.forEach((chore) => {
 	str=str+
-	    "<div class='chore'>"+
-	      "<div class='chore-name'><input  class='checkb'"+
+	    "<div class='chore' onclick='chore_onClick("+chore.id+")'>"+
+	    "<div class='chore-name'"+
+	      "<input  class='checkb'"+
 	      "type='checkbox' id='"+chore.id+"' name='scales'>"+
 	      "<label for='scales'>"+chore.name+"</label></div>"+
 	      "<div class='chore-desc'>"+chore.desc+"</div>"+
@@ -155,5 +156,14 @@ $(document).ready(function(){
 	save_notification();
     });
 
+    
 });
 
+/** The chore div has been clicked
+  *
+  * \param choreid The corresponding chore id as integer.
+  *
+  */
+function chore_onClick(choreid) {
+    console.log("Chore div clicked! Id=" + choreid);
+}
