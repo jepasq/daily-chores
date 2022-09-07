@@ -1,3 +1,11 @@
+* v0.0.0-6 (31 Aug. 2022 - 07 Sep. 2022) SLOC 389
+- Electron switch from 19.0.14 to 15
+- Toggle checkbox and save when chore div clicked
+- Manage to get the chore div clickable using inline JS
+- Better handling of NULL today's chores array
+- Correctly load today's chores status at startup
+- Chores are made of divs (not table)
+
 * v0.0.0-5 (15 Aug. 2022 - 31 Aug. 2022) SLOC 351
 - Upgrade electron to 19.0.14 running npm audit fix
 - Correctly save daily chores
