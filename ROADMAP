@@ -2,22 +2,27 @@
 
 * v1.0.0
 ** v0.1.0
-*** v0.0.1
+*** v0.0.2
 **** May handle a theme editor
      and so, a fully customizable one
 **** May add a D3 chart to see today's work
+**** Handle history and maybe graph
+Based on previous days work
 **** May handle multi-items chores
 - [ ] Do x things. Modify it with a spinbox
 - [ ] Maybe also nested items ?  
 **** Maybe handle multiple theme, not only light/dark
-**** More dialog work
+**** TODO More dialog work
 - [ ] Add a dialog 'backdrop'
   as in https://stackoverflow.com/q/60767212
 - [ ] Must be able to modify an item
   - [ ] Modify button is disabled by default
   - [ ] Must be able to select an item
     
-- [ ]   
+- [ ] May regularly run =npm audit fix=
+  13 vulnerabilities (2 low, 8 moderate, 1 high, 2 critical)
+  12/09/22: Electron switch from 19.0.15 to 16
+  
 **** TODO May add unit tests
 :LOGBOOK:
 CLOCK: [2022-07-25 lun. 09:48]--[2022-07-25 lun. 09:58] =>  0:10
@@ -36,7 +41,8 @@ CLOCK: [2022-07-25 lun. 09:34]--[2022-07-25 lun. 09:42] =>  0:08
   - [ ] It seems we can mock it. see https://stackoverflow.com/a/37331384
 - [ ] Test this on another branch
   see https://www.electronjs.org/fr/docs/latest/tutorial/automated-testing
-**** TODO Today's chores loading
+*** DONE v0.0.1
+**** DONE Today's chores loading
 :LOGBOOK:
 CLOCK: [2022-09-12 lun. 04:59]--[2022-09-12 lun. 05:07] =>  0:08
 CLOCK: [2022-09-07 mer. 03:15]--[2022-09-07 mer. 03:26] =>  0:11
@@ -53,8 +59,7 @@ CLOCK: [2022-08-31 mer. 16:26]--[2022-08-31 mer. 16:38] =>  0:12
 - [X] Must check checkbox if complete chore is clicked.
   - [X] Get the click event, heavently with chore id
   - [X] Now check the checkbox from its ID
-    
-- [ ] Trying IPC when main needs storage feature
+- [X] Trying IPC when main needs storage feature
   Testing https://www.electronjs.org/fr/docs/latest/tutorial/ipc#pattern-3-main-to-renderer
   Actually fail but continue testing
 - [ ] May regularly run =npm audit fix=
