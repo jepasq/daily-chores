@@ -56,3 +56,7 @@ body {
     background-color: #EEA;
     cursor: pointer;
 }
+
+.modal-backdrop {
+    opacity: 0.5;
+}

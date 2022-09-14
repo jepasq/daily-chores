@@ -13,10 +13,13 @@ Based on previous days work
 - [ ] Maybe also nested items ?  
 **** Maybe handle multiple theme, not only light/dark
 **** TODO More dialog work
+:LOGBOOK:
+CLOCK: [2022-09-14 mer. 04:33]--[2022-09-14 mer. 04:56] =>  0:23
+:END:
 - [ ] Add a dialog 'backdrop'
   as in https://stackoverflow.com/q/60767212
-- [ ] Must be able to modify an item
-  - [ ] Modify button is disabled by default
+- [-] Must be able to modify an item
+  - [X] Modify button is disabled by default
   - [ ] Must be able to select an item
     
 - [ ] May regularly run =npm audit fix=
