@@ -14,6 +14,7 @@ Based on previous days work
 **** Maybe handle multiple theme, not only light/dark
 **** TODO More dialog work
 :LOGBOOK:
+CLOCK: [2022-09-16 ven. 03:17]--[2022-09-16 ven. 03:41] =>  0:24
 CLOCK: [2022-09-16 ven. 02:45]--[2022-09-16 ven. 02:57] =>  0:12
 CLOCK: [2022-09-14 mer. 04:33]--[2022-09-14 mer. 04:56] =>  0:23
 :END:
@@ -22,8 +23,10 @@ CLOCK: [2022-09-14 mer. 04:33]--[2022-09-14 mer. 04:56] =>  0:23
 - [-] Must be able to modify an item
   - [X] Modify button is disabled by default
   - [X] Make the item background-color change on hover
-  - [ ] Get the click callback and change its color when clicked then,
-    keep its content in a variable and change modify disabled state
+  - [X] Get the click callback
+  - [ ] Change its color when clicked
+  - [ ] keep its content in a variable and change enable modify button
+  - [ ] If modify button is clicked, update line inputs
     
 - [ ] May regularly run =npm audit fix=
   13 vulnerabilities (2 low, 8 moderate, 1 high, 2 critical)

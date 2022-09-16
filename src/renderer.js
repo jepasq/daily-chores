@@ -165,13 +165,22 @@ $('#reset-chore-template').on ('click', (event) => {
 
     chores_to_html(ct);
 });
-  
+
+
 $(document).ready(function(){
+    /// The click event of a preferences Dialog's list item
+
+
     home_load();
-
-
-    $(".checkb").on ('change', () => {
+    $(".checkb").on('change', () => {
 	save();
     });
+
+    // Since the element are dynamically created, the click event is on
+    // the parent container
+    $('#chore-template-list').on('click', '.list-group-item', (event) => {
+	console.log("=> Click event : " + JSON.stringify(event));
+    });
+
 });
 
