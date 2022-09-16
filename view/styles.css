@@ -60,3 +60,9 @@ body {
 .modal-backdrop {
     opacity: 0.5;
 }
+
+/** The item list in preferences dialog */
+.list-group-item:hover {
+    background-color: #EEA;
+    cursor: pointer;
+}

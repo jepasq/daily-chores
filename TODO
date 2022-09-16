@@ -8,6 +8,7 @@ daily-chores - GPLv3 - An electron app. to check for daily chores.
     SLOC is the Physical line of flosse/sloc output on 'src/ test/'.
 
 * v0.0.1-7 (07 Sep. 2022 - ???) SLOC ???
-- (3) Modal's Modify button is disabled by default
+- (4) Add dialog's item hover effect
+- Modal's Modify button is disabled by default
 - Close chore loadiong ROADMAP section and bump version to 0.0.1
 - Upgrade electron patch version from 15 to 16
