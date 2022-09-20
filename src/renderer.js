@@ -24,8 +24,9 @@ function chores_to_html(ct) {
     console.log(ctl);
     ctl.empty();
     ct.chores.forEach((item) => {
-	console.log(item);
-	ctl.append('<li  class="list-group-item">'+item.name+'</li>');
+	var id="chore-template-id-"+item.id;
+	ctl.append('<li id="'+ id +'"class="list-group-item">'+
+		   item.name+'</li>');
     });
 }
 
@@ -169,8 +170,6 @@ $('#reset-chore-template').on ('click', (event) => {
 
 $(document).ready(function(){
     /// The click event of a preferences Dialog's list item
-
-
     home_load();
     $(".checkb").on('change', () => {
 	save();
@@ -180,7 +179,9 @@ $(document).ready(function(){
     // the parent container
     $('#chore-template-list').on('click', '.list-group-item', (event) => {
 	console.log("=> Click event : " + JSON.stringify(event));
+	console.log("=> Click this : " + JSON.stringify(this));
+//	this.css("background-color", "#EEE");
+	console.log("=> Click event : " +$(this).get(0).text());
     });
-
 });
 
