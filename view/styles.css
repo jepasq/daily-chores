@@ -66,3 +66,14 @@ body {
     background-color: #EEA;
     cursor: pointer;
 }
+
+/** The item list in preferences duialog */
+.selected {
+    background-color: #99F;
+}
+
+.selected:hover {
+    background-color: #99F;
+    cursor: pointer;
+}
+

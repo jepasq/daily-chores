@@ -25,7 +25,8 @@ function chores_to_html(ct) {
     ctl.empty();
     ct.chores.forEach((item) => {
 	var id="chore-template-id-"+item.id;
-	ctl.append('<li id="'+ id +'"class="list-group-item">'+
+	ctl.append('<li id="'+ id +'" class="list-group-item" '+
+		   'onclick="choreTemplate_onClick(\''+id+'\')">' +
 		   item.name+'</li>');
     });
 }
@@ -175,13 +176,23 @@ $(document).ready(function(){
 	save();
     });
 
-    // Since the element are dynamically created, the click event is on
+    // Since the elements are dynamically created, the click event is on
     // the parent container
     $('#chore-template-list').on('click', '.list-group-item', (event) => {
-	console.log("=> Click event : " + JSON.stringify(event));
-	console.log("=> Click this : " + JSON.stringify(this));
+//	console.log("=> Click event : " + JSON.stringify(event));
+//	console.log("=> Click this : " + JSON.stringify(this));
 //	this.css("background-color", "#EEE");
-	console.log("=> Click event : " +$(this).get(0).text());
+//	console.log("=> Click event : " +$(this).get(0).text());
     });
 });
 
+/** Call from an onclick event created dynamically in chores_to_html()
+ *  function
+ */
+function choreTemplate_onClick(id) {
+    console.log("in choreTemplate_onClick("+id+")");
+
+    $('.list-group-item').removeClass("selected")
+    
+    $('#'+id).addClass("selected");
+}
