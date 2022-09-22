@@ -4,6 +4,12 @@ require('popper.js');
 require('bootstrap');
 */
 
+/** These variables keep content of selected element from dialog between
+ *  an element click  and the Modify button click.
+ *
+ */
+var globalName, globalDesc;
+
 function show_dialog() {
     $('#myModal').show({backdrop: 'static'})
     //    $('body').append($("<div class='modal-backdrop fade hide'></div>")
@@ -25,8 +31,10 @@ function chores_to_html(ct) {
     ctl.empty();
     ct.chores.forEach((item) => {
 	var id="chore-template-id-"+item.id;
-	ctl.append('<li id="'+ id +'" class="list-group-item" '+
-		   'onclick="choreTemplate_onClick(\''+id+'\')">' +
+	var oc='onclick="choreTemplate_onClick(\''+
+	    id+'\', \'' + item.name + '\', \'' + item.desc + '\')"'
+	ctl.append('<li id="'+ id +'" class="list-group-item" '+oc+'>'
+		    +
 		   item.name+'</li>');
     });
 }
@@ -175,24 +183,26 @@ $(document).ready(function(){
     $(".checkb").on('change', () => {
 	save();
     });
-
-    // Since the elements are dynamically created, the click event is on
-    // the parent container
-    $('#chore-template-list').on('click', '.list-group-item', (event) => {
-//	console.log("=> Click event : " + JSON.stringify(event));
-//	console.log("=> Click this : " + JSON.stringify(this));
-//	this.css("background-color", "#EEE");
-//	console.log("=> Click event : " +$(this).get(0).text());
-    });
 });
 
 /** Call from an onclick event created dynamically in chores_to_html()
  *  function
  */
-function choreTemplate_onClick(id) {
-    console.log("in choreTemplate_onClick("+id+")");
+function choreTemplate_onClick(id, name, desc) {
+    console.log("in choreTemplate_onClick("+id+") : " + name + ", " + desc);
 
     $('.list-group-item').removeClass("selected")
+    $('#modify-button').prop("disabled", false);
     
     $('#'+id).addClass("selected");
+    globalName = name;
+    globalDesc = desc;
 }
+
+/** The dialog chores handling section's Modify button
+ *
+ */
+$('#modify-button').on ('click', (event) => {
+    console.log("Modify button clicked (" + globalName+
+		", " + globalDesc + ")");
+});

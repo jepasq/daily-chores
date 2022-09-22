@@ -14,6 +14,7 @@ Based on previous days work
 **** Maybe handle multiple theme, not only light/dark
 **** TODO More dialog work
 :LOGBOOK:
+CLOCK: [2022-09-22 jeu. 04:02]--[2022-09-22 jeu. 04:15] =>  0:13
 CLOCK: [2022-09-21 mer. 02:59]--[2022-09-21 mer. 03:21] =>  0:22
 CLOCK: [2022-09-20 mar. 02:23]--[2022-09-20 mar. 02:45] =>  0:22
 CLOCK: [2022-09-16 ven. 03:17]--[2022-09-16 ven. 03:41] =>  0:24
@@ -29,8 +30,9 @@ CLOCK: [2022-09-14 mer. 04:33]--[2022-09-14 mer. 04:56] =>  0:23
   - [X] Change its color when clicked
     Actually trying with an inline onclick where we can add parameters
     such as id, name, description
-  - [ ] keep its content in a variable and change enable modify button
-  - [ ] If modify button is clicked, update line inputs
+  - [X] keep its content in a variable and change enable modify button
+  - [ ] If modify button is clicked, update line inputs and remove
+    selected element
     
 - [ ] May regularly run =npm audit fix=
   13 vulnerabilities (2 low, 8 moderate, 1 high, 2 critical)

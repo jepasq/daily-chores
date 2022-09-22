@@ -1,6 +1,6 @@
 # daily-chores
 
-An electron application to check for daily chores.
+An *electron*-based application to check for daily chores.
 
 # Dependencies
 
@@ -10,15 +10,19 @@ First, you'll need to install *node package manager* :
 		or 
 	sudo pacman -S npm
 
-then, once node is installed :
+then, install *npm*-based dependencies :
 
 	npm install
 
 # Run
 
+Once all prerequisite are met, to start the applicarion :
+
 	npm start
 
 # Unit tests
+
+To run unit tests :
 
 	npm test
 
