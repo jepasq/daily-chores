@@ -14,6 +14,7 @@ Based on previous days work
 **** Maybe handle multiple theme, not only light/dark
 **** TODO More dialog work
 :LOGBOOK:
+CLOCK: [2022-09-22 jeu. 04:30]--[2022-09-22 jeu. 05:00] =>  0:30
 CLOCK: [2022-09-22 jeu. 04:02]--[2022-09-22 jeu. 04:15] =>  0:13
 CLOCK: [2022-09-21 mer. 02:59]--[2022-09-21 mer. 03:21] =>  0:22
 CLOCK: [2022-09-20 mar. 02:23]--[2022-09-20 mar. 02:45] =>  0:22
@@ -23,7 +24,7 @@ CLOCK: [2022-09-14 mer. 04:33]--[2022-09-14 mer. 04:56] =>  0:23
 :END:
 - [ ] Add a dialog 'backdrop'
   as in https://stackoverflow.com/q/60767212
-- [-] Must be able to modify an item
+- [X] Must be able to modify an item
   - [X] Modify button is disabled by default
   - [X] Make the item background-color change on hover
   - [X] Get the click callback
@@ -31,9 +32,12 @@ CLOCK: [2022-09-14 mer. 04:33]--[2022-09-14 mer. 04:56] =>  0:23
     Actually trying with an inline onclick where we can add parameters
     such as id, name, description
   - [X] keep its content in a variable and change enable modify button
-  - [ ] If modify button is clicked, update line inputs and remove
-    selected element
-    
+  - [X] When modify button is clicked
+    - [X] remove selected element
+    - [X] update line inputs
+
+- [ ] Handle dialog's Delete button
+
 - [ ] May regularly run =npm audit fix=
   13 vulnerabilities (2 low, 8 moderate, 1 high, 2 critical)
   12/09/22: Electron switch from 19.0.15 to 16

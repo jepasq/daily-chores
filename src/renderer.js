@@ -203,6 +203,21 @@ function choreTemplate_onClick(id, name, desc) {
  *
  */
 $('#modify-button').on ('click', (event) => {
-    console.log("Modify button clicked (" + globalName+
-		", " + globalDesc + ")");
+    // Remove selected element
+    $('li').remove('.selected');
+
+    // Move item to input elements
+    $('#newChoreName').val(globalName);
+    $('#newChoreDescription').val(globalDesc);
+
+    
+    // Disable modify button
+    $('#modify-button').prop("disabled", true);
+
+    // Save with removed item
+    save();
+
+    // Reset global vars
+    globalName = "";
+    globalDesc = "";
 });
