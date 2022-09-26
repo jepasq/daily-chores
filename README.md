@@ -16,7 +16,7 @@ then, install *npm*-based dependencies :
 
 # Run
 
-Once all prerequisite are met, to start the applicarion :
+Once all prerequisite are met, to start the application :
 
 	npm start
 

@@ -1,0 +1,3 @@
+# see https://github.com/mochajs/mocha/blob/master/example/config/.mocharc.yml
+package: './package.json'
+ui: 'bdd'

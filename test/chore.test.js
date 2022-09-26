@@ -1,11 +1,13 @@
-const {Chore, ChoreTemplate} = require('../src/chore');
+const chore = require('../src/chore'); ///{Chore, ChoreTemplate}
 const assert = require('assert');
 
 describe('ChoreTemplate Test', () => {
     it('can be instantiated', () => {
-	console.log(ChoreTemplate);
-	let ct = new ChoreTemplate();
+	console.log(chore);
+
+	let ct = new chore.ChoreTemplate();
         assert.not_equal(ct, null);
+	
     });
 
 });

@@ -44,6 +44,7 @@ CLOCK: [2022-09-14 mer. 04:33]--[2022-09-14 mer. 04:56] =>  0:23
   
 **** TODO May add unit tests
 :LOGBOOK:
+CLOCK: [2022-09-26 lun. 09:07]--[2022-09-26 lun. 09:20] =>  0:13
 CLOCK: [2022-07-25 lun. 09:48]--[2022-07-25 lun. 09:58] =>  0:10
 CLOCK: [2022-07-25 lun. 09:34]--[2022-07-25 lun. 09:42] =>  0:08
 :END:
@@ -51,6 +52,7 @@ CLOCK: [2022-07-25 lun. 09:34]--[2022-07-25 lun. 09:42] =>  0:08
   maybe https://github.com/flosse/sloc
 - [X] Can't use ChoreTemplate in tests
   =TypeError: ChoreTemplate is not a constructor=
+- [X] Try configuing mocha with .mocharc.yml
 - [ ] Test mocha following
   https://medium.com/serverlessguru/how-to-unit-test-with-nodejs-76967019ba56
   Test if we can test for ChoreTemplate here. Not sure since we use
