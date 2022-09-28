@@ -1,3 +1,11 @@
+* v0.0.1-8 (20 Sep. 2022 - 28 Sep. 2022) SLOC 438
+- Enable dialog's delete button when an item is selected
+- Dialog's Delete button is disabled at startup
+- Add a basic .mocharc.yml file
+- Remove selected li and feed line input when modify is clicked
+- Clicking dialog element enable Modify button
+- Dialog item list Selection works
+
 * v0.0.1-7 (07 Sep. 2022 - 20 Sep. 2022) SLOC 399
 - Add id to list-group-item elements
 - Get the dialog's item click event

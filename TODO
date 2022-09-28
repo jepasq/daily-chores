@@ -7,10 +7,5 @@ daily-chores - GPLv3 - An electron app. to check for daily chores.
     Update version and revision in index.html
     SLOC is the Physical line of flosse/sloc output on 'src/ test/'.
 
-* v0.0.1-8 (20 Sep. 2022 - ???) SLOC ???
-- (6) Enable dialog's delete button when an item is selected
-- Dialog's Delete button is disabled at startup
-- Add a basic .mocharc.yml file
-- Remove selected li and feed line input when modify is clicked
-- Clicking dialog element enable Modify button
-- Dialog item list Selection works
+* v0.0.1-9 (28 Sep. 2022 - ???) SLOC ???
+
