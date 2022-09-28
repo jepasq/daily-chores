@@ -193,13 +193,14 @@ function choreTemplate_onClick(id, name, desc) {
 
     $('.list-group-item').removeClass("selected")
     $('#modify-button').prop("disabled", false);
+    $('#delete-button').prop("disabled", false);
     
     $('#'+id).addClass("selected");
     globalName = name;
     globalDesc = desc;
 }
 
-/** The dialog chores handling section's Modify button
+/** The dialog chores handling section's Modify/Delete buttons
  *
  */
 $('#modify-button').on ('click', (event) => {
