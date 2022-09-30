@@ -109,4 +109,4 @@ class Chore {
     
 }
 
-//module.exports = {Chore, ChoreTemplate};
+module.exports = {Chore, ChoreTemplate};

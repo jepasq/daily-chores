@@ -1,11 +1,18 @@
-const chore = require('../src/chore'); ///{Chore, ChoreTemplate}
+const {Chore, ChoreTemplate} = require('../src/chore');
 const assert = require('assert');
+
+class LocalStorage {
+
+}
+
+var localStorage = new LocalStorage();
+
+global.window = {};
+global.window = { localStorage: new LocalStorage() }
 
 describe('ChoreTemplate Test', () => {
     it('can be instantiated', () => {
-	console.log(chore);
-
-	let ct = new chore.ChoreTemplate();
+	let ct = new ChoreTemplate();
         assert.not_equal(ct, null);
 	
     });

@@ -44,13 +44,16 @@ CLOCK: [2022-09-14 mer. 04:33]--[2022-09-14 mer. 04:56] =>  0:23
   - [ ] Implement its callback
 
 - [ ] Handle reset when dialog is closed
-
+  Mainy buttons should re-become disabled
+  Then, input should be set to ""
+  
 - [ ] May regularly run =npm audit fix=
   13 vulnerabilities (2 low, 8 moderate, 1 high, 2 critical)
   12/09/22: Electron switch from 19.0.15 to 16
   
 **** TODO May add unit tests
 :LOGBOOK:
+CLOCK: [2022-09-30 ven. 03:44]--[2022-09-30 ven. 04:11] =>  0:27
 CLOCK: [2022-09-26 lun. 09:07]--[2022-09-26 lun. 09:20] =>  0:13
 CLOCK: [2022-07-25 lun. 09:48]--[2022-07-25 lun. 09:58] =>  0:10
 CLOCK: [2022-07-25 lun. 09:34]--[2022-07-25 lun. 09:42] =>  0:08
