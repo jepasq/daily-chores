@@ -14,6 +14,7 @@ Based on previous days work
 **** Maybe handle multiple theme, not only light/dark
 **** TODO More dialog work
 :LOGBOOK:
+CLOCK: [2022-10-10 lun. 05:47]--[2022-10-10 lun. 06:13] =>  0:26
 CLOCK: [2022-10-10 lun. 05:30]--[2022-10-10 lun. 05:37] =>  0:07
 CLOCK: [2022-09-28 mer. 04:14]--[2022-09-28 mer. 04:23] =>  0:09
 CLOCK: [2022-09-26 lun. 09:25]--[2022-09-26 lun. 09:27] =>  0:02
@@ -25,8 +26,6 @@ CLOCK: [2022-09-16 ven. 03:17]--[2022-09-16 ven. 03:41] =>  0:24
 CLOCK: [2022-09-16 ven. 02:45]--[2022-09-16 ven. 02:57] =>  0:12
 CLOCK: [2022-09-14 mer. 04:33]--[2022-09-14 mer. 04:56] =>  0:23
 :END:
-- [ ] Add a dialog 'backdrop'
-  as in https://stackoverflow.com/q/60767212
 - [X] Must be able to modify an item
   - [X] Modify button is disabled by default
   - [X] Make the item background-color change on hover
@@ -38,11 +37,16 @@ CLOCK: [2022-09-14 mer. 04:33]--[2022-09-14 mer. 04:56] =>  0:23
   - [X] When modify button is clicked
     - [X] remove selected element
     - [X] update line inputs
-
-- [-] Handle dialog's Delete button
+- [X] Handle dialog's Delete button
   - [X] Delete button must be disabled by default
   - [X] Enable it when an item is selected  
-  - [ ] Implement its callback
+  - [X] Implement its callback (graphically)
+
+- [ ] Add a dialog 'backdrop'
+  as in https://stackoverflow.com/q/60767212
+
+- [ ] Modify/Delete may use ChoreTemplate::remove(item)
+  Both are graphically implemented but they don't modifu stored list
 
 - [ ] Handle reset when dialog is closed
   Mainy buttons should re-become disabled

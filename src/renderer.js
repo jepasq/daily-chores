@@ -200,7 +200,7 @@ function choreTemplate_onClick(id, name, desc) {
     globalDesc = desc;
 }
 
-/** The dialog chores handling section's Modify/Delete buttons
+/** The dialog chores handling section's Modify buttons
  *
  */
 $('#modify-button').on ('click', (event) => {
@@ -221,4 +221,19 @@ $('#modify-button').on ('click', (event) => {
     // Reset global vars
     globalName = "";
     globalDesc = "";
+});
+
+/** The dialog chores handling section's Delete buttons
+ *
+ */
+$('#delete-button').on ('click', (event) => {
+    // Remove selected element
+    $('li').remove('.selected');
+
+    // Disable buttons
+    $('#modify-button').prop("disabled", true);
+    $('#delete-button').prop("disabled", true);
+    
+    // Save with removed item
+    save();
 });
