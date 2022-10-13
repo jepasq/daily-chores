@@ -1,14 +1,16 @@
-const {Chore, ChoreTemplate} = require('../src/chore');
 const assert = require('assert');
 
+const {Chore, ChoreTemplate} = require('../src/chore');
+/*
 class LocalStorage {
 
 }
-
 var localStorage = new LocalStorage();
 
-global.window = {};
-global.window = { localStorage: new LocalStorage() }
+
+
+});
+*/
 
 describe('ChoreTemplate Test', () => {
     it('can be instantiated', () => {
@@ -16,7 +18,6 @@ describe('ChoreTemplate Test', () => {
         assert.not_equal(ct, null);
 	
     });
-
 });
 
 describe('Simple Math Test', () => {
