@@ -13,12 +13,10 @@ var ls = {
     }
 }
 
-
-    
 describe('ChoreTemplate Test', () => {
     it('can be instantiated', () => {
 	let ct = new ChoreTemplate(ls);
-        assert.not_equal(ct, null);
+        assert.notEqual(ct, null);
 	
     });
 });
