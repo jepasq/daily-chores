@@ -7,10 +7,5 @@ daily-chores - GPLv3 - An electron app. to check for daily chores.
     Update version and revision in index.html
     SLOC is the Physical line of flosse/sloc output on 'src/ test/'.
 
-* v0.0.1-9 (28 Sep. 2022 - ???) SLOC ???
-- (6) Add a failing ChoreTemplate unit test
-- Fix assert.notEqual call
-- Add ChoreTemplate ctor paramater to mock localStorage
-- Graphical delete button implementation
-- Upgrade to electron 19.1.2
-- Can now run unit test AND application
+* v0.0.1-10 (18 Oct. 2022 - ???) SLOC ???
+

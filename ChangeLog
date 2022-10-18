@@ -1,3 +1,11 @@
+* v0.0.1-9 (28 Sep. 2022 - 18 Oct. 2022) SLOC 432
+- Add a failing ChoreTemplate unit test
+- Fix assert.notEqual call
+- Add ChoreTemplate ctor paramater to mock localStorage
+- Graphical delete button implementation
+- Upgrade to electron 19.1.2
+- Can now run unit test AND application
+
 * v0.0.1-8 (20 Sep. 2022 - 28 Sep. 2022) SLOC 438
 - Enable dialog's delete button when an item is selected
 - Dialog's Delete button is disabled at startup
