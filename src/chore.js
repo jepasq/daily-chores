@@ -4,14 +4,15 @@
  *
  */
 class ChoreTemplate {
-    constructor() {
+    constructor( ls = localStorage) {
 	this.chores = [];
 	this.nextchoreid = 0;
+	this.localStorage = ls;
 	if (this.isDefined()) {
 	    try {
-		const jp = JSON.parse(localStorage.getItem('chore-template'));
+		const jp = JSON.parse(this.localStorage.getItem('chore-template'));
 		this.chores = jp;
-		const nc = localStorage.getItem('nextchore-id');
+		const nc = this.localStorage.getItem('nextchore-id');
 		console.log(nc);
 		if (nc === null) {
 		    console.log("nextchore-id is NULL. Not overriding.");
@@ -36,8 +37,8 @@ class ChoreTemplate {
     }
     isDefined() {
 	console.log("in Chore::isDefined(): "+
-		    JSON.parse(localStorage.getItem('chore-template')));
-	return localStorage.getItem('chore-template')!=null;
+		    JSON.parse(this.localStorage.getItem('chore-template')));
+	return this.localStorage.getItem('chore-template')!=null;
     }
 
     debug() {
@@ -56,7 +57,7 @@ class ChoreTemplate {
 	this.nextchoreid += 1;
 
 	this.save();
-	console.log(localStorage.getItem('chore-template'));
+	console.log(this.localStorage.getItem('chore-template'));
 	this.debug();
     }
 

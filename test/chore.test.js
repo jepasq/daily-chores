@@ -1,20 +1,23 @@
 const assert = require('assert');
 
 const {Chore, ChoreTemplate} = require('../src/chore');
-/*
-class LocalStorage {
 
+var ls = {
+    getItem: function (key) {
+        if( key === 'id_token' ){ return /* a token object */; }
+        return null;
+    },
+
+    setItem: function (key) {
+
+    }
 }
-var localStorage = new LocalStorage();
 
 
-
-});
-*/
-
+    
 describe('ChoreTemplate Test', () => {
     it('can be instantiated', () => {
-	let ct = new ChoreTemplate();
+	let ct = new ChoreTemplate(ls);
         assert.not_equal(ct, null);
 	
     });
