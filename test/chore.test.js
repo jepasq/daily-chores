@@ -19,6 +19,14 @@ describe('ChoreTemplate Test', () => {
         assert.notEqual(ct, null);
 	
     });
+
+    it('has a remove() function', () => {
+	let ct = new ChoreTemplate(ls);
+	ct.remove('aze');
+        assert.notEqual(ct, null);
+	
+    });
+
 });
 
 describe('Simple Math Test', () => {
