@@ -24,9 +24,17 @@ describe('ChoreTemplate Test', () => {
 	let ct = new ChoreTemplate(ls);
 	ct.remove('aze');
         assert.notEqual(ct, null);
-	
     });
 
+    it('remove() function changes content len', () => {
+	let ct = new ChoreTemplate(ls);
+	ct.add('aze');
+	ct.add('zer');
+	var l1 = ct.chores.len();
+        assert.notEqual(ct, null);
+    });
+
+    
 });
 
 describe('Simple Math Test', () => {

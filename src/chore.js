@@ -63,8 +63,9 @@ class ChoreTemplate {
 
     // Save actual members in local storage
     save() {
-	localStorage.setItem('chore-template', JSON.stringify(this.chores));
-	localStorage.setItem('nextchore-id', this.nextchoreid);
+	this.localStorage.setItem('chore-template',
+				  JSON.stringify(this.chores));
+	this.localStorage.setItem('nextchore-id', this.nextchoreid);
     }
 
     // Warning : reset localStorage
@@ -72,6 +73,16 @@ class ChoreTemplate {
 	console.log("Local storage has benn reset");
 	localStorage.removeItem('chore-template');
 	this.chores = [];
+    }
+
+    /// Remove the given element from local storage
+    remove(key) {
+	// Thanks to https://stackoverflow.com/a/5767357
+	const index = this.chores.indexOf(key);
+	if (index > -1) {
+	    this.chores.splice(index, 1);
+	}
+	this.save();
     }
 }
 
