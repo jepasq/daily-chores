@@ -28,10 +28,10 @@ describe('ChoreTemplate Test', () => {
 
     it('remove() function changes content len', () => {
 	let ct = new ChoreTemplate(ls);
-	ct.add('aze');
-	ct.add('zer');
-	var l1 = ct.chores.len();
-        assert.notEqual(ct, null);
+	var l1 = ct.chores.length;
+	ct.add({'id':'aze'});
+	ct.add({'id': 'zer'});
+        assert.notEqual(ct, ct.chores.length);
     });
 
     
