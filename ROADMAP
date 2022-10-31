@@ -47,7 +47,7 @@ CLOCK: [2022-09-14 mer. 04:33]--[2022-09-14 mer. 04:56] =>  0:23
 - [-] Modify/Delete may use ChoreTemplate::remove(item)
   Both are graphically implemented but they don't modify stored list
   - [X] Add a remove() unit test
-  - [ ] Implement it  
+  - [ ] Implement it
 
 - [ ] Add a dialog 'backdrop'
   as in https://stackoverflow.com/q/60767212
