@@ -27,7 +27,6 @@ function show_dialog() {
 function chores_to_html(ct) {
     
     var ctl = $('#chore-template-list');
-    console.log(ctl);
     ctl.empty();
     ct.chores.forEach((item) => {
 	var id="chore-template-id-"+item.id;
@@ -227,13 +226,20 @@ $('#modify-button').on ('click', (event) => {
  *
  */
 $('#delete-button').on ('click', (event) => {
+
+    var tbr = $('li.selected').text();
+    
     // Remove selected element
     $('li').remove('.selected');
 
+    let ct = new ChoreTemplate();
+    ct.remove(tbr);
+    
     // Disable buttons
     $('#modify-button').prop("disabled", true);
     $('#delete-button').prop("disabled", true);
     
     // Save with removed item
     save();
+    chores_to_html(ct);
 });

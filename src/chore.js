@@ -77,6 +77,8 @@ class ChoreTemplate {
 
     /// Remove the given element from local storage
     remove(key) {
+	console.log("ChoreTemplate::remove() called for '"+key
+		    +"' while content is actually '" + this.chores + "'");
 	// Thanks to https://stackoverflow.com/a/5767357
 	const index = this.chores.indexOf(key);
 	if (index > -1) {
