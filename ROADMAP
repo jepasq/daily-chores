@@ -14,6 +14,7 @@ Based on previous days work
 **** Maybe handle multiple theme, not only light/dark
 **** TODO More dialog work
 :LOGBOOK:
+CLOCK: [2022-11-03 jeu. 12:39]--[2022-11-03 jeu. 12:52] =>  0:13
 CLOCK: [2022-11-03 jeu. 11:59]--[2022-11-03 jeu. 12:05] =>  0:06
 CLOCK: [2022-10-31 lun. 09:02]--[2022-10-31 lun. 09:27] =>  0:25
 CLOCK: [2022-10-24 lun. 13:39]--[2022-10-24 lun. 13:47] =>  0:08
@@ -50,12 +51,13 @@ CLOCK: [2022-09-14 mer. 04:33]--[2022-09-14 mer. 04:56] =>  0:23
   - [X] Add a remove() unit test
   - [ ] Implement it
 
+- [-] Handle reset when dialog is closed
+  - [X] Event handled
+  - [ ] Many buttons should re-become disabled
+  - [ ] Then, input should be set to ""
+  
 - [ ] Add a dialog 'backdrop'
   as in https://stackoverflow.com/q/60767212
-  
-- [ ] Handle reset when dialog is closed
-  Mainy buttons should re-become disabled
-  Then, input should be set to ""
   
 - [ ] May regularly run =npm audit fix=
   13 vulnerabilities (2 low, 8 moderate, 1 high, 2 critical)

@@ -243,3 +243,9 @@ $('#delete-button').on ('click', (event) => {
     save();
     chores_to_html(ct);
 });
+
+/// We're closing the dialog
+$('#close-dialog-button').on ('click', (event) => {
+//function reset_dialog() {
+    console.log("Closing dialog, about to reset");
+});
