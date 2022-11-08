@@ -84,9 +84,30 @@ class ChoreTemplate {
 	const index = this.chores.indexOf(key);
 	if (index > -1) {
 	    this.chores.splice(index, 1);
+	} else {
+	    console.log("WARNING: Can't find key '" + key + "'");
 	}
 	this.save();
     }
+
+    /// Remove items containing given name
+    removeFromName(name) {
+	console.log("ChoreTemplate::removeFromName() called for '"+name
+		    +"' while content is actually '" +
+		    JSON.stringify(this.chores) + "'");
+	// Thanks to https://stackoverflow.com/a/5767357
+	var i=0;
+	while (i < this.chores.length) {
+	    console.log("Comparing " + this.chores[i].name + " and " +  name)
+	    if (this.chores[i].name == name) {
+		this.chores.splice(i, 1);
+	    } else {
+		++i;
+	    }
+	}
+	this.save();
+    }
+
 }
 
 function padTo2Digits(num) {

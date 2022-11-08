@@ -32,7 +32,7 @@ describe('ChoreTemplate Test', () => {
 	ct.add({'id': 'zer'});
 	var l1 = ct.chores.length;
 	ct.remove({'id': 'zer'});
-        assert.notEqual(li, ct.chores.length);
+        assert.notEqual(l1, ct.chores.length);
     });
 
     it('removeFromName() function changes content len', () => {
@@ -42,7 +42,7 @@ describe('ChoreTemplate Test', () => {
 	ct.add({'id':'02', 'name':'zer'});
 	var l1 = ct.chores.length;
 	ct.removeFromName('aze');
-        assert.notEqual(li, ct.chores.length);
+        assert.notEqual(l1, ct.chores.length);
     });
     
 });
