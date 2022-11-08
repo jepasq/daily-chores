@@ -51,7 +51,7 @@ class ChoreTemplate {
     // May use exception here
     add(item) {
 	console.log(this.chores + ' is a ' + typeof(this.chores));
-	console.log("Adding item : " + item);
+	console.log("Adding item : " + JSON.stringify(item));
 	item.id=this.nextchoreid;
 	this.chores.push(item);
 	this.nextchoreid += 1;
@@ -78,7 +78,8 @@ class ChoreTemplate {
     /// Remove the given element from local storage
     remove(key) {
 	console.log("ChoreTemplate::remove() called for '"+key
-		    +"' while content is actually '" + this.chores + "'");
+		    +"' while content is actually '" +
+		    JSON.stringify(this.chores) + "'");
 	// Thanks to https://stackoverflow.com/a/5767357
 	const index = this.chores.indexOf(key);
 	if (index > -1) {

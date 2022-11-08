@@ -28,11 +28,21 @@ describe('ChoreTemplate Test', () => {
 
     it('remove() function changes content len', () => {
 	let ct = new ChoreTemplate(ls);
-	var l1 = ct.chores.length;
 	ct.add({'id':'aze'});
 	ct.add({'id': 'zer'});
-        assert.notEqual(ct, ct.chores.length);
+	var l1 = ct.chores.length;
+	ct.remove({'id': 'zer'});
+        assert.notEqual(li, ct.chores.length);
     });
 
+    it('removeFromName() function changes content len', () => {
+	let ct = new ChoreTemplate(ls);
+	var l1 = ct.chores.length;
+	ct.add({'id':'01', 'name':'aze'});
+	ct.add({'id':'02', 'name':'zer'});
+	var l1 = ct.chores.length;
+	ct.removeFromName('aze');
+        assert.notEqual(li, ct.chores.length);
+    });
     
 });

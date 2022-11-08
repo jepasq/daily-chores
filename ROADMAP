@@ -14,6 +14,7 @@ Based on previous days work
 **** Maybe handle multiple theme, not only light/dark
 **** TODO More dialog work
 :LOGBOOK:
+CLOCK: [2022-11-08 mar. 09:39]--[2022-11-08 mar. 09:47] =>  0:08
 CLOCK: [2022-11-03 jeu. 12:39]--[2022-11-03 jeu. 12:52] =>  0:13
 CLOCK: [2022-11-03 jeu. 11:59]--[2022-11-03 jeu. 12:05] =>  0:06
 CLOCK: [2022-10-31 lun. 09:02]--[2022-10-31 lun. 09:27] =>  0:25
@@ -50,6 +51,8 @@ CLOCK: [2022-09-14 mer. 04:33]--[2022-09-14 mer. 04:56] =>  0:23
   Both are graphically implemented but they don't modify stored list
   - [X] Add a remove() unit test
   - [ ] Implement it
+    Test and implement a removeFromName()
+ChoreTemplate::remove() called for 'Blog write' while content is actually '[{"name":"Github work","desc":"Every wee day on this","type":"indoor","id":0},{"name":"Blog write","desc":"","type":"indoor","id":1},{"name":"Github work 2","desc":"Every wee day on this","type":"indoor","id":2}]'
 
 - [-] Handle reset when dialog is closed
   - [X] Event handled
