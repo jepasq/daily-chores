@@ -77,7 +77,7 @@ class ChoreTemplate {
 
     /// Remove the given element from local storage
     remove(key) {
-	console.log("ChoreTemplate::remove() called for '"+key
+	console.log("ChoreTemplate::remove() called for '"+JSON.stringify(key)
 		    +"' while content is actually '" +
 		    JSON.stringify(this.chores) + "'");
 	// Thanks to https://stackoverflow.com/a/5767357
@@ -85,7 +85,8 @@ class ChoreTemplate {
 	if (index > -1) {
 	    this.chores.splice(index, 1);
 	} else {
-	    console.log("WARNING: Can't find key '" + key + "'");
+	    console.log("WARNING ChoreTemplate::remove(): Can't find key '" +
+			JSON.stringify(key) + "'");
 	}
 	this.save();
     }
