@@ -87,6 +87,18 @@ class ChoreTemplate {
 	} else {
 	    console.log("WARNING ChoreTemplate::remove(): Can't find key '" +
 			JSON.stringify(key) + "'");
+
+	    // Maybe the parameter is an obejct
+	    var i=0;
+	    while (i < this.chores.length) {
+		var totxt=JSON.stringify(this.chores[i]);
+		if (key == this.chores[i]) {
+		    console.log("= "+ totxt);
+		} else {
+		    console.log("> "+ totxt + " != " + JSON.stringify(key));
+		}
+		i++;
+	    }
 	}
 	this.save();
     }
