@@ -82,20 +82,19 @@ class ChoreTemplate {
 		    JSON.stringify(this.chores) + "'");
 	// Thanks to https://stackoverflow.com/a/5767357
 	const index = this.chores.indexOf(key);
-	if (index > -1) {
-	    this.chores.splice(index, 1);
-	} else {
+	if (index == -1){
 	    console.log("WARNING ChoreTemplate::remove(): Can't find key '" +
 			JSON.stringify(key) + "'");
 
-	    // Maybe the parameter is an obejct
+	    // Maybe the parameter is an obejct so we'll check text cmp
 	    var i=0;
 	    while (i < this.chores.length) {
-		var totxt=JSON.stringify(this.chores[i]);
-		if (key == this.chores[i]) {
-		    console.log("= "+ totxt);
+		var totxt="'"+JSON.stringify(this.chores[i])+"'";
+		if (JSON.stringify(this.chores[i]) == JSON.stringify(key)){
+		    this.chores.splice(i, 1);
 		} else {
-		    console.log("> "+ totxt + " != " + JSON.stringify(key));
+		    console.log("> "+ totxt + " != '" + JSON.stringify(key)
+				+"'");
 		}
 		i++;
 	    }
@@ -111,7 +110,6 @@ class ChoreTemplate {
 	// Thanks to https://stackoverflow.com/a/5767357
 	var i=0;
 	while (i < this.chores.length) {
-	    console.log("Comparing " + this.chores[i].name + " and " +  name)
 	    if (this.chores[i].name == name) {
 		this.chores.splice(i, 1);
 	    } else {
