@@ -232,8 +232,9 @@ $('#delete-button').on ('click', (event) => {
     // Remove selected element
     $('li').remove('.selected');
 
+    console.log("#delete-button: will remove '"+tbr+"'");
     let ct = new ChoreTemplate();
-    ct.remove(tbr);
+    ct.removeFromName(tbr);
     
     // Disable buttons
     $('#modify-button').prop("disabled", true);
