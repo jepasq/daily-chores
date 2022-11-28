@@ -80,6 +80,8 @@ CLOCK: [2022-09-14 mer. 04:33]--[2022-09-14 mer. 04:56] =>  0:23
 :LOGBOOK:
 CLOCK: [2022-10-26 mer. 11:36]--[2022-10-26 mer. 11:53] =>  0:17
 :END:
+- [ ] npm update : must test after
+  npm install -g npm@9.1.2
 - [ ] Test this on another branch
   see https://www.electronjs.org/fr/docs/latest/tutorial/automated-testing
 **** DONE May add unit tests
