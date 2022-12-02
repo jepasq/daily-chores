@@ -210,6 +210,8 @@ $('#modify-button').on ('click', (event) => {
     $('#newChoreName').val(globalName);
     $('#newChoreDescription').val(globalDesc);
 
+    let ct = new ChoreTemplate();
+    ct.removeFromName(globalName);
     
     // Disable modify button
     $('#modify-button').prop("disabled", true);

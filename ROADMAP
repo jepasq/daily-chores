@@ -13,7 +13,10 @@ Based on previous days work
 - [ ] Maybe also nested items ?  
 **** Maybe handle multiple theme, not only light/dark
 **** TODO Dialog may be used to modify items
-- [ ] Modify then add back adds two item, the original and the modified ones
+:LOGBOOK:
+CLOCK: [2022-12-02 ven. 05:47]--[2022-12-02 ven. 05:52] =>  0:05
+:END:
+- [X] Modify then add back adds two item, the original and the modified ones
   see why
 
 - [-] Handle reset when dialog is closed
