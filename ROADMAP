@@ -14,10 +14,12 @@ Based on previous days work
 **** Maybe handle multiple theme, not only light/dark
 **** TODO Dialog may be used to modify items
 :LOGBOOK:
+CLOCK: [2022-12-14 mer. 01:13]--[2022-12-14 mer. 01:43] =>  0:30
 CLOCK: [2022-12-02 ven. 05:47]--[2022-12-02 ven. 05:52] =>  0:05
 :END:
 - [X] Modify then add back adds two item, the original and the modified ones
   see why
+- [X] Items can't be checked anymore in main page
 
 - [-] Handle reset when dialog is closed
   - [X] Event handled
@@ -31,7 +33,7 @@ CLOCK: [2022-12-02 ven. 05:47]--[2022-12-02 ven. 05:52] =>  0:05
   13 vulnerabilities (2 low, 3 moderate, 6 high, 2 critical)
   21/11/22: Electron switch from 19.1.5 to 19.1.6
   02/12/22: Upgrade multiple packages 
-  
+  14/12/22: =npm install -g npm@9.2.0=
 **** TODO More unit tests work
 :LOGBOOK:
 CLOCK: [2022-10-26 mer. 11:36]--[2022-10-26 mer. 11:53] =>  0:17

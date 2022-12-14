@@ -106,9 +106,10 @@ function save() {
   */
 function chore_onClick(choreid) {
     console.log("Chore div clicked! Id=" + choreid);
-    const cid = $("#"+choreid).each(function () {
+/*    const cid = $("#"+choreid).each(function () {
 	this.checked = !this.checked;
-    });
+	});
+	*/
     save();
 }
 
