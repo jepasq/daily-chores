@@ -248,8 +248,9 @@ $('#delete-button').on ('click', (event) => {
     chores_to_html(ct);
 });
 
-/// We're closing the dialog
+/// We're closing the dialog, reset to standard values
 $('#close-dialog-button').on ('click', (event) => {
-//function reset_dialog() {
     console.log("Closing dialog, about to reset");
+    $('#newChoreName').val("");
+    $('#newChoreDescription').val("");
 });

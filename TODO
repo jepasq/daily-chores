@@ -8,7 +8,8 @@ daily-chores - GPLv3 - An electron app. to check for daily chores.
     SLOC is the Physical line of flosse/sloc output on 'src/ test/'.
 
 * v0.0.1-11 (16 Nov. 2022 - ???) SLOC ???
-- (4) Fix the main page items behavior
+- (5) Closing dialog empty dialog's input fields
+- Fix the main page items behavior
 - Fix the modify double entry issue
 - Delete button event uses removeFromName
 - Finally fixed ChoreTemplate::remove implemention
