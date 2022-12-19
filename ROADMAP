@@ -14,6 +14,7 @@ Based on previous days work
 **** Maybe handle multiple theme, not only light/dark
 **** TODO Dialog may be used to modify items
 :LOGBOOK:
+CLOCK: [2022-12-19 lun. 03:54]--[2022-12-19 lun. 04:02] =>  0:08
 CLOCK: [2022-12-14 mer. 02:25]--[2022-12-14 mer. 02:32] =>  0:07
 CLOCK: [2022-12-14 mer. 01:13]--[2022-12-14 mer. 01:43] =>  0:30
 CLOCK: [2022-12-02 ven. 05:47]--[2022-12-02 ven. 05:52] =>  0:05
@@ -21,11 +22,11 @@ CLOCK: [2022-12-02 ven. 05:47]--[2022-12-02 ven. 05:52] =>  0:05
 - [X] Modify then add back adds two item, the original and the modified ones
   see why
 - [X] Items can't be checked anymore in main page
-
-- [-] Handle reset when dialog is closed
+- [X] Handle reset when dialog is closed
   - [X] Event handled
   - [X] Then, input should be set to ""
-  - [ ] Many buttons should re-become disabled
+  - [X] Many buttons should re-become disabled
+    reset_dialog_buttons
   
 - [ ] Add a dialog 'backdrop'
   as in https://stackoverflow.com/q/60767212

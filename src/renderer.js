@@ -200,6 +200,15 @@ function choreTemplate_onClick(id, name, desc) {
     globalDesc = desc;
 }
 
+/** Reset all dialog buttons to their initial status, just before the dialog
+ *  was opened.
+ *
+ */
+function reset_dialog_buttons() {
+    $('#modify-button').prop("disabled", false);
+    $('#delete-button').prop("disabled", false);
+}
+
 /** The dialog chores handling section's Modify buttons
  *
  */
@@ -253,4 +262,5 @@ $('#close-dialog-button').on ('click', (event) => {
     console.log("Closing dialog, about to reset");
     $('#newChoreName').val("");
     $('#newChoreDescription').val("");
+    reset_dialog_buttons();
 });
