@@ -8,9 +8,7 @@ var ls = {
         return null;
     },
 
-    setItem: function (key) {
-
-    }
+    setItem: function (key) { }
 }
 
 describe('ChoreTemplate Test', () => {
