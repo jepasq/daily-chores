@@ -13,7 +13,9 @@ CLOCK: [2022-12-21 mer. 06:36]--[2022-12-21 mer. 06:55] =>  0:19
 Based on previous days work
 - [ ] Start with unit tests and a custom source
 - [ ] May have an History::update() function that save the current day
-- [ ] Add a king of bar graph button for stats  
+- [ ] Add a king of bar graph button for stats
+  If we have access to fontawesome, =chart-bar= could be fun
+  <i class="fas fa-chart-bar"></i>
 **** May handle multi-items chores
 - [ ] Do x things. Modify it with a spinbox
 - [ ] Maybe also nested items ?  

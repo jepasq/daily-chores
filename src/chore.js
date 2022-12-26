@@ -13,7 +13,6 @@ class ChoreTemplate {
 		const jp = JSON.parse(this.localStorage.getItem('chore-template'));
 		this.chores = jp;
 		const nc = this.localStorage.getItem('nextchore-id');
-		console.log(nc);
 		if (nc === null) {
 		    console.log("nextchore-id is NULL. Not overriding.");
 		}
@@ -36,8 +35,6 @@ class ChoreTemplate {
 	}
     }
     isDefined() {
-	console.log("in Chore::isDefined(): "+
-		    JSON.parse(this.localStorage.getItem('chore-template')));
 	return this.localStorage.getItem('chore-template')!=null;
     }
 
@@ -50,15 +47,12 @@ class ChoreTemplate {
     
     // May use exception here
     add(item) {
-	console.log(this.chores + ' is a ' + typeof(this.chores));
-	console.log("Adding item : " + JSON.stringify(item));
 	item.id=this.nextchoreid;
 	this.chores.push(item);
 	this.nextchoreid += 1;
 
 	this.save();
-	console.log(this.localStorage.getItem('chore-template'));
-	this.debug();
+	//	this.debug();
     }
 
     // Save actual members in local storage
@@ -70,21 +64,16 @@ class ChoreTemplate {
 
     // Warning : reset localStorage
     reset() {
-	console.log("Local storage has benn reset");
+	console.log("Local storage has been reset");
 	localStorage.removeItem('chore-template');
 	this.chores = [];
     }
 
     /// Remove the given element from local storage
     remove(key) {
-	console.log("ChoreTemplate::remove() called for '"+JSON.stringify(key)
-		    +"' while content is actually '" +
-		    JSON.stringify(this.chores) + "'");
 	// Thanks to https://stackoverflow.com/a/5767357
 	const index = this.chores.indexOf(key);
 	if (index == -1){
-	    console.log("WARNING ChoreTemplate::remove(): Can't find key '" +
-			JSON.stringify(key) + "'");
 
 	    // Maybe the parameter is an obejct so we'll check text cmp
 	    var i=0;
@@ -104,9 +93,6 @@ class ChoreTemplate {
 
     /// Remove items containing given name
     removeFromName(name) {
-	console.log("ChoreTemplate::removeFromName() called for '"+name
-		    +"' while content is actually '" +
-		    JSON.stringify(this.chores) + "'");
 	// Thanks to https://stackoverflow.com/a/5767357
 	var i=0;
 	while (i < this.chores.length) {
