@@ -8,14 +8,15 @@
 **** May add a D3 chart to see today's work
 **** TODO Handle history and maybe graph
 :LOGBOOK:
+CLOCK: [2022-12-26 lun. 02:52]--[2022-12-26 lun. 03:09] =>  0:17
 CLOCK: [2022-12-21 mer. 06:36]--[2022-12-21 mer. 06:55] =>  0:19
 :END:
 Based on previous days work
-- [ ] Start with unit tests and a custom source
-- [ ] May have an History::update() function that save the current day
-- [ ] Add a king of bar graph button for stats
+- [X] Add a king of bar graph button for stats
   If we have access to fontawesome, =chart-bar= could be fun
   <i class="fas fa-chart-bar"></i>
+- [ ] Start with unit tests and a custom source
+- [ ] May have an History::update() function that save the current day
 **** May handle multi-items chores
 - [ ] Do x things. Modify it with a spinbox
 - [ ] Maybe also nested items ?  
