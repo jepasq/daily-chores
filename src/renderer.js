@@ -209,6 +209,10 @@ function reset_dialog_buttons() {
     $('#delete-button').prop("disabled", false);
 }
 
+function show_history_dialog() {
+    $('#historyModal').show({backdrop: 'static'})
+}
+
 /** The dialog chores handling section's Modify buttons
  *
  */
@@ -264,3 +268,12 @@ $('#close-dialog-button').on ('click', (event) => {
     $('#newChoreDescription').val("");
     reset_dialog_buttons();
 });
+
+$('#btn-history').on ('click', (event) => {
+    show_history_dialog();
+});
+
+$('#close-history-dialog-button').on ('click', (event) => {
+    $('#historyModal').hide();
+});
+
