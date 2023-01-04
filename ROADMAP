@@ -12,6 +12,7 @@
 **** Maybe handle multiple theme, not only light/dark
 **** TODO Handle history and maybe graph
 :LOGBOOK:
+CLOCK: [2023-01-04 mer. 07:08]--[2023-01-04 mer. 07:11] =>  0:03
 CLOCK: [2023-01-04 mer. 06:52]--[2023-01-04 mer. 07:02] =>  0:10
 CLOCK: [2022-12-29 jeu. 05:25]--[2022-12-29 jeu. 05:46] =>  0:21
 CLOCK: [2022-12-26 lun. 02:52]--[2022-12-26 lun. 03:09] =>  0:17
@@ -24,6 +25,7 @@ Based on previous days work
 - [X] Start with unit tests and a custom source
 - [X] Clicking button shows another dialog
 - [ ] May have an History::update() function that save the current day
+  Must add to the history array
 - [ ] renderer.js's show_dialog should be renamed to show_preferences_dialog  
 **** TODO Dialog may be used to modify items
 :LOGBOOK:

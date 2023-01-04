@@ -26,8 +26,8 @@ describe('History Test', () => {
     it('getLastDays returns an empty array by default', () => {
 	let hi = new History(ls);
 	const arr = hi.getLastDays();
-	assert.true(arr.isArray());
-	assert.isEqual(arr.length(), 0);
+	assert.equal(Array.isArray(arr), true);
+	assert.equal(arr.length, 0);
     });
 });
 
