@@ -15,7 +15,19 @@ describe('History Test', () => {
     it('can be instantiated', () => {
 	let hi = new History(ls);
         assert.notEqual(hi, null);
-	
+    });
+
+    it('has an update function', () => {
+	let hi = new History(ls);
+	hi.update();
+//        assert.notEqual(hi, null);
+    });
+
+    it('getLastDays returns an empty array by default', () => {
+	let hi = new History(ls);
+	const arr = hi.getLastDays();
+	assert.true(arr.isArray());
+	assert.isEqual(arr.length(), 0);
     });
 });
 
