@@ -8,7 +8,8 @@ daily-chores - GPLv3 - An electron app. to check for daily chores.
     SLOC is the Physical line of flosse/sloc output on 'src/ test/'.
 
 * v0.0.1-12 (19 Dec. 2022 - ???) SLOC ???
-- (5) Add basic failing histpry unit tests
+- (6) Add a failing test on history::update()
+- Add basic failing history unit tests
 - History/chart button shows dialog
 - Add a bar-chart icon button for history dialog
 - Remove mst of the Chores console.log to clean unit test output

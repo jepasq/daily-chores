@@ -29,5 +29,16 @@ describe('History Test', () => {
 	assert.equal(Array.isArray(arr), true);
 	assert.equal(arr.length, 0);
     });
+
+    it('update() had a new getLastDays element function', () => {
+	let hi = new History(ls);
+	const l1 = hi.getLastDays().length;
+	
+	hi.update();
+	const l2 = hi.getLastDays().length;
+	assert.equal(l2, l1+1);
+    });
+
+    
 });
 
