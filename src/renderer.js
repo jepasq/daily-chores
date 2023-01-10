@@ -138,6 +138,12 @@ $('#myModal .close').on ('click', (event) => {
     home_load();
 });
 
+$('#historyModal .close').on ('click', (event) => {
+    $('#historyModal').hide()
+    home_load();
+});
+
+
 /** Add a new chore to the chorelist
  *
  * Informations are directly taken from the preferences dialog inputs.
