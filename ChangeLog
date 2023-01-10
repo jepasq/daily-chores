@@ -1,3 +1,11 @@
+* v0.0.1-12 (19 Dec. 2022 - 10 Jan. 2023) SLOC 616
+- Add a failing test on history::update()
+- Add basic failing history unit tests
+- History/chart button shows dialog
+- Add a bar-chart icon button for history dialog
+- Remove mst of the Chores console.log to clean unit test output
+- Add an empty History class and first unit test
+
 * v0.0.1-11 (16 Nov. 2022 - 19 Dec. 2022) SLOC 554
 - Reset dialog's buttons when dialog is closed
 - Closing dialog empty dialog's input fields
