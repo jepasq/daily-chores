@@ -30,7 +30,7 @@ describe('History Test', () => {
 	assert.equal(arr.length, 0);
     });
 
-    it('update() had a new getLastDays element function', () => {
+    it('update() adds a new getLastDays element function', () => {
 	let hi = new History(ls);
 	const l1 = hi.getLastDays().length;
 	

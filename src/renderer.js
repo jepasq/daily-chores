@@ -10,7 +10,7 @@ require('bootstrap');
  */
 var globalName, globalDesc;
 
-function show_dialog() {
+function show_preferences_dialog() {
     $('#myModal').show({backdrop: 'static'})
     //    $('body').append($("<div class='modal-backdrop fade hide'></div>")
     let ct = new ChoreTemplate();
@@ -126,11 +126,11 @@ $('#reset-to-system').on ('click', (event) => {
 
 
 $('#btn-preferences').on ('click', (event) => {
-    show_dialog();
+    show_preferences_dialog();
 });
 
 $("#undefined-chore-template").on ('click', (event) => {
-    show_dialog();
+    show_preferences_dialog();
 });
 
 $('#myModal .close').on ('click', (event) => {
