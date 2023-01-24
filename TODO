@@ -8,5 +8,6 @@ daily-chores - GPLv3 - An electron app. to check for daily chores.
     SLOC is the Physical line of flosse/sloc output on 'src/ test/'.
 
 * v0.0.1-13 (10 Jan. 2023 - ???) SLOC ???
-- (2) Rename renderer.js function show_dialog() to show_preferences_dialog()
+- (3) Add date key to history::update() added object
+- Rename renderer.js function show_dialog() to show_preferences_dialog()
 - Can close history dialog with its cross button

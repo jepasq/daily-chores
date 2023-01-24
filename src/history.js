@@ -1,5 +1,6 @@
 class History {
     constructor() {
+	this.days = []
 /*	let d = new Date();
 	this.date = formatDate(d);
 	this.key =  'chore' + this.date;
@@ -9,12 +10,13 @@ class History {
 
     /// Update the history list with the current day(s)
     update() {
-
+	this.days.push({date: 'aze'})
+	
     }
 
     /// Returns the last saved days as an array
     getLastDays() {
-	return [];
+	return this.days;
     }
 }
 

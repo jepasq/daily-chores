@@ -39,6 +39,26 @@ describe('History Test', () => {
 	assert.equal(l2, l1+1);
     });
 
+    it('update() object has a date key', () => {
+	let hi = new History(ls);
+	hi.update();
+	const l2 = hi.getLastDays()[0];
+	assert.equal(l2.hasOwnProperty('date'), true);
+    });
+
+    it('update() date object is a date', () => {
+	let hi = new History(ls);
+	hi.update();
+	const d = hi.getLastDays()[0]['date'];
+	assert.equal(d instanceof Date, true);
+    });
     
+    it('update() object has chores and checked keys', () => {
+	let hi = new History(ls);
+	hi.update();
+	const l2 = hi.getLastDays()[0];
+	assert.equal(l2.hasOwnProperty('chores'),  true);
+	assert.equal(l2.hasOwnProperty('checked'), true);
+    });
 });
 
