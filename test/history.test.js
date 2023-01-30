@@ -46,11 +46,12 @@ describe('History Test', () => {
 	assert.equal(l2.hasOwnProperty('date'), true);
     });
 
-    it('update() date object is a date', () => {
+    it('update() date object is a formatted date', () => {
 	let hi = new History(ls);
 	hi.update();
 	const d = hi.getLastDays()[0]['date'];
-	assert.equal(d instanceof Date, true);
+	assert.equal(typeof d, "string");
+	assert.equal(d.length, 10);
     });
     
     it('update() object has chores and checked keys', () => {

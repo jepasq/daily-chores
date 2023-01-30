@@ -1,4 +1,4 @@
-const {formatDate, ChoreTemplate} = require('./date');
+const {formatDate} = require('./date');
 
 class History {
     constructor() {
@@ -12,10 +12,8 @@ class History {
 
     /// Update the history list with the current day(s)
     update() {
-	this.days.push({date: 'aze'})
-
 	let d = new Date();
-	this.date = formatDate(d);
+	this.days.push({date: formatDate(d)})
     }
 
     /// Returns the last saved days as an array
