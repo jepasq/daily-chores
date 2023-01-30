@@ -13,7 +13,11 @@ class History {
     /// Update the history list with the current day(s)
     update() {
 	let d = new Date();
-	this.days.push({date: formatDate(d)})
+	this.days.push({
+	    date: formatDate(d),
+	    chores: 0,
+	    checked: 0,
+	})
     }
 
     /// Returns the last saved days as an array

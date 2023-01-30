@@ -1,5 +1,6 @@
 const assert = require('assert');
 
+const {Chore, ChoreTemplate} = require('../src/chore');
 const {History} = require('../src/history');
 
 var ls = {
@@ -61,5 +62,19 @@ describe('History Test', () => {
 	assert.equal(l2.hasOwnProperty('chores'),  true);
 	assert.equal(l2.hasOwnProperty('checked'), true);
     });
+
+    it('update() chores number is ChoreTemplate\'s length', () => {
+	let ct = new ChoreTemplate(ls);
+	ct.add({'id':0});
+	ct.add({'id':1});
+	ct.add({'id':2});
+	var l1 = ct.chores.length;
+
+	let hi = new History(ls);
+	hi.update();
+	const l2 = hi.getLastDays()[0];
+	assert.equal(l2.chores,  l1);
+    });
+    
 });
 
