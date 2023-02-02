@@ -1,8 +1,11 @@
 const {formatDate} = require('./date');
+const {Chore, ChoreTemplate} = require('./chore');
 
 class History {
-    constructor() {
+    constructor( ls = localStorage) {
 	this.days = []
+	this.localStorage = ls;
+	
 /*	let d = new Date();
 	this.date = formatDate(d);
 	this.key =  'chore' + this.date;
@@ -13,9 +16,10 @@ class History {
     /// Update the history list with the current day(s)
     update() {
 	let d = new Date();
+	let ct = new ChoreTemplate(this.localStorage);
 	this.days.push({
 	    date: formatDate(d),
-	    chores: 0,
+	    chores: ct.chores.length,
 	    checked: 0,
 	})
     }

@@ -1,9 +1,3 @@
-//const { Chore, ChoreTemplate} = require('./chore');
-/*
-require('popper.js');
-require('bootstrap');
-*/
-
 /** These variables keep content of selected element from dialog between
  *  an element click  and the Modify button click.
  *
@@ -216,6 +210,9 @@ function reset_dialog_buttons() {
 }
 
 function show_history_dialog() {
+/*    let hi = new History();
+    $('#history-array-length').text(hi.getLastDays().length);
+  */  
     $('#historyModal').show({backdrop: 'static'})
 }
 

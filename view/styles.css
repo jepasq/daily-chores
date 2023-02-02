@@ -77,3 +77,6 @@ body {
     cursor: pointer;
 }
 
+#history-array-length {
+    font-style: italic;
+}

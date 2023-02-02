@@ -1,5 +1,6 @@
 const { app, BrowserWindow, ipcMain, nativeTheme } = require('electron');
 const {Chore, ChoreTemplate} = require('./chore');
+const {History} = require('./history');
       
 const path = require('path');
 
@@ -44,3 +45,11 @@ app.whenReady().then(() => {
 app.on('window-all-closed', () => {
   if (process.platform !== 'darwin') app.quit()
 })
+
+app.on ("before-quit", (event) => {
+    console.log("Exit: save history before closing app...");
+    let hi = new History();
+    hi.update();
+
+    process.exit (); // really let the app exit now
+});

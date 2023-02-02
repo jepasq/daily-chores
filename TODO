@@ -8,4 +8,5 @@ daily-chores - GPLv3 - An electron app. to check for daily chores.
     SLOC is the Physical line of flosse/sloc output on 'src/ test/'.
 
 * v0.0.1-14 (30 Jan. 2023 - ???) SLOC ???
-- (1) Bump http-cache-semantics dependency version from 4.1.0 to 4.1.1
+- (2) Trying app.on's before-quit to save History
+- Bump http-cache-semantics dependency version from 4.1.0 to 4.1.1

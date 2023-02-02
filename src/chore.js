@@ -1,4 +1,4 @@
-// Do not use 'require' here (called from renderer)
+const {formatDate} = require('./date');
 
 /** This is what you expect to be done each day
  *
