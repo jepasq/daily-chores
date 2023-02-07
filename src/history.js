@@ -17,6 +17,7 @@ class History {
     update() {
 	let d = new Date();
 	let ct = new ChoreTemplate(this.localStorage);
+	ct.debug();
 	this.days.push({
 	    date: formatDate(d),
 	    chores: ct.chores.length,

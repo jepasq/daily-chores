@@ -68,6 +68,7 @@ describe('History Test', () => {
 	ct.add({'id':0});
 	ct.add({'id':1});
 	ct.add({'id':2});
+	ct.save();
 	var l1 = ct.chores.length;
 
 	let hi = new History(ls);
