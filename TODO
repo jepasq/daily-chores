@@ -8,7 +8,8 @@ daily-chores - GPLv3 - An electron app. to check for daily chores.
     SLOC is the Physical line of flosse/sloc output on 'src/ test/'.
 
 * v0.0.1-14 (30 Jan. 2023 - ???) SLOC ???
-- (4) Rename History class to ChoresHistory to avoid name conflict
+- (5) Start to use eletron-log package from renderer process
+- Rename History class to ChoresHistory to avoid name conflict
 - Save added chores in fake localstorage trying to fix UT
 - Trying app.on's before-quit to save History
 - Bump http-cache-semantics dependency version from 4.1.0 to 4.1.1

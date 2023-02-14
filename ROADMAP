@@ -75,11 +75,14 @@ CLOCK: [2022-12-02 ven. 05:47]--[2022-12-02 ven. 05:52] =>  0:05
   14/12/22: =npm install -g npm@9.2.0=
 **** TODO More unit tests work
 :LOGBOOK:
+CLOCK: [2023-02-14 mar. 13:36]--[2023-02-14 mar. 13:50] =>  0:14
 CLOCK: [2022-10-26 mer. 11:36]--[2022-10-26 mer. 11:53] =>  0:17
 :END:
 - [X] npm update : must test after
   npm install -g npm@9.1.2
-- [ ] May add a logger to avoid log message while running tests  
+- [X] May add a logger to avoid log message while running tests
+  may test https://www.npmjs.com/package/electron-log
+  Start from the renderer process. May use more.
 - [ ] Test this on another branch
   see https://www.electronjs.org/fr/docs/latest/tutorial/automated-testing
 **** DONE More dialog work

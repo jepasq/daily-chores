@@ -1,10 +1,16 @@
-const { app, BrowserWindow, ipcMain, nativeTheme } = require('electron');
+const {app, BrowserWindow, ipcMain, nativeTheme} = require('electron');
 const {Chore, ChoreTemplate} = require('./chore');
 const {History} = require('./history');
       
 const path = require('path');
+const log = require('electron-log');
 
 const createWindow = () => {
+    //    log.initialize({ preload: true });
+    log.transports.file.level = 'info' 
+    log.transports.console.level = 'info'
+    log.info('Log from the main process');
+    
     const win = new BrowserWindow({
 	width: 800,
 	height: 600,

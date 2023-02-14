@@ -26,6 +26,15 @@ To run unit tests :
 
 	npm test
 
+# Log file
+
+For logging, we use [electron-log](https://www.npmjs.com/package/electron-log).
+By default, it writes logs to the following locations:
+
+* on Linux: ~/.config/daily-chores/logs/main.log
+* on macOS: ~/Library/Logs/daily-chores/main.log
+* on Windows: %USERPROFILE%\AppData\Roaming\daily-chores\logs\main.log
+
 # License
 
 `daily-chores` is licensed under GPL v3 or later.
