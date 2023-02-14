@@ -1,7 +1,7 @@
 const {formatDate} = require('./date');
 const {Chore, ChoreTemplate} = require('./chore');
 
-class History {
+class ChoresHistory {
     constructor( ls = localStorage) {
 	this.days = []
 	this.localStorage = ls;
@@ -31,4 +31,4 @@ class History {
     }
 }
 
-module.exports = {History};
+module.exports = {ChoresHistory};

@@ -12,6 +12,7 @@
 **** Maybe handle multiple theme, not only light/dark
 **** TODO Handle history and maybe graph
 :LOGBOOK:
+CLOCK: [2023-02-14 mar. 11:40]--[2023-02-14 mar. 11:57] =>  0:17
 CLOCK: [2023-02-07 mar. 11:13]--[2023-02-07 mar. 11:34] =>  0:21
 CLOCK: [2023-02-02 jeu. 10:32]--[2023-02-02 jeu. 11:00] =>  0:28
 CLOCK: [2023-01-30 lun. 10:35]--[2023-01-30 lun. 10:43] =>  0:08
@@ -39,6 +40,9 @@ Based on previous days work
 - [X] History update must be called when we quit app
   Trying app.on "before-quit" in main.js
 - [ ] Print history length in dialog to be sure it works
+  Already created as #history-array-length
+  - [ ] We have an illegal constructor error. It seems it tries to create
+    a History (web API) object. Rename as ChoresHistory
   
 - [ ] May have an History::update() function that save the current day
   Must add an item to the history array to fix current unit tests

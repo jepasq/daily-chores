@@ -1,7 +1,7 @@
 const assert = require('assert');
 
 const {Chore, ChoreTemplate} = require('../src/chore');
-const {History} = require('../src/history');
+const {ChoresHistory} = require('../src/history');
 
 var ls = {
     getItem: function (key) {
@@ -12,27 +12,27 @@ var ls = {
     setItem: function (key) { }
 }
 
-describe('History Test', () => {
+describe('ChoresHistory Test', () => {
     it('can be instantiated', () => {
-	let hi = new History(ls);
+	let hi = new ChoresHistory(ls);
         assert.notEqual(hi, null);
     });
 
     it('has an update function', () => {
-	let hi = new History(ls);
+	let hi = new ChoresHistory(ls);
 	hi.update();
 //        assert.notEqual(hi, null);
     });
 
     it('getLastDays returns an empty array by default', () => {
-	let hi = new History(ls);
+	let hi = new ChoresHistory(ls);
 	const arr = hi.getLastDays();
 	assert.equal(Array.isArray(arr), true);
 	assert.equal(arr.length, 0);
     });
 
     it('update() adds a new getLastDays element function', () => {
-	let hi = new History(ls);
+	let hi = new ChoresHistory(ls);
 	const l1 = hi.getLastDays().length;
 	
 	hi.update();
@@ -41,14 +41,14 @@ describe('History Test', () => {
     });
 
     it('update() object has a date key', () => {
-	let hi = new History(ls);
+	let hi = new ChoresHistory(ls);
 	hi.update();
 	const l2 = hi.getLastDays()[0];
 	assert.equal(l2.hasOwnProperty('date'), true);
     });
 
     it('update() date object is a formatted date', () => {
-	let hi = new History(ls);
+	let hi = new ChoresHistory(ls);
 	hi.update();
 	const d = hi.getLastDays()[0]['date'];
 	assert.equal(typeof d, "string");
@@ -56,7 +56,7 @@ describe('History Test', () => {
     });
     
     it('update() object has chores and checked keys', () => {
-	let hi = new History(ls);
+	let hi = new ChoresHistory(ls);
 	hi.update();
 	const l2 = hi.getLastDays()[0];
 	assert.equal(l2.hasOwnProperty('chores'),  true);
@@ -71,7 +71,7 @@ describe('History Test', () => {
 	ct.save();
 	var l1 = ct.chores.length;
 
-	let hi = new History(ls);
+	let hi = new ChoresHistory(ls);
 	hi.update();
 	const l2 = hi.getLastDays()[0];
 	assert.equal(l2.chores,  l1);
