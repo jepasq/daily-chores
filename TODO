@@ -7,10 +7,5 @@ daily-chores - GPLv3 - An electron app. to check for daily chores.
     Update version and revision in index.html
     SLOC is the Physical line of flosse/sloc output on 'src/ test/'.
 
-* v0.0.1-14 (30 Jan. 2023 - ???) SLOC ???
-- (6) Some package-lock.json upgrade
-- Start to use eletron-log package from renderer process
-- Rename History class to ChoresHistory to avoid name conflict
-- Save added chores in fake localstorage trying to fix UT
-- Trying app.on's before-quit to save History
-- Bump http-cache-semantics dependency version from 4.1.0 to 4.1.1
+* v0.0.1-15 (12 Feb. 2023 - ???) SLOC ???
+

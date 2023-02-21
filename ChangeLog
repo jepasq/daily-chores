@@ -1,3 +1,11 @@
+* v0.0.1-14 (30 Jan. 2023 - 12 Feb. 2023) SLOC 690
+- Some package-lock.json upgrade
+- Start to use eletron-log package from renderer process
+- Rename History class to ChoresHistory to avoid name conflict
+- Save added chores in fake localstorage trying to fix UT
+- Trying app.on's before-quit to save History
+- Bump http-cache-semantics dependency version from 4.1.0 to 4.1.1
+
 * v0.0.1-13 (10 Jan. 2023 - 30 Jan. 2023) SLOC 667
 - Fix last history unit test and add a new ChoreTemplate-based failing one
 - Fix formatted date unit test for history::update
