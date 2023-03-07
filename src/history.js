@@ -1,6 +1,12 @@
 const {formatDate} = require('./date');
 const {Chore, ChoreTemplate} = require('./chore');
 
+/** Handles an History array of chores value used to draw plots
+ *
+ * Note: renamed from History to avoid a name colision with browser's Hisrtory
+ *   prototype (see https://developer.mozilla.org/en-US/docs/Web/API/History).
+ *
+ */
 class ChoresHistory {
     constructor( ls = localStorage) {
 	this.days = []

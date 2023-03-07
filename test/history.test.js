@@ -3,6 +3,9 @@ const assert = require('assert');
 const {Chore, ChoreTemplate} = require('../src/chore');
 const {ChoresHistory} = require('../src/history');
 
+/** A very simple fake localstorage used to check saved dataz consistency
+ *
+ */
 var ls = {
     getItem: function (key) {
         if( key === 'id_token' ){ return /* a token object */; }
