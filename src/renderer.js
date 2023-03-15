@@ -1,7 +1,6 @@
 
 // Chore is already declared
 //const {ChoreTemplate} = require('./chore');
-//const {ChoresHistory} = require('./history');
 
 /** These variables keep content of selected element from dialog between
  *  an element click  and the Modify button click.

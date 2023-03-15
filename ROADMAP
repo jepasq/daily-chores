@@ -12,6 +12,7 @@
 **** Maybe handle multiple theme, not only light/dark
 **** TODO Handle history and maybe graph
 :LOGBOOK:
+CLOCK: [2023-03-15 mer. 07:48]--[2023-03-15 mer. 08:15] =>  0:27
 CLOCK: [2023-02-14 mar. 11:40]--[2023-02-14 mar. 11:57] =>  0:17
 CLOCK: [2023-02-07 mar. 11:13]--[2023-02-07 mar. 11:34] =>  0:21
 CLOCK: [2023-02-02 jeu. 10:32]--[2023-02-02 jeu. 11:00] =>  0:28
@@ -36,9 +37,12 @@ Based on previous days work
 - [X] Clicking button shows another dialog
 - [X] Can close history dialog with its cross button
 - [X] renderer.js's show_dialog should be renamed to show_preferences_dialog  
-
 - [X] History update must be called when we quit app
   Trying app.on "before-quit" in main.js
+- [X] Can't open history dialog anymore
+  show_history_dialog(): ChoresHistory is not defined
+  Is due to require keyword but now, tests won't work
+  
 - [ ] Print history length in dialog to be sure it works
   Already created as #history-array-length
   - [ ] We have an illegal constructor error. It seems it tries to create
