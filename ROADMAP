@@ -42,10 +42,9 @@ Based on previous days work
 - [X] Can't open history dialog anymore
   show_history_dialog(): ChoresHistory is not defined
   Is due to require keyword but now, tests won't work
-  
-- [ ] Print history length in dialog to be sure it works
+- [X] Print history length in dialog to be sure it works
   Already created as #history-array-length
-  - [ ] We have an illegal constructor error. It seems it tries to create
+  - [X] We have an illegal constructor error. It seems it tries to create
     a History (web API) object. Rename as ChoresHistory
   
 - [ ] May have an History::update() function that save the current day
