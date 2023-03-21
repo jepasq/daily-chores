@@ -10,7 +10,50 @@
 - [ ] Do x things. Modify it with a spinbox
 - [ ] Maybe also nested items ?  
 **** Maybe handle multiple theme, not only light/dark
-**** TODO Handle history and maybe graph
+**** More dialog work    
+- [ ] May have an ChoresHistory::update() function that save the current day
+  Must add an item to the history array to fix current unit tests
+  - [ ] First, add today's date, then number of chore items and number of
+    checked ones.
+
+- [ ] Add a dialog 'backdrop'
+  as in https://stackoverflow.com/q/60767212
+  
+- [ ] May regularly run =npm audit fix=
+  13 vulnerabilities (2 low, 3 moderate, 6 high, 2 critical)
+  21/11/22: Electron switch from 19.1.5 to 19.1.6
+  02/12/22: Upgrade multiple packages 
+  14/12/22: =npm install -g npm@9.2.0=
+    
+**** TODO More unit tests work
+:LOGBOOK:
+CLOCK: [2023-02-14 mar. 13:36]--[2023-02-14 mar. 13:50] =>  0:14
+CLOCK: [2022-10-26 mer. 11:36]--[2022-10-26 mer. 11:53] =>  0:17
+:END:
+- [X] npm update : must test after
+  npm install -g npm@9.1.2
+- [X] May add a logger to avoid log message while running tests
+  may test https://www.npmjs.com/package/electron-log
+  Start from the renderer process. May use more.
+- [ ] Test this on another branch
+  see https://www.electronjs.org/fr/docs/latest/tutorial/automated-testing
+**** DONE Dialog may be used to modify items
+:LOGBOOK:
+CLOCK: [2022-12-19 lun. 03:54]--[2022-12-19 lun. 04:02] =>  0:08
+CLOCK: [2022-12-14 mer. 02:25]--[2022-12-14 mer. 02:32] =>  0:07
+CLOCK: [2022-12-14 mer. 01:13]--[2022-12-14 mer. 01:43] =>  0:30
+CLOCK: [2022-12-02 ven. 05:47]--[2022-12-02 ven. 05:52] =>  0:05
+:END:
+- [X] Modify then add back adds two item, the original and the modified ones
+  see why
+- [X] Items can't be checked anymore in main page
+- [X] Handle reset when dialog is closed
+  - [X] Event handled
+  - [X] Then, input should be set to ""
+  - [X] Many buttons should re-become disabled
+    reset_dialog_buttons
+  
+**** DONE Handle history and maybe graph
 :LOGBOOK:
 CLOCK: [2023-03-15 mer. 07:48]--[2023-03-15 mer. 08:15] =>  0:27
 CLOCK: [2023-02-14 mar. 11:40]--[2023-02-14 mar. 11:57] =>  0:17
@@ -46,48 +89,7 @@ Based on previous days work
   Already created as #history-array-length
   - [X] We have an illegal constructor error. It seems it tries to create
     a History (web API) object. Rename as ChoresHistory
-  
-- [ ] May have an History::update() function that save the current day
-  Must add an item to the history array to fix current unit tests
-  - [ ] First, add today's date, then number of chore items and number of
-    checked ones.
-    
-**** TODO Dialog may be used to modify items
-:LOGBOOK:
-CLOCK: [2022-12-19 lun. 03:54]--[2022-12-19 lun. 04:02] =>  0:08
-CLOCK: [2022-12-14 mer. 02:25]--[2022-12-14 mer. 02:32] =>  0:07
-CLOCK: [2022-12-14 mer. 01:13]--[2022-12-14 mer. 01:43] =>  0:30
-CLOCK: [2022-12-02 ven. 05:47]--[2022-12-02 ven. 05:52] =>  0:05
-:END:
-- [X] Modify then add back adds two item, the original and the modified ones
-  see why
-- [X] Items can't be checked anymore in main page
-- [X] Handle reset when dialog is closed
-  - [X] Event handled
-  - [X] Then, input should be set to ""
-  - [X] Many buttons should re-become disabled
-    reset_dialog_buttons
-  
-- [ ] Add a dialog 'backdrop'
-  as in https://stackoverflow.com/q/60767212
-  
-- [ ] May regularly run =npm audit fix=
-  13 vulnerabilities (2 low, 3 moderate, 6 high, 2 critical)
-  21/11/22: Electron switch from 19.1.5 to 19.1.6
-  02/12/22: Upgrade multiple packages 
-  14/12/22: =npm install -g npm@9.2.0=
-**** TODO More unit tests work
-:LOGBOOK:
-CLOCK: [2023-02-14 mar. 13:36]--[2023-02-14 mar. 13:50] =>  0:14
-CLOCK: [2022-10-26 mer. 11:36]--[2022-10-26 mer. 11:53] =>  0:17
-:END:
-- [X] npm update : must test after
-  npm install -g npm@9.1.2
-- [X] May add a logger to avoid log message while running tests
-  may test https://www.npmjs.com/package/electron-log
-  Start from the renderer process. May use more.
-- [ ] Test this on another branch
-  see https://www.electronjs.org/fr/docs/latest/tutorial/automated-testing
+
 **** DONE More dialog work
 :LOGBOOK:
 CLOCK: [2022-11-21 lun. 03:46]--[2022-11-21 lun. 03:57] =>  0:11
