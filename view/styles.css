@@ -80,3 +80,14 @@ body {
 #history-array-length {
     font-style: italic;
 }
+
+#history-graph {
+    width: 80%;
+    height: 200px;
+    background: #99C;
+
+    border-style: inset;
+    border-width: 2px;
+
+    margin: auto;
+}

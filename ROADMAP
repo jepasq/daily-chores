@@ -5,16 +5,23 @@
 *** TODO v0.0.2
 **** May handle a theme editor
      and so, a fully customizable one
-**** May add a D3 chart to see today's work
+**** May add a D3 chart to see historic work
+:LOGBOOK:
+CLOCK: [2023-03-24 ven. 09:14]--[2023-03-24 ven. 09:28] =>  0:14
+:END:
+- [ ] Add d3 markup
+  =d3 is not defined=
 **** May handle multi-items chores
 - [ ] Do x things. Modify it with a spinbox
 - [ ] Maybe also nested items ?  
 **** Maybe handle multiple theme, not only light/dark
-**** More dialog work    
+**** More dialog work
 - [ ] May have an ChoresHistory::update() function that save the current day
   Must add an item to the history array to fix current unit tests
   - [ ] First, add today's date, then number of chore items and number of
     checked ones.
+
+- [ ] May need to add a 'no-script' message
 
 - [ ] Add a dialog 'backdrop'
   as in https://stackoverflow.com/q/60767212
@@ -31,7 +38,7 @@ CLOCK: [2023-02-14 mar. 13:36]--[2023-02-14 mar. 13:50] =>  0:14
 CLOCK: [2022-10-26 mer. 11:36]--[2022-10-26 mer. 11:53] =>  0:17
 :END:
 - [X] npm update : must test after
-  npm install -g npm@9.1.2
+  =npm install -g npm@9.1.2=
 - [X] May add a logger to avoid log message while running tests
   may test https://www.npmjs.com/package/electron-log
   Start from the renderer process. May use more.

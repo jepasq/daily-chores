@@ -217,6 +217,9 @@ function show_history_dialog() {
     let hi = new ChoresHistory();
     $('#history-array-length').text(hi.getLastDays().length);
 
+//    d3.select("#history-graph")
+
+    
     $('#historyModal').show({backdrop: 'static'})
 }
 
