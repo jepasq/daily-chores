@@ -8,6 +8,7 @@ daily-chores - GPLv3 - An electron app. to check for daily chores.
     SLOC is the Physical line of flosse/sloc output on 'src/ test/'.
 
 * v0.0.1-15 (12 Feb. 2023 - ???) SLOC ???
-- (3) Add history graph div and style
+- (4) Add a noscript message
+- Add history graph div and style
 - Close and merge two dialog-related ROADMAP section
 - Fix history dialog opening issue
