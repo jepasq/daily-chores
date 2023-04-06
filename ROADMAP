@@ -17,6 +17,7 @@ CLOCK: [2023-03-24 ven. 09:14]--[2023-03-24 ven. 09:28] =>  0:14
 **** Maybe handle multiple theme, not only light/dark
 **** TODO More dialog work
 :LOGBOOK:
+CLOCK: [2023-04-06 jeu. 09:32]--[2023-04-06 jeu. 09:57] =>  0:25
 CLOCK: [2023-03-30 jeu. 11:03]--[2023-03-30 jeu. 11:16] =>  0:13
 CLOCK: [2023-03-30 jeu. 10:39]--[2023-03-30 jeu. 10:49] =>  0:10
 :END:
@@ -24,7 +25,8 @@ CLOCK: [2023-03-30 jeu. 10:39]--[2023-03-30 jeu. 10:49] =>  0:10
 - [X] Include d3 js from a local source to avoid a crossorigin error
 
 - [ ] Adding chores doesn't work anymore
-
+  due to a =ChoreTemplate is not defined= error
+  
 - [ ] May have an ChoresHistory::update() function that save the current day
   Must add an item to the history array to fix current unit tests
   - [ ] First, add today's date, then number of chore items and number of
