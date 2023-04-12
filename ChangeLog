@@ -1,3 +1,11 @@
+* v0.0.1-15 (12 Feb. 2023 - ???) SLOC 701
+- Fix adding item issue imprting chore.js directly from index.html
+- Add D3 JS from local source instead of non working CDN
+- Add a noscript message
+- Add history graph div and style
+- Close and merge two dialog-related ROADMAP section
+- Fix history dialog opening issue
+
 * v0.0.1-14 (30 Jan. 2023 - 12 Feb. 2023) SLOC 690
 - Some package-lock.json upgrade
 - Start to use eletron-log package from renderer process
