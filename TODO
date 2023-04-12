@@ -8,7 +8,8 @@ daily-chores - GPLv3 - An electron app. to check for daily chores.
     SLOC is the Physical line of flosse/sloc output on 'src/ test/'.
 
 * v0.0.1-15 (12 Feb. 2023 - ???) SLOC ???
-- (5) Add D3 JS from local source instead of non working CDN
+- (6) Fix adding item issue imprting chore.js directly from index.html
+- Add D3 JS from local source instead of non working CDN
 - Add a noscript message
 - Add history graph div and style
 - Close and merge two dialog-related ROADMAP section
