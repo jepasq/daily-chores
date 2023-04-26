@@ -8,10 +8,13 @@
      and so, a fully customizable one
 **** May add a D3 chart to see historic work
 :LOGBOOK:
+CLOCK: [2023-04-26 mer. 13:35]--[2023-04-26 mer. 13:52] =>  0:17
 CLOCK: [2023-03-24 ven. 09:14]--[2023-03-24 ven. 09:28] =>  0:14
 :END:
-- [ ] Add d3 markup
+- [X] Add d3 markup
   =d3 is not defined=
+- [ ] Add an example bar graph
+  Always the =ReferenceError: d3 is not defined= error
 **** May handle multi-items chores
 - [ ] Do x things. Modify it with a spinbox
 - [ ] Maybe also nested items ?  

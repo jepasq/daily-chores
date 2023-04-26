@@ -38,3 +38,8 @@ class ChoresHistory {
 }
 
 module.exports = {ChoresHistory};
+
+var svg = d3.select("svg"),
+    margin = 200,
+    width = svg.attr("width") - margin,
+    height = svg.attr("height") - margin;
