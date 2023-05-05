@@ -8,4 +8,5 @@ daily-chores - GPLv3 - An electron app. to check for daily chores.
     SLOC is the Physical line of flosse/sloc output on 'src/ test/'.
 
 * v0.0.1-16 (12 Feb. 2023 - ???) SLOC ???
-- (1) History graph is now a SVG element (was a div)
+- (2) Add d3 npm module dependency
+- History graph is now a SVG element (was a div)

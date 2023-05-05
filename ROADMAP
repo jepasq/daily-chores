@@ -21,6 +21,7 @@ CLOCK: [2023-03-24 ven. 09:14]--[2023-03-24 ven. 09:28] =>  0:14
 **** Maybe handle multiple theme, not only light/dark
 **** TODO More dialog work
 :LOGBOOK:
+CLOCK: [2023-05-05 ven. 11:03]--[2023-05-05 ven. 11:10] =>  0:07
 CLOCK: [2023-04-12 mer. 09:14]--[2023-04-12 mer. 09:25] =>  0:11
 CLOCK: [2023-04-06 jeu. 09:32]--[2023-04-06 jeu. 09:57] =>  0:25
 CLOCK: [2023-03-30 jeu. 11:03]--[2023-03-30 jeu. 11:16] =>  0:13
@@ -47,9 +48,10 @@ CLOCK: [2023-03-30 jeu. 10:39]--[2023-03-30 jeu. 10:49] =>  0:10
   02/12/22: Upgrade multiple packages 
   14/12/22: =npm install -g npm@9.2.0=
   12/04/23: nothing again
-  
+  05/05/2023 =npm install -g npm@9.6.6=
 **** TODO More unit tests work
 :LOGBOOK:
+CLOCK: [2023-05-05 ven. 11:11]--[2023-05-05 ven. 11:26] =>  0:15
 CLOCK: [2023-02-14 mar. 13:36]--[2023-02-14 mar. 13:50] =>  0:14
 CLOCK: [2022-10-26 mer. 11:36]--[2022-10-26 mer. 11:53] =>  0:17
 :END:
@@ -58,6 +60,8 @@ CLOCK: [2022-10-26 mer. 11:36]--[2022-10-26 mer. 11:53] =>  0:17
 - [X] May add a logger to avoid log message while running tests
   may test https://www.npmjs.com/package/electron-log
   Start from the renderer process. May use more.
+- [ ] Running unit test fire this error =d3 is not defined=
+  Try to install the d3 npm module
 - [ ] Test this on another branch
   see https://www.electronjs.org/fr/docs/latest/tutorial/automated-testing
 **** DONE Dialog may be used to modify items

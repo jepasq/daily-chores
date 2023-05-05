@@ -1,5 +1,7 @@
 const assert = require('assert');
 
+const d3  = require('d3');
+
 const {Chore, ChoreTemplate} = require('../src/chore');
 const {ChoresHistory} = require('../src/history');
 
