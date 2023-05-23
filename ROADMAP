@@ -36,7 +36,8 @@ CLOCK: [2023-03-30 jeu. 10:39]--[2023-03-30 jeu. 10:49] =>  0:10
   Must add an item to the history array to fix current unit tests
   - [ ] First, add today's date, then number of chore items and number of
     checked ones.
-
+  - [ ] Currently a =d3.select is not a function= error when running tests
+    
 - [ ] May set an application icon https://stackoverflow.com/a/31538436
 
 - [ ] Add a dialog 'backdrop'

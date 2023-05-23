@@ -1,6 +1,8 @@
 //const {formatDate} = require('./date');
 //const {Chore, ChoreTemplate} = require('./chore');
 
+const d3  = import('d3');
+
 /** Handles an History array of chores value used to draw plots
  *
  * Note: renamed from History to avoid a name colision with browser's Hisrtory
@@ -39,7 +41,7 @@ class ChoresHistory {
 
 module.exports = {ChoresHistory};
 
-var svg = d3.select("svg"),
-    margin = 200,
-    width = svg.attr("width") - margin,
-    height = svg.attr("height") - margin;
+var svg = d3.select("svg");
+margin = 200;
+width = svg.attr("width") - margin;
+height = svg.attr("height") - margin;

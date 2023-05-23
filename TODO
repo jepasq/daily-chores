@@ -8,6 +8,7 @@ daily-chores - GPLv3 - An electron app. to check for daily chores.
     SLOC is the Physical line of flosse/sloc output on 'src/ test/'.
 
 * v0.0.1-16 (12 Feb. 2023 - ???) SLOC ???
-- (3) index.html uses d3 from node_module, remove ext/d3
+- (4) Just fixed the d3 import error in tests
+- index.html uses d3 from node_module, remove ext/d3
 - Add d3 npm module dependency
 - History graph is now a SVG element (was a div)

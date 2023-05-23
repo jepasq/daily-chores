@@ -1,6 +1,7 @@
 const assert = require('assert');
 
-const d3  = require('d3');
+const d3  = import('d3');
+// import * as d3 from "d3"; // Can't : we're not in a "module"
 
 const {Chore, ChoreTemplate} = require('../src/chore');
 const {ChoresHistory} = require('../src/history');
