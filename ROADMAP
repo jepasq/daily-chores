@@ -52,6 +52,7 @@ CLOCK: [2023-03-30 jeu. 10:39]--[2023-03-30 jeu. 10:49] =>  0:10
   05/05/2023 =npm install -g npm@9.6.6=
 **** TODO More unit tests work
 :LOGBOOK:
+CLOCK: [2023-06-01 jeu. 05:24]--[2023-06-01 jeu. 05:51] =>  0:27
 CLOCK: [2023-05-05 ven. 11:11]--[2023-05-05 ven. 11:26] =>  0:15
 CLOCK: [2023-02-14 mar. 13:36]--[2023-02-14 mar. 13:50] =>  0:14
 CLOCK: [2022-10-26 mer. 11:36]--[2022-10-26 mer. 11:53] =>  0:17
@@ -61,8 +62,9 @@ CLOCK: [2022-10-26 mer. 11:36]--[2022-10-26 mer. 11:53] =>  0:17
 - [X] May add a logger to avoid log message while running tests
   may test https://www.npmjs.com/package/electron-log
   Start from the renderer process. May use more.
-- [ ] Running unit test fire this error =d3 is not defined=
+- [X] Running unit test fire this error =d3 is not defined=
   Try to install the d3 npm module
+- [ ] Now =TypeError: d3.select is not a function=
 - [ ] Test this on another branch
   see https://www.electronjs.org/fr/docs/latest/tutorial/automated-testing
 **** DONE Dialog may be used to modify items
