@@ -1,7 +1,6 @@
 //const {formatDate} = require('./date');
 //const {Chore, ChoreTemplate} = require('./chore');
 
-const d3  = import('d3');
 
 /** Handles an History array of chores value used to draw plots
  *
@@ -14,11 +13,10 @@ class ChoresHistory {
 	this.days = []
 	this.localStorage = ls;
 	
-/*	let d = new Date();
+	let d = new Date();
 	this.date = formatDate(d);
 	this.key =  'chore' + this.date;
 	console.log("Saving chores for today ("+this.date+")");
-*/
 
     }
 
@@ -42,7 +40,3 @@ class ChoresHistory {
 
 module.exports = {ChoresHistory};
 
-var svg = d3.select("svg");
-margin = 200;
-width = svg.attr("width") - margin;
-height = svg.attr("height") - margin;
