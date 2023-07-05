@@ -1,3 +1,4 @@
+/* Needed for unit tests only */
 //const {formatDate} = require('./date');
 //const {Chore, ChoreTemplate} = require('./chore');
 

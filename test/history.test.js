@@ -5,6 +5,7 @@ const d3  = import('d3');
 
 const {Chore, ChoreTemplate} = require('../src/chore');
 const {ChoresHistory} = require('../src/history');
+const {formatDate} = require('../src/date');
 
 /** A very simple fake localstorage used to check saved dataz consistency
  *
