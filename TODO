@@ -8,4 +8,5 @@ daily-chores - GPLv3 - An electron app. to check for daily chores.
     SLOC is the Physical line of flosse/sloc output on 'src/ test/'.
 
 * v0.0.1-17 (26 Jun. 2023 - ???) SLOC ???
-- (1) ROADMAP update
+- (2) Upgrade semver dependency from 6.3.0 to 6.3.1
+- ROADMAP update
