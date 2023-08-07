@@ -19,6 +19,8 @@ CLOCK: [2023-03-24 ven. 09:14]--[2023-03-24 ven. 09:28] =>  0:14
 - [ ] Do x things. Modify it with a spinbox
 - [ ] Maybe also nested items ?  
 **** Maybe handle multiple theme, not only light/dark
+**** May switch to abstract-level for persistance
+https://github.com/Level/abstract-level
 **** TODO More dialog work
 :LOGBOOK:
 CLOCK: [2023-06-19 lun. 08:02]--[2023-06-19 lun. 08:49] =>  0:47
@@ -50,7 +52,8 @@ CLOCK: [2023-03-30 jeu. 10:39]--[2023-03-30 jeu. 10:49] =>  0:10
   02/12/22: Upgrade multiple packages 
   14/12/22: =npm install -g npm@9.2.0=
   12/04/23: nothing again
-  05/05/2023 =npm install -g npm@9.6.6=
+  05/05/23: =npm install -g npm@9.6.6=
+  07/08/23: no update
 **** TODO More unit tests work
 :LOGBOOK:
 CLOCK: [2023-07-05 mer. 13:51]--[2023-07-05 mer. 14:08] =>  0:17
