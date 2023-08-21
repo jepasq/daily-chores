@@ -35,6 +35,19 @@ By default, it writes logs to the following locations:
 * on macOS: ~/Library/Logs/daily-chores/main.log
 * on Windows: %USERPROFILE%\AppData\Roaming\daily-chores\logs\main.log
 
+# API documentation
+
+API documentation can be generated with `jsdoc`. Since this binary can't be
+found on official arch/manjaro repositories, you have to build it from 
+[https://aur.archlinux.org/packages/nodejs-jsdoc](AUR) :
+
+	git clone https://aur.archlinux.org/nodejs-jsdoc.git
+	cd nodejs-jsdoc
+	less PKGBUILD  # To check for the script
+	makepkg
+	sudo pamac install nodejs-jsdoc-*-any.pkg.tar.zst
+
+
 # License
 
 `daily-chores` is licensed under GPL v3 or later.
