@@ -1,5 +1,8 @@
 /* Needed for unit tests only */
-//const {formatDate} = require('./date');
+
+if (process.env.npm_command == "test") {
+    const {formatDate} = require('./date');
+}
 //const {Chore, ChoreTemplate} = require('./chore');
 
 
