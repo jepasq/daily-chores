@@ -47,6 +47,8 @@ found on official arch/manjaro repositories, you have to build it from
 	makepkg
 	sudo pamac install nodejs-jsdoc-*-any.pkg.tar.zst
 
+Then, call `make doc`. You can now found HTML documentation in the `doc/`
+directory.
 
 # License
 

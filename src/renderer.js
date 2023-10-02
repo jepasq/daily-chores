@@ -19,7 +19,7 @@ function show_preferences_dialog() {
 
 /** Clear and feed HTML using in-memory ChoreTemplate
  *
- * \param ct The ChoreTemplate object.
+ * @param ct The ChoreTemplate object.
  *
  */
 function chores_to_html(ct) {
@@ -36,7 +36,12 @@ function chores_to_html(ct) {
     });
 }
 
-/// Set the initial state of the homepage
+/** Set the initial state of the homepage
+ *
+ * It is notably used to set the current day's date and run the initial
+ * {@link ChoreTemplate} load. 
+ *
+ */
 function home_load() {
     let today = new Date().toLocaleDateString();
     $('#today-date').html(today);
@@ -76,14 +81,20 @@ function home_load() {
     
 }
 
-/** Show then show a notification alert indicating we saved current state.
+/** Show a notification alert indicating we saved current state.
+ *
+ * @see save
  *
  */
 function save_notification() {
     $('#save-notif').removeClass("d-none").show().delay(600).fadeOut(200);
 }
 
-/** Save current chores state and show notification
+/** Save current chores state and show a notification
+ *
+ * It shows a notification using a call to {@link save_notification}.
+ *
+ * @see save_notification
  *
  */
 function save() {
@@ -99,7 +110,7 @@ function save() {
 
 /** The chore div has been clicked
   *
-  * \param choreid The corresponding chore id as integer.
+  * @param choreid {int} The corresponding chore id as integer.
   *
   */
 function chore_onClick(choreid) {

@@ -34,6 +34,11 @@ class ChoreTemplate {
 	    this.chores = [];
 	}
     }
+    /** Can be found in current localStorage pobject ?
+     *
+     * @return A boolean value.
+     *
+     */
     isDefined() {
 	return this.localStorage.getItem('chore-template')!=null;
     }

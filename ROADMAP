@@ -56,9 +56,13 @@ CLOCK: [2023-03-30 jeu. 10:39]--[2023-03-30 jeu. 10:49] =>  0:10
   07/08/23: no update
 **** Write API documentation
 :LOGBOOK:
+CLOCK: [2023-10-02 lun. 12:09]--[2023-10-02 lun. 12:21] =>  0:12
 CLOCK: [2023-09-06 mer. 09:16]--[2023-09-06 mer. 09:58] =>  0:42
 CLOCK: [2023-08-21 lun. 02:40]--[2023-08-21 lun. 03:01] =>  0:21
 :END:
+
+  Please note, it's @param, not \param
+  
 - [X] Maybe using =jsdoc=
 - [X] Move instructions to README if it works  
 - [ ] Nice, but it seems we can't list undocumented members
