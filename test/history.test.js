@@ -4,7 +4,7 @@ const d3  = import('d3');
 // import * as d3 from "d3"; // Can't : we're not in a "module"
 
 const {Chore, ChoreTemplate} = require('../src/chore');
-//const {formatDate} = require('../src/date');
+const {formatDate} = require('../src/date');
 const {ChoresHistory} = require('../src/history');
 
 /** A very simple fake localstorage used to check saved dataz consistency
