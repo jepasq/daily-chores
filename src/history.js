@@ -1,9 +1,10 @@
 /* Needed for unit tests only */
 
 if (process.env.npm_command == "test") {
-    const {formatDate} = require('./date');
+    // Here we use var because of its visibility (vs const)
+    var {formatDate} = require('./date');
+    var {Chore, ChoreTemplate} = require('./chore');
 }
-//const {Chore, ChoreTemplate} = require('./chore');
 
 
 /** Handles an History array of chores value used to draw plots
