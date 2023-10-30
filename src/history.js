@@ -14,18 +14,29 @@ if (process.env.npm_command == "test") {
  *
  */
 class ChoresHistory {
+    /** The ChoreszHistory's constructor
+     *
+     * @param ls {LocalStorage} A possible localStorage replacement for
+     *           unit tests purpose.
+     *
+     */
     constructor( ls = localStorage) {
-	this.days = []
+	/** @member {Array} The list of JSON objects to be stored. */
+	this.days = [];
 	this.localStorage = ls;
 	
 	let d = new Date();
 	this.date = formatDate(d);
 	this.key =  'chore' + this.date;
-	console.log("Saving chores for today ("+this.date+")");
+	console.log("Setting ChoresHistory's key to '" + this.key + "'");
 
     }
 
-    /// Update the history list with the current day(s)
+    /** Update the history list with the current day(s)
+     *
+     * The the list will 
+     *
+     */
     update() {
 	let d = new Date();
 	let ct = new ChoreTemplate(this.localStorage);

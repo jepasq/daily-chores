@@ -56,14 +56,18 @@ CLOCK: [2023-03-30 jeu. 10:39]--[2023-03-30 jeu. 10:49] =>  0:10
   05/05/23: =npm install -g npm@9.6.6=
   07/08/23: no update
   23/10/23: no update
+  30/10/23: browserify-sign && readable-stream
+  
 **** Write API documentation
 :LOGBOOK:
+CLOCK: [2023-10-30 lun. 05:57]--[2023-10-30 lun. 06:18] =>  0:21
 CLOCK: [2023-10-02 lun. 12:09]--[2023-10-02 lun. 12:21] =>  0:12
 CLOCK: [2023-09-06 mer. 09:16]--[2023-09-06 mer. 09:58] =>  0:42
 CLOCK: [2023-08-21 lun. 02:40]--[2023-08-21 lun. 03:01] =>  0:21
 :END:
 
-  Please note, it's @param, not \param
+  Please note, it's =@param {type} text=, not \param.
+  Please also use =@member {type}= syntax
   
 - [X] Maybe using =jsdoc=
 - [X] Move instructions to README if it works  
@@ -90,7 +94,7 @@ CLOCK: [2022-10-26 mer. 11:36]--[2022-10-26 mer. 11:53] =>  0:17
   Start from the renderer process. May use more.
 - [X] Running unit test fire this error =d3 is not defined=
   Try to install the d3 npm module
-- [ ] Actually, history.js needs a special require for FormatDate
+- [X] Actually, history.js needs a special require for FormatDate
   only in unit tests running mode
   - Trying to detect this mode : =process.env.npm_command == "test"=
 

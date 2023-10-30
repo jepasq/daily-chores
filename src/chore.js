@@ -121,7 +121,6 @@ class Chore {
 	let d = new Date();
 	this.date = formatDate(d);
 	this.key =  'chore' + this.date;
-	console.log("Saving chores for today ("+this.date+")");
     }
 
     save(json) {
