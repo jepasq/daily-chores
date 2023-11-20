@@ -10,24 +10,8 @@ class ChoreTemplate {
 	this.chores = [];
 	this.nextchoreid = 0;
 	this.localStorage = ls;
-	if (this.isDefined()) {
-	    try {
-		const jp = JSON.parse(this.localStorage.getItem('chore-template'));
-		this.chores = jp;
-		const nc = this.localStorage.getItem('nextchore-id');
-		if (nc === null) {
-		    console.log("nextchore-id is NULL. Not overriding.");
-		}
-		else {
-		    this.nextchoreid = parseInt(nc, 10);
-		}
-	    }
-	    catch {
-		console.log("Can't parse JSON, resetting chores");
-		this.chores = [];
-	    }
-	}
-
+	this.load();
+	
 	// Need a reset if not an object (i.e. an array)
 	const toc = typeof(this.chores);
 	if (toc != "object") {
@@ -69,6 +53,25 @@ class ChoreTemplate {
 	this.localStorage.setItem('nextchore-id', this.nextchoreid);
     }
 
+    // Load actual members from local storage
+    load() {
+	try {
+	    const jp = JSON.parse(this.localStorage.getItem('chore-template'));
+	    this.chores = jp;
+	    const nc = this.localStorage.getItem('nextchore-id');
+	    if (nc === null) {
+		console.log("nextchore-id is NULL. Not overriding.");
+	    }
+	    else {
+		this.nextchoreid = parseInt(nc, 10);
+	    }
+	}
+	catch {
+	    console.log("Can't parse JSON, resetting chores");
+	    this.chores = [];
+	}
+    }
+    
     // Warning : reset localStorage
     reset() {
 	console.log("Local storage has been reset");

@@ -106,9 +106,12 @@ CLOCK: [2022-10-26 mer. 11:36]--[2022-10-26 mer. 11:53] =>  0:17
 - [ ] Test this on another branch
   see https://www.electronjs.org/fr/docs/latest/tutorial/automated-testing
 **** TODO Make the actual history test work
+:LOGBOOK:
+CLOCK: [2023-11-20 lun. 03:03]--[2023-11-20 lun. 03:16] =>  0:13
+:END:
 - [ ] Not sure the whole ChoreTemlate thing must handle load
   There's no load() function in here
-  - [ ] Now test it. Should now implement it
+  - [ ] Should try to fix load function
   
 **** DONE Dialog may be used to modify items
 :LOGBOOK:
