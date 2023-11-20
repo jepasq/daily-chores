@@ -41,6 +41,7 @@ class ChoresHistory {
 	let d = new Date();
 	let ct = new ChoreTemplate(this.localStorage);
 	ct.debug();
+	console.log('ct.chores :' + ct.chores);
 	this.days.push({
 	    date: formatDate(d),
 	    chores: ct.chores.length,

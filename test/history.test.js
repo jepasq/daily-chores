@@ -78,9 +78,15 @@ describe('ChoresHistory Test', () => {
 	ct.save();
 	var l1 = ct.chores.length;
 
+	// Just testin'
+	let ct2 = new ChoreTemplate(ls);
+	console.log('ct.chores.length :' + ct2.chores.length);
+	assert.equal(ct2.chores.length,  3);
+	
 	let hi = new ChoresHistory(ls);
 	hi.update();
 	const l2 = hi.getLastDays()[0];
+	console.log(hi.getLastDays());
 	assert.equal(l2.chores,  l1);
     });
     

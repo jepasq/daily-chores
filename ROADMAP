@@ -21,6 +21,27 @@ CLOCK: [2023-03-24 ven. 09:14]--[2023-03-24 ven. 09:28] =>  0:14
 **** Maybe handle multiple theme, not only light/dark
 **** May switch to abstract-level for persistance
 https://github.com/Level/abstract-level
+**** Write API documentation
+:LOGBOOK:
+CLOCK: [2023-10-30 lun. 05:57]--[2023-10-30 lun. 06:18] =>  0:21
+CLOCK: [2023-10-02 lun. 12:09]--[2023-10-02 lun. 12:21] =>  0:12
+CLOCK: [2023-09-06 mer. 09:16]--[2023-09-06 mer. 09:58] =>  0:42
+CLOCK: [2023-08-21 lun. 02:40]--[2023-08-21 lun. 03:01] =>  0:21
+:END:
+
+  Please note, it's =@param {type} text=, not \param.
+  Please also use =@member {type}= syntax
+  
+- [X] Maybe using =jsdoc=
+- [X] Move instructions to README if it works  
+- [ ] Nice, but it seems we can't list undocumented members
+  Maybe with jslint. Installed but can't find how!
+#+BEGIN_EXAMPLE
+    git clone https://aur.archlinux.org/jslint.git
+    cd jslint/
+    makepkg
+    sudo pacman -U jslint-*-any.pkg.tar.zst
+#+END_EXAMPLE
 **** TODO More dialog work
 :LOGBOOK:
 CLOCK: [2023-10-23 lun. 03:58]--[2023-10-23 lun. 04:26] =>  0:28
@@ -58,29 +79,9 @@ CLOCK: [2023-03-30 jeu. 10:39]--[2023-03-30 jeu. 10:49] =>  0:10
   23/10/23: no update
   30/10/23: browserify-sign && readable-stream
   
-**** Write API documentation
-:LOGBOOK:
-CLOCK: [2023-10-30 lun. 05:57]--[2023-10-30 lun. 06:18] =>  0:21
-CLOCK: [2023-10-02 lun. 12:09]--[2023-10-02 lun. 12:21] =>  0:12
-CLOCK: [2023-09-06 mer. 09:16]--[2023-09-06 mer. 09:58] =>  0:42
-CLOCK: [2023-08-21 lun. 02:40]--[2023-08-21 lun. 03:01] =>  0:21
-:END:
-
-  Please note, it's =@param {type} text=, not \param.
-  Please also use =@member {type}= syntax
-  
-- [X] Maybe using =jsdoc=
-- [X] Move instructions to README if it works  
-- [ ] Nice, but it seems we can't list undocumented members
-  Maybe with jslint. Installed but can't find how!
-#+BEGIN_EXAMPLE
-    git clone https://aur.archlinux.org/jslint.git
-    cd jslint/
-    makepkg
-    sudo pacman -U jslint-*-any.pkg.tar.zst
-#+END_EXAMPLE
 **** TODO More unit tests work
 :LOGBOOK:
+CLOCK: [2023-11-20 lun. 02:11]--[2023-11-20 lun. 02:43] =>  0:32
 CLOCK: [2023-07-05 mer. 13:51]--[2023-07-05 mer. 14:08] =>  0:17
 CLOCK: [2023-06-01 jeu. 05:24]--[2023-06-01 jeu. 05:51] =>  0:27
 CLOCK: [2023-05-05 ven. 11:11]--[2023-05-05 ven. 11:26] =>  0:15
@@ -99,11 +100,16 @@ CLOCK: [2022-10-26 mer. 11:36]--[2022-10-26 mer. 11:53] =>  0:17
   - Trying to detect this mode : =process.env.npm_command == "test"=
 
 - [ ] Run this on github actions
-  First try result : failed
+  First try result : failed due to actual history unit test
   
 - [ ] Now =TypeError: d3.select is not a function=
 - [ ] Test this on another branch
   see https://www.electronjs.org/fr/docs/latest/tutorial/automated-testing
+**** TODO Make the actual history test work
+- [ ] Not sure the whole ChoreTemlate thing must handle load
+  There's no load() function in here
+  - [ ] Now test it. Should now implement it
+  
 **** DONE Dialog may be used to modify items
 :LOGBOOK:
 CLOCK: [2022-12-19 lun. 03:54]--[2022-12-19 lun. 04:02] =>  0:08

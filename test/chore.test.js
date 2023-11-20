@@ -39,9 +39,28 @@ describe('ChoreTemplate Test', () => {
 	var l1 = ct.chores.length;
 	ct.add({'id':'01', 'name':'aze'});
 	ct.add({'id':'02', 'name':'zer'});
-	var l1 = ct.chores.length;
 	ct.removeFromName('aze');
         assert.notEqual(l1, ct.chores.length);
     });
+
+    it('has a load() function', () => {
+	let ct = new ChoreTemplate(ls);
+	ct.load();
+
+	assert.notEqual(0, ct.chores.length);
+    });
+
+    it('load() function recover saved items', () => {
+	let ct = new ChoreTemplate(ls);
+	ct.add({'id':'01', 'name':'aze'});
+	ct.add({'id':'02', 'name':'zer'});
+	
+	let ct2 = new ChoreTemplate(ls);
+	ct2.load();
+
+	assert.notEqual(2, ct2.chores.length);
+    });
+
+    
     
 });
