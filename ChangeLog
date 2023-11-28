@@ -1,3 +1,11 @@
+* v0.0.1-18 (13 Oct. 2023 - 28 Nov. 2023) SLOC 785
+- Add a md mainpage to the API documentation
+- Move part of the ChoresTemplate ctor in load() function body
+- Add a couple ChoreTemplate load function tests
+- Run CI on github actions on npm 18 and 20
+- Update some new dependencies and API documentation for ChoresHistory
+- formatDate and ChoreTemplate are now vars in history.js in test env
+
 * v0.0.1-17 (26 Jun. 2023 - 13 Oct. 2023) SLOC 740
 - Upgrade get-func-name dependency from 2.0.0 o 2.0.2
 - Improve global and ChoreTemplate API documentation
