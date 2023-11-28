@@ -39,6 +39,7 @@ class ChoreTemplate {
     // May use exception here
     add(item) {
 	item.id=this.nextchoreid;
+	console.log("typeof this.chores = "+ typeof(this.chores));
 	this.chores.push(item);
 	this.nextchoreid += 1;
 

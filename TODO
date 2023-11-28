@@ -8,7 +8,8 @@ daily-chores - GPLv3 - An electron app. to check for daily chores.
     SLOC is the Physical line of flosse/sloc output on 'src/ test/'.
 
 * v0.0.1-18 (13 Oct. 2023 - ???) SLOC ???
-- (5) Move part of the ChoresTemplate ctor in load() function body
+- (6) Add a md mainpage to the API documentation
+- Move part of the ChoresTemplate ctor in load() function body
 - Add a couple ChoreTemplate load function tests
 - Run CI on github actions on npm 18 and 20
 - Update some new dependencies and API documentation for ChoresHistory

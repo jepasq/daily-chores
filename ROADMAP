@@ -23,6 +23,7 @@ CLOCK: [2023-03-24 ven. 09:14]--[2023-03-24 ven. 09:28] =>  0:14
 https://github.com/Level/abstract-level
 **** Write API documentation
 :LOGBOOK:
+CLOCK: [2023-11-28 mar. 08:01]--[2023-11-28 mar. 08:11] =>  0:10
 CLOCK: [2023-10-30 lun. 05:57]--[2023-10-30 lun. 06:18] =>  0:21
 CLOCK: [2023-10-02 lun. 12:09]--[2023-10-02 lun. 12:21] =>  0:12
 CLOCK: [2023-09-06 mer. 09:16]--[2023-09-06 mer. 09:58] =>  0:42
@@ -81,6 +82,7 @@ CLOCK: [2023-03-30 jeu. 10:39]--[2023-03-30 jeu. 10:49] =>  0:10
   
 **** TODO More unit tests work
 :LOGBOOK:
+CLOCK: [2023-11-28 mar. 07:10]--[2023-11-28 mar. 07:51] =>  0:41
 CLOCK: [2023-11-20 lun. 02:11]--[2023-11-20 lun. 02:43] =>  0:32
 CLOCK: [2023-07-05 mer. 13:51]--[2023-07-05 mer. 14:08] =>  0:17
 CLOCK: [2023-06-01 jeu. 05:24]--[2023-06-01 jeu. 05:51] =>  0:27
@@ -98,6 +100,8 @@ CLOCK: [2022-10-26 mer. 11:36]--[2022-10-26 mer. 11:53] =>  0:17
 - [X] Actually, history.js needs a special require for FormatDate
   only in unit tests running mode
   - Trying to detect this mode : =process.env.npm_command == "test"=
+
+- [ ] =Cannot read properties of null (reading 'push')= in chore.js:42
 
 - [ ] Run this on github actions
   First try result : failed due to actual history unit test

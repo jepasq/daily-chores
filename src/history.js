@@ -21,8 +21,12 @@ class ChoresHistory {
      *
      */
     constructor( ls = localStorage) {
-	/** @member {Array} The list of JSON objects to be stored. */
+	/** @member {Array} days The list of JSON objects to be stored. */
 	this.days = [];
+	/** @member {Array} localStorage The storage object to be used.
+	 *
+	 * It can be overriden from 
+	 */
 	this.localStorage = ls;
 	
 	let d = new Date();
