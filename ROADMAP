@@ -111,12 +111,14 @@ CLOCK: [2022-10-26 mer. 11:36]--[2022-10-26 mer. 11:53] =>  0:17
   see https://www.electronjs.org/fr/docs/latest/tutorial/automated-testing
 **** TODO Make the actual history test work
 :LOGBOOK:
+CLOCK: [2023-12-05 mar. 08:39]--[2023-12-05 mar. 09:13] =>  0:34
 CLOCK: [2023-11-20 lun. 03:03]--[2023-11-20 lun. 03:16] =>  0:13
 :END:
 - [-] When running app
   - [X] chore.js:1 process is not defined  
-  - [ ] date.js:13 module is not defined
-
+  - [X] date.js:13 module is not defined
+  - [ ] More errors
+    
 - [ ] Not sure the whole ChoreTemlate thing must handle load
   There's no load() function in here
   - [ ] Should try to fix load function

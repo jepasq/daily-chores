@@ -10,4 +10,6 @@ function formatDate(date) {
   ].join('-');
 }
 
-module.exports = { formatDate };
+if (typeof module !== 'undefined') {
+    module.exports = { formatDate };
+}

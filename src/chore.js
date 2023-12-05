@@ -142,4 +142,6 @@ class Chore {
     
 }
 
-module.exports = {Chore, ChoreTemplate};
+if (typeof module !== 'undefined') {
+    module.exports = {Chore, ChoreTemplate};
+}
