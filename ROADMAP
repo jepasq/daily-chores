@@ -113,6 +113,10 @@ CLOCK: [2022-10-26 mer. 11:36]--[2022-10-26 mer. 11:53] =>  0:17
 :LOGBOOK:
 CLOCK: [2023-11-20 lun. 03:03]--[2023-11-20 lun. 03:16] =>  0:13
 :END:
+- [-] When running app
+  - [X] chore.js:1 process is not defined  
+  - [ ] date.js:13 module is not defined
+
 - [ ] Not sure the whole ChoreTemlate thing must handle load
   There's no load() function in here
   - [ ] Should try to fix load function

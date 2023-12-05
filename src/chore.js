@@ -1,5 +1,7 @@
-if (process.env.npm_command == "test") {
-    const {formatDate} = require('./date');
+if (typeof process !== 'undefined') {
+    if (process.env.npm_command == "test") {
+	const {formatDate} = require('./date');
+    }
 }
 
 /** This is what you expect to be done each day
