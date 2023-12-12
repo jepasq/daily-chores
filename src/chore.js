@@ -128,18 +128,16 @@ class Chore {
 	this.date = formatDate(d);
 	this.key =  'chore' + this.date;
     }
-
+    
     save(json) {
 	localStorage.setItem(this.key, JSON.stringify(json));
     }
-
+    
     loadToday() {
 	console.log("Loading today's chores");
 	var content = localStorage.getItem(this.key);
-//	console.log(content);
 	return  JSON.parse(content)
     }
-    
 }
 
 if (typeof module !== 'undefined') {
