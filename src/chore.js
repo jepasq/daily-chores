@@ -8,18 +8,20 @@ if (typeof process !== 'undefined') {
  *
  */
 class ChoreTemplate {
+    /** Private member */
+    #chores = [];
+    
     constructor( ls = localStorage) {
-	this.chores = [];
 	this.nextchoreid = 0;
 	this.localStorage = ls;
 	this.load();
 	
 	// Need a reset if not an object (i.e. an array)
-	const toc = typeof(this.chores);
+	const toc = typeof(this.#chores);
 	if (toc != "object") {
 	    console.log("Resetting choresTemplate storage. Bad type '"
 			+ toc + "'");
-	    this.chores = [];
+	    this.#chores = [];
 	}
     }
     /** Can be found in current localStorage pobject ?
@@ -33,7 +35,7 @@ class ChoreTemplate {
 
     debug() {
 	console.log("Chored :");
-	this.chores.forEach((c) => {
+	this.#chores.forEach((c) => {
 	    console.log(c);
 	});
     }
@@ -41,8 +43,8 @@ class ChoreTemplate {
     // May use exception here
     add(item) {
 	item.id=this.nextchoreid;
-	console.log("typeof this.chores = "+ typeof(this.chores));
-	this.chores.push(item);
+	console.log("typeof this.#chores = "+ typeof(this.#chores));
+	this.#chores.push(item);
 	this.nextchoreid += 1;
 
 	this.save();
@@ -52,7 +54,7 @@ class ChoreTemplate {
     // Save actual members in local storage
     save() {
 	this.localStorage.setItem('chore-template',
-				  JSON.stringify(this.chores));
+				  JSON.stringify(this.#chores));
 	this.localStorage.setItem('nextchore-id', this.nextchoreid);
     }
 
@@ -60,7 +62,7 @@ class ChoreTemplate {
     load() {
 	try {
 	    const jp = JSON.parse(this.localStorage.getItem('chore-template'));
-	    this.chores = jp;
+	    this.#chores = jp;
 	    const nc = this.localStorage.getItem('nextchore-id');
 	    if (nc === null) {
 		console.log("nextchore-id is NULL. Not overriding.");
@@ -71,7 +73,7 @@ class ChoreTemplate {
 	}
 	catch {
 	    console.log("Can't parse JSON, resetting chores");
-	    this.chores = [];
+	    this.#chores = [];
 	}
     }
     
@@ -79,21 +81,21 @@ class ChoreTemplate {
     reset() {
 	console.log("Local storage has been reset");
 	localStorage.removeItem('chore-template');
-	this.chores = [];
+	this.#chores = [];
     }
 
     /// Remove the given element from local storage
     remove(key) {
 	// Thanks to https://stackoverflow.com/a/5767357
-	const index = this.chores.indexOf(key);
+	const index = this.#chores.indexOf(key);
 	if (index == -1){
 
 	    // Maybe the parameter is an obejct so we'll check text cmp
 	    var i=0;
-	    while (i < this.chores.length) {
-		var totxt="'"+JSON.stringify(this.chores[i])+"'";
-		if (JSON.stringify(this.chores[i]) == JSON.stringify(key)){
-		    this.chores.splice(i, 1);
+	    while (i < this.#chores.length) {
+		var totxt="'"+JSON.stringify(this.#chores[i])+"'";
+		if (JSON.stringify(this.#chores[i]) == JSON.stringify(key)){
+		    this.#chores.splice(i, 1);
 		} else {
 		    console.log("> "+ totxt + " != '" + JSON.stringify(key)
 				+"'");
@@ -108,9 +110,9 @@ class ChoreTemplate {
     removeFromName(name) {
 	// Thanks to https://stackoverflow.com/a/5767357
 	var i=0;
-	while (i < this.chores.length) {
-	    if (this.chores[i].name == name) {
-		this.chores.splice(i, 1);
+	while (i < this.#chores.length) {
+	    if (this.#chores[i].name == name) {
+		this.#chores.splice(i, 1);
 	    } else {
 		++i;
 	    }
