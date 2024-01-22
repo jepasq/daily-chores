@@ -111,13 +111,16 @@ CLOCK: [2022-10-26 mer. 11:36]--[2022-10-26 mer. 11:53] =>  0:17
   see https://www.electronjs.org/fr/docs/latest/tutorial/automated-testing
 **** TODO [fix_ChoreTemplateNullMember] Make the actual history test work
 :LOGBOOK:
+CLOCK: [2024-01-22 lun. 15:59]--[2024-01-22 lun. 16:21] =>  0:22
 CLOCK: [2024-01-08 lun. 11:36]--[2024-01-08 lun. 12:22] =>  0:46
 CLOCK: [2023-12-12 mar. 08:37]--[2023-12-12 mar. 09:03] =>  0:26
 CLOCK: [2023-12-05 mar. 08:39]--[2023-12-05 mar. 09:13] =>  0:34
 CLOCK: [2023-11-20 lun. 03:03]--[2023-11-20 lun. 03:16] =>  0:13
 :END:
 - [ ] ChoreTemplate's this.chores is always null when running tests
-
+  - Trying another implementation in src/chorres-template. To run tests :
+  =make test-ct=
+  
 - [-] When running app
   - [X] chore.js:1 process is not defined  
   - [X] date.js:13 module is not defined
