@@ -118,7 +118,7 @@ CLOCK: [2023-12-05 mar. 08:39]--[2023-12-05 mar. 09:13] =>  0:34
 CLOCK: [2023-11-20 lun. 03:03]--[2023-11-20 lun. 03:16] =>  0:13
 :END:
 - [ ] ChoreTemplate's this.chores is always null when running tests
-  - Trying another implementation in src/chorres-template. To run tests :
+  - Trying another implementation in src/chore-template. To run tests :
   =make test-ct=
   
 - [-] When running app
