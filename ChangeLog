@@ -1,3 +1,11 @@
+* v0.0.1-19 (28 Nov. 2023 - 14 Feb. 2024) SLOC 847
+- Add new ChoreTemplate class add function
+- Fix fake local storage missing in new chore template implementation
+- Try a new ChoreTemplate implementation in a separate file
+- Trying to make ChoreTemplate.chores a private member
+- Fix some module not defined errors
+- Fix undefined process when running app
+
 * v0.0.1-18 (13 Oct. 2023 - 28 Nov. 2023) SLOC 785
 - Add a md mainpage to the API documentation
 - Move part of the ChoresTemplate ctor in load() function body
