@@ -24,5 +24,13 @@ describe('ChoreTemplate Test', () => {
         assert.equal(ct.chores.length, oldLen + 1);
     });
 
+    it('has a remove() function', () => {
+	let ct = new ChoreTemplate(ls);
+	ct.add({name: "aze"}) // Must be able to add .id field
+	let oldLen = ct.chores.length
+	ct.removeByName('aze');
+        assert.equal(ct.chores.length, oldLen - 1);
+    });
+    
 });
 
