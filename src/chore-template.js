@@ -39,6 +39,10 @@ class ChoreTemplate {
 	    i++;
 	}
     }
+
+    remove(item) {
+	this.removeByName(item.name);
+    }
     
 }
 

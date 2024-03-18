@@ -60,7 +60,4 @@ describe('ChoreTemplate Test', () => {
 
 	assert.notEqual(2, ct2.chores.length);
     });
-
-    
-    
 });
