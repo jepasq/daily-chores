@@ -50,6 +50,22 @@ describe('ChoreTemplate Test', () => {
         assert.notEqual(l1, ct.chores.length);
     });
 
-    
+    it('has a load() function', () => {
+	let ct = new ChoreTemplate(ls);
+	ct.load();
+
+	assert.notEqual(0, ct.len());
+    });
+
+    it('load() function recover saved items', () => {
+	let ct = new ChoreTemplate(ls);
+	ct.add({'id':'01', 'name':'aze'});
+	ct.add({'id':'02', 'name':'zer'});
+	
+	let ct2 = new ChoreTemplate(ls);
+	ct2.load();
+
+	assert.notEqual(2, ct2.len());
+    });
 });
 

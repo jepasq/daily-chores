@@ -109,7 +109,7 @@ CLOCK: [2022-10-26 mer. 11:36]--[2022-10-26 mer. 11:53] =>  0:17
 - [ ] Now =TypeError: d3.select is not a function=
 - [ ] Test this on another branch
   see https://www.electronjs.org/fr/docs/latest/tutorial/automated-testing
-**** TODO [fix_ChoreTemplateNullMember] Make the actual history test work
+**** TODO Make the actual history test work
 :LOGBOOK:
 CLOCK: [2024-03-18 lun. 04:30]--[2024-03-18 lun. 04:49] =>  0:19
 CLOCK: [2024-03-06 mer. 04:28]--[2024-03-06 mer. 04:57] =>  0:29
@@ -120,9 +120,6 @@ CLOCK: [2023-12-12 mar. 08:37]--[2023-12-12 mar. 09:03] =>  0:26
 CLOCK: [2023-12-05 mar. 08:39]--[2023-12-05 mar. 09:13] =>  0:34
 CLOCK: [2023-11-20 lun. 03:03]--[2023-11-20 lun. 03:16] =>  0:13
 :END:
-- [ ] ChoreTemplate's this.chores is always null when running tests
-  - Trying another implementation in src/chore-template. To run tests :
-  =make test-ct=
   
 - [-] When running app
   - [X] chore.js:1 process is not defined  
@@ -132,6 +129,16 @@ CLOCK: [2023-11-20 lun. 03:03]--[2023-11-20 lun. 03:16] =>  0:13
 
 - [ ] History dialog can't be shown anymore
   Due to the ChoresHistory instanciation
+
+**** TODO Replace ChreTemplate with new implementation
+:LOGBOOK:
+CLOCK: [2024-03-18 lun. 08:05]--[2024-03-18 lun. 08:42] =>  0:37
+:END:
+- [ ] ChoreTemplate's this.chores is always null when running tests
+  - Trying another implementation in src/chore-template. To run tests :
+  =make test-ct=
+  - [ ] Currently move unit tests from one implementation (chore.js) to
+    the other (chore-template.js)
   
 - [ ] Not sure the whole ChoreTemplate thing must handle load
   There's no load() function in here

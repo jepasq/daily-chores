@@ -43,7 +43,33 @@ class ChoreTemplate {
     remove(item) {
 	this.removeByName(item.name);
     }
-    
+
+    load() {
+	try {
+	    const jp = JSON.parse(this.localStorage.getItem('chore-template'));
+	    this.chores = jp;
+	    const nc = this.localStorage.getItem('nextchore-id');
+	    if (nc === null) {
+		console.log("nextchore-id is NULL. Not overriding.");
+	    }
+	    else {
+		this.nextchoreid = parseInt(nc, 10);
+	    }
+	}
+	catch {
+	    console.log("Can't parse JSON, resetting chores");
+	    this.chores = [];
+	}
+
+    }
+
+    len() {
+	if (this.chores == null) {
+	    return 0;
+	}
+	    
+	return this.chores.length
+    }
 }
 
 if (typeof module !== 'undefined') {
