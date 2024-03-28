@@ -3,7 +3,7 @@ const assert = require('assert');
 const d3  = import('d3');
 // import * as d3 from "d3"; // Can't : we're not in a "module"
 
-const {Chore, ChoreTemplate} = require('../src/chore');
+const {Chore, ChoreTemplate} = require('../src/chore-template');
 const {formatDate} = require('../src/date');
 const {ChoresHistory} = require('../src/history');
 
