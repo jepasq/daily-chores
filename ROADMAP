@@ -82,6 +82,7 @@ CLOCK: [2023-03-30 jeu. 10:39]--[2023-03-30 jeu. 10:49] =>  0:10
   
 **** TODO More unit tests work
 :LOGBOOK:
+CLOCK: [2024-03-28 jeu. 07:36]--[2024-03-28 jeu. 07:52] =>  0:16
 CLOCK: [2023-11-28 mar. 07:10]--[2023-11-28 mar. 07:51] =>  0:41
 CLOCK: [2023-11-20 lun. 02:11]--[2023-11-20 lun. 02:43] =>  0:32
 CLOCK: [2023-07-05 mer. 13:51]--[2023-07-05 mer. 14:08] =>  0:17
@@ -100,6 +101,7 @@ CLOCK: [2022-10-26 mer. 11:36]--[2022-10-26 mer. 11:53] =>  0:17
 - [X] Actually, history.js needs a special require for FormatDate
   only in unit tests running mode
   - Trying to detect this mode : =process.env.npm_command == "test"=
+- [X] ChoreTemplete save is not a function : copied
 
 - [ ] =Cannot read properties of null (reading 'push')= in chore.js:42
 

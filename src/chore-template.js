@@ -44,6 +44,13 @@ class ChoreTemplate {
 	this.removeByName(item.name);
     }
 
+    // Save actual members in local storage
+    save() {
+	this.localStorage.setItem('chore-template',
+				  JSON.stringify(this.chores));
+	this.localStorage.setItem('nextchore-id', this.nextchoreid);
+    }
+    
     load() {
 	try {
 	    const jp = JSON.parse(this.localStorage.getItem('chore-template'));
