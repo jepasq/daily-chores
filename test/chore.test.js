@@ -1,6 +1,6 @@
 const assert = require('assert');
 
-const {Chore, ChoreTemplate} = require('../src/chore');
+const {Chore} = require('../src/chore');
 
 var ls = {
     getItem: function (key) {

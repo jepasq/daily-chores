@@ -1,9 +1,10 @@
-/* Needed for unit tests only */
 
 if (process.env.npm_command == "test") {
+    // Needed for unit tests only
     // Here we use var because of its visibility (vs const)
     var {formatDate} = require('./date');
-    var {Chore, ChoreTemplate} = require('./chore');
+    var {Chore} = require('./chore');
+    var {ChoreTemplate} = require('./chore-template');
 }
 
 
