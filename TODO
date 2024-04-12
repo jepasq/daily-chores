@@ -7,10 +7,5 @@ daily-chores - GPLv3 - An electron app. to check for daily chores.
     Update version and revision in index.html
     SLOC is the Physical line of flosse/sloc output on 'src/ test/'.
 
-* v0.0.1-20 (14 Feb. 2024 - ???) SLOC ???
-- (6) Finally remove old ChoreTemplate implementation in chore.js
-- Copy ChoreTemplate.save to new implementation
-- Upgrade several dependencies (body-parser, content-type and more)
-- Add ChoreTemplate::load and implement len function
-- Implement and test ChoreTemplate::remove function
-- Add a ChoreTemplate::removeByName function
+* v0.0.1-21 (12 Apr. 2024 - ???) SLOC ???
+
