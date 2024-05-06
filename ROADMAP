@@ -134,13 +134,14 @@ CLOCK: [2023-11-20 lun. 03:03]--[2023-11-20 lun. 03:16] =>  0:13
 
 **** TODO Replace ChoreTemplate with new implementation
 :LOGBOOK:
+CLOCK: [2024-05-06 lun. 14:57]--[2024-05-06 lun. 15:05] =>  0:08
 CLOCK: [2024-04-12 ven. 11:16]--[2024-04-12 ven. 11:26] =>  0:10
 CLOCK: [2024-03-18 lun. 08:05]--[2024-03-18 lun. 08:42] =>  0:37
 :END:
 
 - [ ] Finally remove ChoreTemplate implementation in Chore
   Still 13 errors, now 8
-  
+  - Implement chores getter then 6 errors
 - [ ] ChoreTemplate's this.chores is always null when running tests
   - Trying another implementation in src/chore-template. To run tests :
   =make test-ct=

@@ -1,6 +1,7 @@
 const assert = require('assert');
 
 const {Chore} = require('../src/chore');
+const {ChoreTemplate} = require('../src/chore-template');
 
 var ls = {
     getItem: function (key) {
@@ -29,18 +30,18 @@ describe('ChoreTemplate Test', () => {
 	ct.add({'id':0});
 	ct.add({'id':1});
 	ct.add({'id':2});
-	var l1 = ct.chores.length;
+	var l1 = ct.getChores.length;
 	ct.remove({'id': 1});
-        assert.notEqual(l1, ct.chores.length);
+        assert.notEqual(l1, ct.getChores.length);
     });
 
     it('removeFromName() function changes content len', () => {
 	let ct = new ChoreTemplate(ls);
-	var l1 = ct.chores.length;
+	var l1 = ct.getChores.length;
 	ct.add({'id':'01', 'name':'aze'});
 	ct.add({'id':'02', 'name':'zer'});
 	ct.removeFromName('aze');
-        assert.notEqual(l1, ct.chores.length);
+        assert.notEqual(l1, ct.getChores.length);
     });
 
     it('has a load() function', () => {
@@ -58,6 +59,6 @@ describe('ChoreTemplate Test', () => {
 	let ct2 = new ChoreTemplate(ls);
 	ct2.load();
 
-	assert.notEqual(2, ct2.chores.length);
+	assert.notEqual(2, ct2.getChores.length);
     });
 });
