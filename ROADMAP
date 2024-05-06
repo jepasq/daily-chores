@@ -21,8 +21,9 @@ CLOCK: [2023-03-24 ven. 09:14]--[2023-03-24 ven. 09:28] =>  0:14
 **** Maybe handle multiple theme, not only light/dark
 **** May switch to abstract-level for persistance
 https://github.com/Level/abstract-level
-**** Write API documentation
+**** TODO Write API documentation
 :LOGBOOK:
+CLOCK: [2024-05-06 lun. 16:06]--[2024-05-06 lun. 16:58] =>  0:52
 CLOCK: [2023-11-28 mar. 08:01]--[2023-11-28 mar. 08:11] =>  0:10
 CLOCK: [2023-10-30 lun. 05:57]--[2023-10-30 lun. 06:18] =>  0:21
 CLOCK: [2023-10-02 lun. 12:09]--[2023-10-02 lun. 12:21] =>  0:12
@@ -30,7 +31,9 @@ CLOCK: [2023-09-06 mer. 09:16]--[2023-09-06 mer. 09:58] =>  0:42
 CLOCK: [2023-08-21 lun. 02:40]--[2023-08-21 lun. 03:01] =>  0:21
 :END:
 
-  Please note, it's =@param {type} text=, not \param.
+  *I do not use the @file block to keep main page as clean as possible.*
+
+  Please note, it's =@param {type} name Descrption of the param=, not \param.
   Please also use =@member {type}= syntax
   
 - [X] Maybe using =jsdoc=

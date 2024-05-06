@@ -12,3 +12,7 @@ doc:
 
 test-ct:
 	./node_modules/mocha/bin/mocha.js test/chore-template.test.js
+
+lint:
+	jslint src/*.js test/*.js
+
