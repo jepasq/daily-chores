@@ -52,9 +52,7 @@ describe('ChoreTemplate Test', () => {
 
     it('has a load() function', () => {
 	let ct = new ChoreTemplate(ls);
-	ct.load();
-
-	assert.notEqual(0, ct.len());
+	assert.eEqual(typeof ct.load, "function");
     });
 
     it('load() function recover saved items', () => {
