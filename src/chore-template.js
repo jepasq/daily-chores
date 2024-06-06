@@ -1,3 +1,12 @@
+/** The template (i.e. what to be done) for a given day.
+ *
+ * @member Int          nextchoreid  The next chore unique id.
+ * @member LocalStorage localStorage A storage or a mock used for unit tests.
+ * @member _chores      Array        The internal chores array you can get using
+ *     the chores getter.
+ *
+ *
+ */
 class ChoreTemplate {
     
     constructor( ls = localStorage) {
@@ -6,17 +15,24 @@ class ChoreTemplate {
 	this._chores = []
     }
 
+    /** The getter used to retrieve the internal array
+     *
+     */
     get chores() {
 	return this._chores;
     }
-    
+
+    /// Simply print the arry's content in console
     debug() {
 	console.log("Chored :");
 	this._chores.forEach((c) => {
 	    console.log(c);
 	});
     }
-    
+
+    /** Add the given item to the chores template array
+     *
+     */
     add(item) {
 	item.id = this.nextchoreid;
 	console.log("typeof this._chores = "+ typeof(this._chores));
