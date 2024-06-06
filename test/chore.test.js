@@ -32,7 +32,7 @@ describe('ChoreTemplate Test', () => {
 	ct.add({'id':2});
 	var l1 = ct.getChores.length;
 	ct.remove({'id': 1});
-        assert.notEqual(l1, ct.getChores.length);
+        assert.notEqual(l1, ct.chores.length);
     });
 
     it('removeFromName() function changes content len', () => {
@@ -41,7 +41,7 @@ describe('ChoreTemplate Test', () => {
 	ct.add({'id':'01', 'name':'aze'});
 	ct.add({'id':'02', 'name':'zer'});
 	ct.removeFromName('aze');
-        assert.notEqual(l1, ct.getChores.length);
+        assert.notEqual(l1, ct.chores.length);
     });
 
     it('has a load() function', () => {
@@ -59,6 +59,6 @@ describe('ChoreTemplate Test', () => {
 	let ct2 = new ChoreTemplate(ls);
 	ct2.load();
 
-	assert.notEqual(2, ct2.getChores.length);
+	assert.equal(2, ct2.chores.length);
     });
 });
