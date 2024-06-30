@@ -85,6 +85,7 @@ CLOCK: [2023-03-30 jeu. 10:39]--[2023-03-30 jeu. 10:49] =>  0:10
   23/10/23: no update
   30/10/23: browserify-sign && readable-stream
   12/04/24: =npm install -g npm@10.5.2=
+  01/07/24: braces from 3.0.2 to 3.0.3, fill-ranges and more deps.
 **** TODO More unit tests work
 :LOGBOOK:
 CLOCK: [2024-03-28 jeu. 07:36]--[2024-03-28 jeu. 07:52] =>  0:16
