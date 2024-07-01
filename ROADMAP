@@ -140,6 +140,7 @@ CLOCK: [2023-11-20 lun. 03:03]--[2023-11-20 lun. 03:16] =>  0:13
 
 **** TODO Replace ChoreTemplate with new implementation
 :LOGBOOK:
+CLOCK: [2024-07-01 lun. 03:12]--[2024-07-01 lun. 03:28] =>  0:16
 CLOCK: [2024-06-06 jeu. 17:32]--[2024-06-06 jeu. 17:40] =>  0:08
 CLOCK: [2024-05-22 mer. 10:55]--[2024-05-22 mer. 11:04] =>  0:09
 CLOCK: [2024-05-06 lun. 14:57]--[2024-05-06 lun. 15:05] =>  0:08
@@ -147,14 +148,14 @@ CLOCK: [2024-04-12 ven. 11:16]--[2024-04-12 ven. 11:26] =>  0:10
 CLOCK: [2024-03-18 lun. 08:05]--[2024-03-18 lun. 08:42] =>  0:37
 :END:
 
-- [ ] Finally remove ChoreTemplate implementation in Chore
-  Still 13 errors, now 8
-  - Implement chores getter then 6 errors
-- [ ] ChoreTemplate's this.chores is always null when running tests
+- [X] ChoreTemplate's this.chores is always null when running tests
   - Trying another implementation in src/chore-template. To run tests :
   =make test-ct=
-  - [ ] Currently move unit tests from one implementation (chore.js) to
+  - [X] Currently move unit tests from one implementation (chore.js) to
     the other (chore-template.js)
+- [X] Finally remove ChoreTemplate implementation in Chore
+  Still 13 errors, now 8
+  - Implement chores getter then 6 errors
   
 - [ ] Not sure the whole ChoreTemplate thing must handle load
   There's no load() function in here
