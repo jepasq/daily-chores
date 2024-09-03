@@ -53,8 +53,7 @@ class ChoreTemplate {
 	    if (this._chores[i].name == key){
 		this._chores.splice(i, 1);
 	    } else {
-		console.log("> "+ totxt + " != '" + JSON.stringify(key)
-			    +"'");
+		console.log("> "+ totxt + " != '" + JSON.stringify(key)  + "'");
 	    }
 	    i++;
 	}
