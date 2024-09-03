@@ -50,6 +50,7 @@ CLOCK: [2023-08-21 lun. 02:40]--[2023-08-21 lun. 03:01] =>  0:21
 #+END_EXAMPLE
 **** TODO More dialog work and npm upgrade
 :LOGBOOK:
+CLOCK: [2024-09-03 mar. 08:56]--[2024-09-03 mar. 09:00] =>  0:04
 CLOCK: [2023-10-23 lun. 03:58]--[2023-10-23 lun. 04:26] =>  0:28
 CLOCK: [2023-06-19 lun. 08:02]--[2023-06-19 lun. 08:49] =>  0:47
 CLOCK: [2023-05-05 ven. 11:03]--[2023-05-05 ven. 11:10] =>  0:07
@@ -86,6 +87,7 @@ CLOCK: [2023-03-30 jeu. 10:39]--[2023-03-30 jeu. 10:49] =>  0:10
   30/10/23: browserify-sign && readable-stream
   12/04/24: =npm install -g npm@10.5.2=
   01/07/24: braces from 3.0.2 to 3.0.3, fill-ranges and more deps.
+  03/09/24: elliptic from 6.5.6 tm 6.5.7
 **** TODO More unit tests work
 :LOGBOOK:
 CLOCK: [2024-03-28 jeu. 07:36]--[2024-03-28 jeu. 07:52] =>  0:16
