@@ -5,7 +5,8 @@
     "main": "src/main.js",
     "scripts": {
         "start": "electron .",
-        "test": "mocha"
+        "test": "mocha",
+	"doc": "jsdoc -r src src/Mainpage.md"
     },
     "author": "",
     "license": "GPL-3.0-or-later",

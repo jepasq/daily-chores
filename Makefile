@@ -7,7 +7,7 @@ check:
 	npm test
 
 doc:
-	jsdoc -r src src/Mainpage.md
+	npm run doc
 	@echo "Now, open 'out/index.html' with your favorite browser."
 
 test-ct:
