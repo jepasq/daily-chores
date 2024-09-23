@@ -24,7 +24,7 @@ class ChoreTemplate {
 
     /// Simply print the arry's content in console
     debug() {
-	console.log("Chored :");
+	console.log("Debugging Chore :");
 	this._chores.forEach((c) => {
 	    console.log(c);
 	});
