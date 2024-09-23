@@ -13,11 +13,21 @@ class Chore {
 	this.date = formatDate(d);
 	this.key =  'chore' + this.date;
     }
-    
+
+    /** Save the given json as a cookie
+     *
+     * This will add the json param content to localstorage using
+     * this.key as date.
+     *
+     */
     save(json) {
 	localStorage.setItem(this.key, JSON.stringify(json));
     }
+
     
+    /** Load and parse today's saved chores
+     *
+     */
     loadToday() {
 	console.log("Loading today's chores");
 	var content = localStorage.getItem(this.key);
