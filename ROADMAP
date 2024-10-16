@@ -90,6 +90,7 @@ CLOCK: [2023-03-30 jeu. 10:39]--[2023-03-30 jeu. 10:49] =>  0:10
   01/07/24: braces from 3.0.2 to 3.0.3, fill-ranges and more deps.
   03/09/24: elliptic from 6.5.6 tm 6.5.7
   23/09/24: express, body-parser, encodeurl, fionalhandler and more
+  16/10/24: express, cookie, cookie-parser
 **** TODO More unit tests work
 :LOGBOOK:
 CLOCK: [2024-03-28 jeu. 07:36]--[2024-03-28 jeu. 07:52] =>  0:16
