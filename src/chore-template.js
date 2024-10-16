@@ -39,7 +39,7 @@ class ChoreTemplate {
 	this._chores.push(item);
 	this.nextchoreid += 1;
 
-//	this.save();
+	//this.save();
 	this.debug();
     }
 

@@ -59,6 +59,7 @@ describe('ChoreTemplate Test', () => {
 	let ct = new ChoreTemplate(ls);
 	ct.add({'id':'01', 'name':'aze'});
 	ct.add({'id':'02', 'name':'zer'});
+	ct.save();
 	
 	let ct2 = new ChoreTemplate(ls);
 	ct2.load();

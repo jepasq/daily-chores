@@ -85,8 +85,10 @@ describe('ChoresHistory Test', () => {
 	
 	let hi = new ChoresHistory(ls);
 	hi.update();
-	const l2 = hi.getLastDays()[0];
-	assert.equal(l2.chores,  l1);
+	const lastDays = hi.getLastDays();
+	assert.equal(typeof lastDays, "Array");
+	
+	assert.equal(lastDays[0].chores,  l1);
     });
     
 });
