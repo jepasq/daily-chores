@@ -8,4 +8,5 @@ daily-chores - GPLv3 - An electron app. to check for daily chores.
     SLOC is the Physical line of flosse/sloc output on 'src/ test/'.
 
 * v0.0.1-23 (01 Jul. 2024 - ???) SLOC ???
-- (1) ChoresHistory now check for getLastDays returned value type
+- (2) Upgrade elliptic fom 6.5.7 to 6.6.0 using npm audit command
+- ChoresHistory now check for getLastDays returned value type
