@@ -148,6 +148,7 @@ CLOCK: [2023-11-20 lun. 03:03]--[2023-11-20 lun. 03:16] =>  0:13
 
 **** TODO Replace ChoreTemplate with new implementation
 :LOGBOOK:
+CLOCK: [2024-11-25 lun. 08:40]--[2024-11-25 lun. 08:59] =>  0:19
 CLOCK: [2024-11-04 lun. 09:59]--[2024-11-04 lun. 10:08] =>  0:09
 CLOCK: [2024-10-16 mer. 10:34]--[2024-10-16 mer. 10:47] =>  0:13
 CLOCK: [2024-07-19 ven. 10:23]--[2024-07-19 ven. 10:39] =>  0:16
@@ -169,7 +170,9 @@ CLOCK: [2024-03-18 lun. 08:05]--[2024-03-18 lun. 08:42] =>  0:37
   - Implement chores getter then 6 errors
 - [X] Should try to fix ChoreTemplate::load function.
   Added =make check-ct= rule for this
-  
+
+- [ ] Can't make jsdoc handle ChoreTemplate class descriprion
+
 **** DONE Dialog may be used to modify items
 :LOGBOOK:
 CLOCK: [2022-12-19 lun. 03:54]--[2022-12-19 lun. 04:02] =>  0:08

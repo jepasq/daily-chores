@@ -1,14 +1,19 @@
 /** The template (i.e. what to be done) for a given day.
  *
+ * This class is used to list things that must be done for a specific day.
+ *
  * @member Int          nextchoreid  The next chore unique id.
  * @member LocalStorage localStorage A storage or a mock used for unit tests.
  * @member _chores      Array        The internal chores array you can get using
  *     the chores getter.
  *
- *
  */
 class ChoreTemplate {
-    
+
+    /** ChoreTemplate constructor.
+     *  Assigns default values to defferent member variables.
+     *
+     */
     constructor( ls = localStorage) {
 	this.nextchoreid = 0;
 	this.localStorage = ls;
@@ -16,6 +21,8 @@ class ChoreTemplate {
     }
 
     /** The getter used to retrieve the internal array
+     *
+     *  @return The internal chores array.
      *
      */
     get chores() {
@@ -32,6 +39,8 @@ class ChoreTemplate {
 
     /** Add the given item to the chores template array
      *
+     *  @param item {Object} The item ti be pushed to the internal array.
+     *
      */
     add(item) {
 	item.id = this.nextchoreid;
@@ -43,7 +52,11 @@ class ChoreTemplate {
 	this.debug();
     }
 
-    /// Remove the given element from local storage
+    /** Remove the given element from local storage
+     *
+     *  @param item {String} The name of the stored object to be removed.
+     *
+     */
     removeByName(key) {
 	// Thanks to https://stackoverflow.com/a/5767357
 	    // Maybe the parameter is an obejct so we'll check text cmp
