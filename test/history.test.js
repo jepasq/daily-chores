@@ -76,12 +76,13 @@ describe('ChoresHistory Test', () => {
 	ct.add({'id':1});
 	ct.add({'id':2});
 	ct.save();
-	var l1 = ct.chores.length;
+	var l1 = ct.len();
 
 	// Just testin'
 	let ct2 = new ChoreTemplate(ls);
 	ct2.load();
-	assert.equal(ct2.chores.length,  l1);
+	assert.equal(ct2.len(), l1);
+	assert.ok(ct2.len() > 0);
 	
 	let hi = new ChoresHistory(ls);
 	hi.update();
