@@ -7,10 +7,5 @@ daily-chores - GPLv3 - An electron app. to check for daily chores.
     Update version and revision in index.html
     SLOC is the Physical line of flosse/sloc output on 'src/ test/'.
 
-* v0.0.1-23 (01 Jul. 2024 - ???) SLOC ???
-- (6) Move storageMock in a new file and use it through require
-- Update ansi-colors diff debug express and other using npm audit
-- Slightly improve ChoreTemplate API documentation
-- Better localStorage mock fixes chores-template unit tests
-- Upgrade elliptic fom 6.5.7 to 6.6.0 using npm audit command
-- ChoresHistory now check for getLastDays returned value type
+* v0.0.1-24 (14 Jan. 2025 - ???) SLOC ???
+
