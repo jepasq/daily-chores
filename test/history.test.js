@@ -7,17 +7,11 @@ const {Chore, ChoreTemplate} = require('../src/chore-template');
 const {formatDate} = require('../src/date');
 const {ChoresHistory} = require('../src/history');
 
-/** A very simple fake localstorage used to check saved dataz consistency
- *
- */
-var ls = {
-    getItem: function (key) {
-        if( key === 'id_token' ){ return /* a token object */; }
-        return null;
-    },
+const storageMock = require('./storage');
 
-    setItem: function (key) { }
-}
+/// A fake LocalStorage item
+var ls = storageMock();
+
 
 describe('ChoresHistory Test', () => {
     it('can be instantiated', () => {

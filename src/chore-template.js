@@ -86,7 +86,9 @@ class ChoreTemplate {
     load() {
 	try {
 	    const jp = JSON.parse(this.localStorage.getItem('chore-template'));
+	    console.log("ChoreTemplate::load(): loaded JS : " + jp);
 	    this._chores = jp;
+	    
 	    const nc = this.localStorage.getItem('nextchore-id');
 	    if (nc === null) {
 		console.log("nextchore-id is NULL. Not overriding.");
