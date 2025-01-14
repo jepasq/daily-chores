@@ -80,8 +80,9 @@ describe('ChoresHistory Test', () => {
 	
 	let hi = new ChoresHistory(ls);
 	hi.update();
+	
 	const lastDays = hi.getLastDays();
-	assert.equal(typeof lastDays, "Array");
+	assert.strictEqual(Array.isArray(lastDays),true,"lastDays is an array");
 	
 	assert.equal(lastDays[0].chores,  l1);
     });

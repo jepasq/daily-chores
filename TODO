@@ -8,4 +8,4 @@ daily-chores - GPLv3 - An electron app. to check for daily chores.
     SLOC is the Physical line of flosse/sloc output on 'src/ test/'.
 
 * v0.0.1-24 (14 Jan. 2025 - ???) SLOC ???
-
+- (1) Better array type check in History unit tests
