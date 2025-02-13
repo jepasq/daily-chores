@@ -21,8 +21,9 @@ CLOCK: [2023-03-24 ven. 09:14]--[2023-03-24 ven. 09:28] =>  0:14
 **** Maybe handle multiple theme, not only light/dark
 **** May switch to abstract-level for persistance
 https://github.com/Level/abstract-level
-**** TODO Write API documentation
+**** TODO Write and improve API documentation
 :LOGBOOK:
+CLOCK: [2025-02-13 jeu. 13:54]--[2025-02-13 jeu. 14:04] =>  0:10
 CLOCK: [2024-09-23 lun. 12:59]--[2024-09-23 lun. 13:12] =>  0:13
 CLOCK: [2024-06-06 jeu. 17:47]--[2024-06-06 jeu. 18:23] =>  0:36
 CLOCK: [2024-05-06 lun. 16:06]--[2024-05-06 lun. 16:58] =>  0:52
@@ -40,15 +41,11 @@ CLOCK: [2023-08-21 lun. 02:40]--[2023-08-21 lun. 03:01] =>  0:21
   
 - [X] Maybe using =jsdoc=
 - [X] Move instructions to README if it works  
-- [ ] ChoreTemplate documented but not listed
+- [X] ChoreTemplate documented but not listed
 - [ ] Nice, but it seems we can't list undocumented members
-  Maybe with jslint. Installed but can't find how!
-#+BEGIN_EXAMPLE
-    git clone https://aur.archlinux.org/jslint.git
-    cd jslint/
-    makepkg
-    sudo pacman -U jslint-*-any.pkg.tar.zst
-#+END_EXAMPLE
+  Maybe with jslint. Installed but can't find how! (Now installed via npm
+  and launched via npx)
+- [ ] Try =npm install eslint eslint-plugin-jsdoc --save-dev=  
 **** TODO More dialog work and npm upgrade
 :LOGBOOK:
 CLOCK: [2025-01-14 mar. 09:09]--[2025-01-14 mar. 09:44] =>  0:35

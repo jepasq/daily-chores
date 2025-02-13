@@ -1,3 +1,5 @@
+"use strict";
+
 /** Pad a number with '0'
  *
  * @param {integer} num The number to be padded.
@@ -6,7 +8,7 @@
  *
  */
 function padTo2Digits(num) {
-  return num.toString().padStart(2, '0');
+    return num.toString().padStart(2, '0');
 }
 
 /** Returns the given date as a DD-MM-YYYY string

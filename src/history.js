@@ -1,5 +1,5 @@
 
-if (process.env.npm_command == "test") {
+if (process.env.npm_command === "test") {
     // Needed for unit tests only
     // Here we use var because of its visibility (vs const)
     var {formatDate} = require('./date');

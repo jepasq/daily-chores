@@ -27,6 +27,9 @@ class Chore {
     
     /** Load and parse today's saved chores
      *
+     * This will load, parse as JSON then return the `this.key` content from
+     * localStorage objet.
+     *
      */
     loadToday() {
 	console.log("Loading today's chores");

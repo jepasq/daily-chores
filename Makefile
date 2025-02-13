@@ -10,6 +10,10 @@ doc:
 	npm run doc
 	@echo "Now, open 'out/index.html' with your favorite browser."
 
+# List undocumented members
+undoc:
+	npx eslint .
+
 test-ct:
 	./node_modules/mocha/bin/mocha.js test/chore-template.test.js
 
