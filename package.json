@@ -6,7 +6,7 @@
     "scripts": {
         "start": "electron .",
         "test": "mocha",
-	"doc": "jsdoc -r src src/Mainpage.md"
+        "doc": "jsdoc -r src src/Mainpage.md"
     },
     "author": "",
     "license": "GPL-3.0-or-later",
@@ -21,6 +21,7 @@
         "electron-log": "^5.0.0-beta.15",
         "font-awesome": "^4.7.0",
         "jquery": "^3.6.0",
+        "jslint": "^0.12.1",
         "popper": "^1.0.1",
         "require": "^2.4.20"
     }

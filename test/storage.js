@@ -1,3 +1,5 @@
+"use strict";
+
 // Storage Mock (from https://stackoverflow.com/a/26177872)
 function storageMock() {
     let storage = {};

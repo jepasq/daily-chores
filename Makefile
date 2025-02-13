@@ -13,6 +13,7 @@ doc:
 test-ct:
 	./node_modules/mocha/bin/mocha.js test/chore-template.test.js
 
+# Using npx because installed locally (https://stackoverflow.com/a/55101769)
 lint:
-	jslint src/*.js test/*.js
+	npx jslint src/*.js test/*.js
 

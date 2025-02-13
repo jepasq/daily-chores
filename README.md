@@ -20,11 +20,15 @@ Once all prerequisite are met, to start the application :
 
 	npm start
 
-# Unit tests
+# Unit tests and lint
 
 To run unit tests :
 
 	npm test
+
+To run `jslint`, the Code Quality and Coverage Tool :
+
+	make lint
 
 # Log file
 
