@@ -8,6 +8,7 @@ daily-chores - GPLv3 - An electron app. to check for daily chores.
     SLOC is the Physical line of flosse/sloc output on 'src/ test/'.
 
 * v0.0.1-24 (14 Jan. 2025 - ???) SLOC ???
-- (3) Finally found a way to list undocumented API members
+- (4) Improve Chore's API documentation and remove related debug messages
+- Finally found a way to list undocumented API members
 - Add jslint dependency and modify associated Makefile to make it work
 - Better array type check in History unit tests

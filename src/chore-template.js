@@ -1,17 +1,21 @@
+
+"use strict";
+
 /** The template (i.e. what to be done) for a given day.
  *
- * This class is used to list things that must be done for a specific day.
- *
- * @member Int          nextchoreid  The next chore unique id.
- * @member LocalStorage localStorage A storage or a mock used for unit tests.
- * @member _chores      Array        The internal chores array you can get using
- *     the chores getter.
- *
+ * @class
  */
 class ChoreTemplate {
 
     /** ChoreTemplate constructor.
-     *  Assigns default values to defferent member variables.
+     *
+     * This class is used to list things that must be done for a specific day.
+     *
+     * @member Int          nextchoreid  The next chore unique id.
+     * @member LocalStorage localStorage A storage or a mock used for unit
+     *                      tests.
+     * @member _chores      Array        The internal chores array you
+     *                      can get using the chores getter.
      *
      */
     constructor( ls = localStorage) {
@@ -44,12 +48,12 @@ class ChoreTemplate {
      */
     add(item) {
 	item.id = this.nextchoreid;
-	console.log("typeof this._chores = "+ typeof(this._chores));
+	// console.log("typeof this._chores = "+ typeof(this._chores));
 	this._chores.push(item);
 	this.nextchoreid += 1;
 
 	//this.save();
-	this.debug();
+	//this.debug();
     }
 
     /** Remove the given element from local storage
@@ -86,7 +90,6 @@ class ChoreTemplate {
     load() {
 	try {
 	    const jp = JSON.parse(this.localStorage.getItem('chore-template'));
-	    console.log("ChoreTemplate::load(): loaded JS : " + jp);
 	    this._chores = jp;
 	    
 	    const nc = this.localStorage.getItem('nextchore-id');

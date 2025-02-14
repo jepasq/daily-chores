@@ -149,6 +149,7 @@ CLOCK: [2023-11-20 lun. 03:03]--[2023-11-20 lun. 03:16] =>  0:13
 
 **** TODO Replace ChoreTemplate with new implementation
 :LOGBOOK:
+CLOCK: [2025-02-14 ven. 10:22]--[2025-02-14 ven. 11:11] =>  0:49
 CLOCK: [2024-11-25 lun. 08:40]--[2024-11-25 lun. 08:59] =>  0:19
 CLOCK: [2024-11-04 lun. 09:59]--[2024-11-04 lun. 10:08] =>  0:09
 CLOCK: [2024-10-16 mer. 10:34]--[2024-10-16 mer. 10:47] =>  0:13
@@ -173,7 +174,10 @@ CLOCK: [2024-03-18 lun. 08:05]--[2024-03-18 lun. 08:42] =>  0:37
   Added =make check-ct= rule for this
 
 - [ ] Can't make jsdoc handle ChoreTemplate class descriprion
-
+  Same issue with Chore class.
+  - Using the @class thinks doesn't help and the ctor documentation
+    can't contain all I want (members desc.)
+  
 **** DONE Dialog may be used to modify items
 :LOGBOOK:
 CLOCK: [2022-12-19 lun. 03:54]--[2022-12-19 lun. 04:02] =>  0:08

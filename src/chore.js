@@ -4,10 +4,13 @@ if (typeof process !== 'undefined') {
     }
 }
 
-/** This is what you effectively did a given day
- *
- */
 class Chore {
+    /** This is what you effectively did a given day
+     *
+     * Calling the constructor create the date and key members from
+     * today's date.
+     *
+     */
     constructor() {
 	let d = new Date();
 	this.date = formatDate(d);
